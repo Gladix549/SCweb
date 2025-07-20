@@ -1,0 +1,672 @@
+
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <title>SC</title>
+    <meta charset="windows-1250">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+    
+    
+    body{
+  background:   #2c3e50;
+    
+    }
+    
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .banner {
+      height: 90vh;
+      width: 100%;
+      background: linear-gradient(135deg, #2c3e50, #8e44ad, #00c9ff);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .banner h1 {
+      font-size: 6em;
+      margin-bottom: 0.3em;
+    }
+
+    .banner p {
+      font-size: 1.3em;
+      max-width: 90%;
+    }
+
+    .banner::after  {       
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 8S0px;
+      background: white;
+      clip-path: polygon(0 0, 100% 100%, 0% 100%);
+      z-index: 1;
+    }
+
+    .profile-pic {
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      border: 6px solid white;
+      object-fit: cover;
+      position: absolute;
+      bottom: -180px; /* polovina výšky obrázku */
+      z-index: 2;
+    }
+
+    .motivace {
+    
+      margin-top: 150px; /* aby byl text pod obrázkem */
+      text-align: center;
+      padding: 2em;
+      font-size: 1.4em;
+      background-color:  #2c3e50;
+  
+    }
+
+    
+  
+    
+    /* Top bar */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #2c2c2c;
+      color: white;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+       transition: top 0.3s ease;
+    }
+
+     /*tohle kdyžtak smazat, seba rikal ze lepsi bez toho*/
+    .topbar.hidden {
+     top: -100px; /* move out of view */
+        }
+        
+               
+    .topbar h1 {
+      font-size: 1.3em;
+    }
+
+    .topbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+  
+
+    .content {
+      padding: 20px 30px;
+      background-color: #7d7dff;
+      min-height: 10vh;
+    }
+    
+    
+   
+    
+    
+    
+    
+    
+    .predmety a:hover {
+    transform: scale(1.2)
+    }
+    
+    
+    
+    
+    
+    
+    </style>
+    
+  </head>
+  <body>
+  
+    <div class="topbar">
+    <h1>Sebik stránky</h1>
+     
+    <div>
+      <a padding="30px"; href="#">Domovská stránka</a> 
+      <a href="https://budejovice.rozhlas.cz/sites/default/files/styles/cro_16x9_tablet/public/images/11b51034526978f3f2c1a12669bc88be.jpeg?itok=aswZo2Zf">Fyzika</a>
+      <a href="#">Zeměpis</a>
+      <a href="#">Dějepis</a>
+      <a href="#">Chemie</a>
+      <a href="#">Český jazyk</a>
+      <a href="#">Biologie</a>
+      <a href="#">ZSV</a>
+      <a href="LUL">Anglický jazyk</a>
+      <a href="#">Matematika</a>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+
+  
+  
+
+ <section class="banner">
+    <h1>Vítej na SC.alpha</h1>
+    <p>Stránce kde ti pomůžeme prolézt střední školou bez obtíží</p>
+    <img src="https://trexperienceperu.com/sites/default/files/peruvian-man-clothing.webp" alt="Tvoje fotka" class="profile-pic">
+  </section>
+
+  <section class="motivace">
+    <p>„Nezáleží na tom, kolikrát spadneš, ale kolikrát se zvedneš.“</p>
+    <p text-align="center">- Sebastian Carrera </p>
+  </section>
+  
+  
+  
+  
+  
+  <section style="padding: 60px 20px; background-color: #f9f9f9; text-align: center;">
+  <h2>O mně</h2>
+  <p style="max-width: 700px; margin: 20px auto; font-size: 18px;">
+    Ahoj! Jsem Sebastian Carrera a vytvořil jsem tuto stránku, abych pomohl spolužákům jednoduše najít zápisky ze školy.
+    Věřím, že když si navzájem pomáháme, je střední škola mnohem zvládnutelnější.
+    Tady najdeš moje vlastní poznámky ze všech hlavních předmětů – připravené tak, aby ti co nejvíc pomohly.
+  </p>
+</section>
+
+
+
+  
+  
+ <section style="padding: 40px 20px; background-color: #e6e6ff;">
+  <h2 style="text-align: center; margin-bottom: 30px;">Vyber si předmět</h2>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; max-width: 1000px; margin: auto;" class="predmety">
+
+    <a href="https://budejovice.rozhlas.cz/sites/default/files/styles/cro_16x9_tablet/public/images/11b51034526978f3f2c1a12669bc88be.jpeg?itok=aswZo2Zf" style="background: #6a5acd; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-atom"></i> Fyzika
+    </a>
+
+    <a href="#zemepis" style="background: #4682b4; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-globe-europe"></i> Zeměpis
+    </a>
+
+    <a href="#dejepis" style="background: #ff1493; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-landmark"></i> Dějepis
+    </a>
+
+    <a href="#chemie" style="background: #20b2aa; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-vial"></i> Chemie
+    </a>
+
+    <a href="#ceskyjazyk" style="background: #ff8c00; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-book-open"></i> Český jazyk
+    </a>
+<br>
+    <a href="#biologie" style="background: #228b22; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-dna"></i> Biologie
+    </a>
+
+    <a href="#zsv" style="background: #8b008b; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-scale-balanced"></i> ZSV
+    </a>
+
+    <a href="#anglictina" style="background: #4169e1; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+     <i class="fas fa-language"></i> Anglický jazyk
+    </a>
+
+
+    <a href="#matematika" style="background: #dc143c; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+     <i class="fas fa-square-root-alt"></i> Matematika
+    </a>
+  </div>
+</section>
+
+
+
+
+  <section class="content">
+    <p style="margin-top: 10px;">... hodně obsahu ...</p>
+    <p>nigga fyzika</p>
+    <p>myslím to fr. zabij me</p>
+  </section>
+
+  <div class="content">
+    <p>Tady bude obsah stránky....... </p>
+  
+  </div>
+  
+  
+  
+  
+
+<!-- Quiz 1 -->
+<section id="quiz-section" style="padding: 40px; background: #f0f0f0; text-align: center;">
+  <h2>Mini kvíz - 1. ročník</h2>
+<div id="quiz-box-1">
+  <h2 id="question-1"></h2>
+  <div id="answers-1"></div>
+  <div style="background: #ccc; width: 100%; height: 20px; border-radius: 10px;">
+    <div id="progress-1" style="background: green; width: 0%; height: 100%; border-radius: 10px;"></div>
+  </div>
+</div>
+</section>
+
+
+<!-- Quiz 2 -->
+<section id="quiz-section" style="padding: 40px; background: #7d7dff; text-align: center;">
+  <h2>Mini kvíz - 2. ročník</h2>
+<div id="quiz-box-2">
+  <h2 id="question-2"> </h2>
+  <div id="answers-2"></div>
+  <div style="background: #ccc; width: 100%; height: 20px; border-radius: 10px;">
+    <div id="progress-2" style="background: blue; width: 0%; height: 100%; border-radius: 10px;"></div>
+  </div>
+</div>
+</section>
+
+
+<!-- Quiz 3 -->
+<section id="quiz-section" style="padding: 40px; background: #f0f0f0; text-align: center;">
+  <h2>Mini kvíz - 3. ročník</h2>
+<div id="quiz-box-3">
+  <h2 id="question-3"></h2>
+  <div id="answers-3"></div>
+  <div style="background: #ccc; width: 100%; height: 20px; border-radius: 10px;">
+    <div id="progress-3" style="background: green; width: 0%; height: 100%; border-radius: 10px;"></div>
+  </div>
+</div>
+</section>
+
+<!-- Quiz 4 -->
+<section id="quiz-section" style="padding: 40px; background: #7d7dff; text-align: center;">
+  <h2>Mini kvíz - 4. ročník</h2>
+<div id="quiz-box-4">
+  <h2 id="question-4"></h2>
+  <div id="answers-4"></div>
+  <div style="background: #ccc; width: 100%; height: 20px; border-radius: 10px;">
+    <div id="progress-4" style="background: blue; width: 0%; height: 100%; border-radius: 10px; "></div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script> /* script na quiz, nic jineho tam neni*/
+
+// ========== QUIZ 1 ==========
+
+function startQuiz1() {
+  const quizData1 = [
+    {
+      question: "Jaké je hlavní město Francie?",
+      answers: ["Londýn", "Paříž", "Madrid"],
+      correct: 1
+    },
+        {
+      question: "Je sima malej?",
+      answers: ["Ano", "Ne"],
+      correct: 0
+    },
+           {
+      question: "Je Sebik goat?",
+      answers: ["Ano", "Ne"],
+      correct: 0
+    },
+           {
+      question: "Krade Ústí?",
+      answers: ["Ano", "Ne", "Podle nálady"],
+      correct: 2
+    },
+    // ... more questions
+  ];
+
+  let currentQuestion = 0;
+  let progress = 0;
+  let shuffledQuizData = shuffleArray(quizData1);
+
+  function shuffleArray(array) {
+    const copy = [...array];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function showQuestion() {
+    if (progress >= 100) {
+      document.getElementById("quiz-box-1").innerHTML = "<h3>Gratuluji! Dokončil jsi první kvíz!</h3>";
+      return;
+    }
+
+    if (currentQuestion >= shuffledQuizData.length) {
+      shuffledQuizData = shuffleArray(quizData1);
+      currentQuestion = 0;
+    }
+
+    const q = shuffledQuizData[currentQuestion];
+    document.getElementById("question-1").textContent = q.question;
+
+    const answersDiv = document.getElementById("answers-1");
+    answersDiv.innerHTML = "";
+
+    const answers = shuffleArray(q.answers.map((text, index) => ({
+      text,
+      isCorrect: index === q.correct
+    })));
+
+    answers.forEach(answer => {
+      const btn = document.createElement("button");
+      btn.textContent = answer.text;
+      btn.onclick = () => handleAnswer(answer.isCorrect);
+      btn.style = "margin: 10px; padding: 10px 20px; font-size: 1em; background: #6a5acd; color: white; border: none; border-radius: 8px;";
+      answersDiv.appendChild(btn);
+    });
+  }
+
+  function handleAnswer(isCorrect) {
+    if (isCorrect) {
+      progress = Math.min(100, progress + 10);
+    } else {
+      progress = Math.max(0, progress - 5);
+    }
+
+    document.getElementById("progress-1").style.width = progress + "%";
+    currentQuestion++;
+    showQuestion();
+  }
+
+  showQuestion();
+}
+
+// ========== QUIZ 2 ==========
+
+function startQuiz2() {
+  const quizData2 = [
+    {
+      question: "Co je hlavní město Itálie?",
+      answers: ["Řím", "Milán", "Benátky"],
+      correct: 0
+    },
+    // ... more questions
+  ];
+
+  let currentQuestion = 0;
+  let progress = 0;
+  let shuffledQuizData = shuffleArray(quizData2);
+
+  function shuffleArray(array) {
+    const copy = [...array];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function showQuestion() {
+    if (progress >= 100) {
+      document.getElementById("quiz-box-2").innerHTML = "<h3>Gratuluji! Dokončil jsi druhý kvíz!</h3>";
+      return;
+    }
+
+    if (currentQuestion >= shuffledQuizData.length) {
+      shuffledQuizData = shuffleArray(quizData2);
+      currentQuestion = 0;
+    }
+
+    const q = shuffledQuizData[currentQuestion];
+    document.getElementById("question-2").textContent = q.question;
+
+    const answersDiv = document.getElementById("answers-2");
+    answersDiv.innerHTML = "";
+
+    const answers = shuffleArray(q.answers.map((text, index) => ({
+      text,
+      isCorrect: index === q.correct
+    })));
+
+    answers.forEach(answer => {
+      const btn = document.createElement("button");
+      btn.textContent = answer.text;
+      btn.onclick = () => handleAnswer(answer.isCorrect);
+      btn.style = "margin: 10px; padding: 10px 20px; font-size: 1em; background: #1e90ff; color: white; border: none; border-radius: 8px;";
+      answersDiv.appendChild(btn);
+    });
+  }
+
+  function handleAnswer(isCorrect) {
+    if (isCorrect) {
+      progress = Math.min(100, progress + 10);
+    } else {
+      progress = Math.max(0, progress - 5);
+    }
+
+    document.getElementById("progress-2").style.width = progress + "%";
+    currentQuestion++;
+    showQuestion();
+  }
+
+  showQuestion();
+}
+
+// ========== QUIZ 3 ==========
+
+function startQuiz3() {
+  const quizData3 = [
+    {
+      question: "Jaké je hlavní město Francie?",
+      answers: ["Londýn", "Paříž", "Madrid"],
+      correct: 1
+    },
+    // ... more questions
+  ];
+
+  let currentQuestion = 0;
+  let progress = 0;
+  let shuffledQuizData = shuffleArray(quizData3);
+
+  function shuffleArray(array) {
+    const copy = [...array];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function showQuestion() {
+    if (progress >= 100) {
+      document.getElementById("quiz-box-3").innerHTML = "<h3>Gratuluji! Dokončil jsi první kvíz!</h3>";
+      return;
+    }
+
+    if (currentQuestion >= shuffledQuizData.length) {
+      shuffledQuizData = shuffleArray(quizData3);
+      currentQuestion = 0;
+    }
+
+    const q = shuffledQuizData[currentQuestion];
+    document.getElementById("question-3").textContent = q.question;
+
+    const answersDiv = document.getElementById("answers-3");
+    answersDiv.innerHTML = "";
+
+    const answers = shuffleArray(q.answers.map((text, index) => ({
+      text,
+      isCorrect: index === q.correct
+    })));
+
+    answers.forEach(answer => {
+      const btn = document.createElement("button");
+      btn.textContent = answer.text;
+      btn.onclick = () => handleAnswer(answer.isCorrect);
+      btn.style = "margin: 10px; padding: 10px 20px; font-size: 1em; background: #6a5acd; color: white; border: none; border-radius: 8px;";
+      answersDiv.appendChild(btn);
+    });
+  }
+
+  function handleAnswer(isCorrect) {
+    if (isCorrect) {
+      progress = Math.min(100, progress + 10);
+    } else {
+      progress = Math.max(0, progress - 5);
+    }
+
+    document.getElementById("progress-3").style.width = progress + "%";
+    currentQuestion++;
+    showQuestion();
+  }
+
+  showQuestion();
+}
+
+// ========== QUIZ 4 ==========
+
+function startQuiz4() {
+  const quizData4 = [
+    {
+      question: "Co je hlavní město Itálie?",
+      answers: ["Řím", "Milán", "Benátky"],
+      correct: 0
+    },
+    // ... more questions
+  ];
+
+  let currentQuestion = 0;
+  let progress = 0;
+  let shuffledQuizData = shuffleArray(quizData4);
+
+  function shuffleArray(array) {
+    const copy = [...array];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function showQuestion() {
+    if (progress >= 100) {
+      document.getElementById("quiz-box-4").innerHTML = "<h3>Gratuluji! Dokončil jsi druhý kvíz!</h3>";
+      return;
+    }
+
+    if (currentQuestion >= shuffledQuizData.length) {
+      shuffledQuizData = shuffleArray(quizData4);
+      currentQuestion = 0;
+    }
+
+    const q = shuffledQuizData[currentQuestion];
+    document.getElementById("question-4").textContent = q.question;
+
+    const answersDiv = document.getElementById("answers-4");
+    answersDiv.innerHTML = "";
+
+    const answers = shuffleArray(q.answers.map((text, index) => ({
+      text,
+      isCorrect: index === q.correct
+    })));
+
+    answers.forEach(answer => {
+      const btn = document.createElement("button");
+      btn.textContent = answer.text;
+      btn.onclick = () => handleAnswer(answer.isCorrect);
+      btn.style = "margin: 10px; padding: 10px 20px; font-size: 1em; background: #1e90ff; color: white; border: none; border-radius: 8px;";
+      answersDiv.appendChild(btn);
+    });
+  }
+
+  function handleAnswer(isCorrect) {
+    if (isCorrect) {
+      progress = Math.min(100, progress + 10);
+    } else {
+      progress = Math.max(0, progress - 5);
+    }
+
+    document.getElementById("progress-4").style.width = progress + "%";
+    currentQuestion++;
+    showQuestion();
+  }
+
+  showQuestion();
+}
+
+// Run both quizzes
+startQuiz1();
+startQuiz2();
+startQuiz3();
+startQuiz4();
+
+</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script> /*script topbaru snad.....*/
+  const topbar = document.querySelector('.topbar');
+  const banner = document.querySelector('.banner');
+
+  window.addEventListener('scroll', () => {
+    const bannerBottom = banner.getBoundingClientRect().bottom;
+
+    if (bannerBottom <= 0) {
+      topbar.classList.remove('hidden'); // show navbar
+    } else {
+      topbar.classList.add('hidden'); // hide navbar
+    }
+  });
+</script>
+  
+  
+  
+  
+  
+  </body>   
+</html>
+
+
+
+
+
+
+
+
