@@ -264,17 +264,98 @@
   <iframe src="SC/files/severni_jizni_evropa.pdf" width="80%" height="600px"></iframe>
 </section>
     
-  <section class="content">
-    <p style="margin-top: 10px;">... hodně obsahu ...</p>
-    <p>nigga fyzika</p>
-    <p>myslím to fr. zabij me</p>
-  </section>
+<div style="background-color: #2a2a3a; padding: 40px; border-radius: 12px;">
 
-  <div class="content">
-    <p>Tady bude obsah stránky....... </p>
-  
+  <!-- Scroll animation support -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- SECTION TITLE -->
+  <div style="text-align: center; margin-bottom: 40px;" data-aos="fade-down">
+    <h1 style="font-size: 48px; margin: 0; color: white;">Evropa</h1>
   </div>
-  
+
+  <!-- MAIN DOCUMENT SECTION -->
+  <div style="display: flex; flex-wrap: wrap; gap: 20px;" data-aos="fade-up">
+
+    <!-- LEFT SIDE: IMAGE + BUTTONS -->
+    <div style="
+      flex: 1;
+      min-width: 300px;
+      height: 500px;
+      background-image: url('/mnt/data/108f343a-b87d-4c55-9b94-dfe0f1c53f5a.png');
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    ">
+      <div style="
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        max-width: 400px;
+      ">
+        <h2 style="font-size: 28px; margin-bottom: 20px;">Severní a jižní Evropa</h2>
+
+        <a href="files/severni_jizni_evropa.pdf" download style="
+          display: inline-block;
+          background-color: #28a745;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 8px;
+          text-decoration: none;
+          margin: 10px;
+          font-size: 16px;
+          transition: background 0.3s;
+        " onmouseover="this.style.backgroundColor='#218838'" onmouseout="this.style.backgroundColor='#28a745'">
+          📥 Stáhnout PDF
+        </a>
+
+        <a href="https://docs.google.com/document/d/YOUR_DOCUMENT_ID/view" target="_blank" style="
+          display: inline-block;
+          background-color: #007bff;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 8px;
+          text-decoration: none;
+          margin: 10px;
+          font-size: 16px;
+          transition: background 0.3s;
+        " onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">
+          🌐 Otevřít v Google Docs
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: PREVIEW -->
+    <div style="
+      flex: 1;
+      min-width: 300px;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    ">
+      <iframe 
+        src="https://drive.google.com/file/d/YOUR_DOCUMENT_ID/preview" 
+        width="100%" 
+        height="100%" 
+        style="border: none; box-shadow: 0 0 10px rgba(0,0,0,0.3); border-radius: 10px;">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Initialize animation library -->
+  <script>
+    AOS.init();
+  </script>
+</div>
   
   
   
