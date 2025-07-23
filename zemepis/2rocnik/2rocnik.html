@@ -266,30 +266,45 @@
     
     
     
-    <!-- Scroll animation support -->
+<!-- Scroll animation support -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-<div style="display: flex; flex-wrap: wrap; width: 100%; min-height: 600px; margin: 50px 0;" data-aos="fade-up">
+<!-- SECTION TITLE -->
+<div style="text-align: center; margin-top: 60px;" data-aos="fade-down">
+  <h1 style="font-size: 48px; margin-bottom: 10px;">Evropa</h1>
+  <p style="font-size: 20px; color: gray;">Východní Evropa</p>
+</div>
 
-  <!-- Left: Document Preview -->
-  <div style="flex: 1; min-width: 300px; padding: 20px;">
-    <iframe 
-      src="https://drive.google.com/file/d/your_document_id/preview" 
-      width="100%" 
-      height="500px" 
-      style="border: none; box-shadow: 0 0 10px rgba(0,0,0,0.3); border-radius: 10px;">
-    </iframe>
-  </div>
+<!-- MAIN DOCUMENT SECTION -->
+<div style="display: flex; flex-wrap: wrap; width: 100%; margin: 40px 0;" data-aos="fade-up">
 
-  <!-- Right: Background image + buttons -->
-  <div style="flex: 1; min-width: 300px; height:500px
-    background-image: url('https://www.forum24.cz/wp-content/uploads/fly-images/376850/Evropa1914-1440x810-c.jpg');
-    background-size: cover; background-position: center; position: relative; padding: 40px; color: white; border-radius: 10px;">
+  <!-- LEFT SIDE: IMAGE + BUTTONS -->
+  <div style="
+    flex: 1; 
+    min-width: 300px; 
+    min-height: 500px; 
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Europe_topographic_map-en.jpg');
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    padding: 40px; 
+    color: white; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  ">
+    <div style="
+      background-color: rgba(0, 0, 0, 0.6); 
+      padding: 30px; 
+      border-radius: 10px; 
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    ">
+      <h2 style="font-size: 32px; margin-bottom: 20px;">Evropa</h2>
 
-    <div style="background-color: rgba(0, 0, 0, 0.6); padding: 30px; border-radius: 10px; text-align: center;">
-      <h2 style="font-size: 36px; margin-bottom: 20px;">Evropa</h2>
-      
       <a href="files/evropa.pdf" download style="
         display: inline-block; 
         background-color: #28a745; 
@@ -318,7 +333,16 @@
         🌐 Otevřít v Google Docs
       </a>
     </div>
+  </div>
 
+  <!-- RIGHT SIDE: PREVIEW -->
+  <div style="flex: 1; min-width: 300px; padding: 20px; display: flex; align-items: center;">
+    <iframe 
+      src="https://drive.google.com/file/d/YOUR_DOCUMENT_ID/preview" 
+      width="100%" 
+      height="500px" 
+      style="border: none; box-shadow: 0 0 10px rgba(0,0,0,0.3); border-radius: 10px;">
+    </iframe>
   </div>
 </div>
 
@@ -326,8 +350,6 @@
 <script>
   AOS.init();
 </script>
-    
-    
     
     
   <section class="content">
