@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <title>SC - ZSV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+    
+    
+    body{
+  background:   #2c3e50;
+    
+    }
+    
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .banner {
+      height: 90vh;
+      width: 100%;
+      background: linear-gradient(135deg, #2c3e50, #8e44ad, #00c9ff);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .banner h1 {
+      font-size: 6em;
+      margin-bottom: 0.3em;
+    }
+
+    .banner p {
+      font-size: 1.3em;
+      max-width: 90%;
+    }
+
+    .banner::after  {       
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 8S0px;
+      background: white;
+      clip-path: polygon(0 0, 100% 100%, 0% 100%);
+      z-index: 1;
+    }
+
+    .profile-pic {
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      border: 6px solid white;
+      object-fit: cover;
+      position: absolute;
+      bottom: -180px; /* polovina výšky obrázku */
+      z-index: 2;
+    }
+
+    .motivace {
+    
+      margin-top: 150px; /* aby byl text pod obrázkem */
+      text-align: center;
+      padding: 2em;
+      font-size: 1.4em;
+      background-color:  #2c3e50;
+  
+    }
+
+    
+  
+    
+    /* Top bar */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #2c2c2c;
+      color: white;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+       transition: top 0.3s ease;
+    }
+
+     /*tohle kdyžtak smazat, seba rikal ze lepsi bez toho*/
+    .topbar.hidden {
+     top: -100px; /* move out of view */
+        }
+        
+               
+    .topbar h1 {
+      font-size: 1.3em;
+    }
+
+    .topbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+  
+
+    .content {
+      padding: 20px 30px;
+      background-color: #7d7dff;
+      min-height: 10vh;
+    }
+    
+    
+   
+    
+    
+    
+    
+    
+    .predmety a:hover {
+    transform: scale(1.2)
+    }
+    
+    
+    
+    
+    
+    .grade-selector {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e2a38;
+  color: #fff;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.grade-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.grade-button {
+  text-decoration: none;
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.grade-button:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+    
+    
+    
+    
+    </style>
+    
+  </head>
+  <body>
+  
+    <div class="topbar">
+    <h1>Sebik stránky</h1>
+     
+    <div>
+      <a padding="30px"; href="https://gladix549.github.io/SCweb/index.html">Domovská stránka</a> 
+      <a href="https://budejovice.rozhlas.cz/sites/default/files/styles/cro_16x9_tablet/public/images/11b51034526978f3f2c1a12669bc88be.jpeg?itok=aswZo2Zf">Fyzika</a>
+      <a href="https://gladix549.github.io/SCweb/zemepis/index.html">Zeměpis</a>
+      <a href="https://gladix549.github.io/SCweb/dejepis/index.html">Dějepis</a>
+      <a href="https://gladix549.github.io/SCweb/chemie/index.html">Chemie</a>
+      <a href="https://gladix549.github.io/SCweb/cestina/index.html">Český jazyk</a>
+      <a href="https://gladix549.github.io/SCweb/biologie/index.html">Biologie</a>
+      <a href="https://gladix549.github.io/SCweb/zsv/index.html">ZSV</a>
+      <a href="https://gladix549.github.io/SCweb/anglictina/index.html">Anglický jazyk</a>
+      <a href="https://gladix549.github.io/SCweb/matematika/index.html">Matematika</a>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+
+  
+  
+
+ <section class="banner">
+    <h1>Vítej na SC.alpha</h1>
+    <p>Stránce kde ti pomůžeme prolézt střední školou bez obtíží</p>
+    <img src="https://trexperienceperu.com/sites/default/files/peruvian-man-clothing.webp" alt="Tvoje fotka" class="profile-pic">
+  </section>
+
+  <section class="motivace">
+    <p>„Nezáleží na tom, kolikrát spadneš, ale kolikrát se zvedneš.“</p>
+    <p text-align="center">- Sebastian Carrera </p>
+  </section>
+  
+  
+  
+  
+  
+<section style="position: relative; padding: 60px 20px;
+  background-image: url('https://dhakaopinionmagazine.com/wp-content/uploads/2022/02/RuleofLaw.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;">
+
+  <h2 style="font-size: 60px;">ZSV</h2>
+  <p style="max-width: 700px; margin: 20px auto; font-size: 18px;">
+   Černí patří za mříže...
+  </p>
+
+  <button onclick="history.back()" style="
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  ">
+    ⬅️ Zpět
+  </button>
+
+</section>
+
+<div class="grade-selector" ;>
+  <h2>Vyber si ročník:</h2>
+  <div class="grade-buttons">
+    <a href="1rocnik/1rocnik.html" class="grade-button">1. ročník</a>
+    <a href="2rocnik/2rocnik.html" class="grade-button">2. ročník</a>
+    <a href="3rocnik/3rocnik.html" class="grade-button">3. ročník</a>
+    <a href="4rocnik/4rocnik.html" class="grade-button">4. ročník</a>
+  </div>
+</div>
+  
+  
+ <section style="padding: 40px 20px; background-color: #e6e6ff;">
+  <h2 style="text-align: center; margin-bottom: 30px;">Vyber si předmět</h2>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; max-width: 1000px; margin: auto;" class="predmety">
+
+  <a href="https://gladix549.github.io/SCweb/fyzika/index.html" style="background: #6a5acd; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-atom"></i> Fyzika
+    </a>
+
+    <a href="https://gladix549.github.io/SCweb/zemepis/index.html" style="background: #4682b4; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-globe-europe"></i> Zeměpis
+    </a>
+
+    <a href="https://gladix549.github.io/SCweb/dejepis/index.html" style="background: #ff1493; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-landmark"></i> Dějepis
+    </a>
+
+    <a href="https://gladix549.github.io/SCweb/chemie/index.html" style="background: #20b2aa; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-vial"></i> Chemie
+    </a>
+
+    <a href="https://gladix549.github.io/SCweb/cestina/index.html" style="background: #ff8c00; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-book-open"></i> Český jazyk
+    </a>
+<br>
+    <a href="https://gladix549.github.io/SCweb/biologie/index.html" style="background: #228b22; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-dna"></i> Biologie
+    </a>
+
+    <a href="https://gladix549.github.io/SCweb/zsv/index.html" style="background: #8b008b; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+      <i class="fas fa-scale-balanced"></i> ZSV
+    </a>
+
+    <a href="https://gladix549.github.io/SCweb/anglicitna/index.html" style="background: #4169e1; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+     <i class="fas fa-language"></i> Anglický jazyk
+    </a>
+
+
+    <a href="https://gladix549.github.io/SCweb/matematika/index.html" style="background: #dc143c; color: white; padding: 20px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+     <i class="fas fa-square-root-alt"></i> Matematika
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br>><br><br>><br><br>><br><br>
+
+
+  
+  
+  
+
+<!-- Quiz 1 -->
+<section id="quiz-section" style="padding: 40px; background: #f0f0f0; text-align: center;">
+  <h2> Kvíz -Zeměpis</h2>
+<div id="quiz-box-1">
+  <h2 id="question-1"></h2>
+  <div id="answers-1"></div>
+  <div style="background: #ccc; width: 100%; height: 20px; border-radius: 10px;">
+    <div id="progress-1" style="background: green; width: 0%; height: 100%; border-radius: 10px;"></div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script> /* script na quiz, nic jineho tam neni*/
+
+// ========== QUIZ 1 ==========
+
+function startQuiz1() {
+  const quizData1 = [
+ÿ
