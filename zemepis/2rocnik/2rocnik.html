@@ -395,7 +395,7 @@ function startQuizsjet() {
                {
       question: "Švédsko není členem:",
       answers: ["EU","NATO","Eurozóny","OSN",],
-      correct: 3
+      correct: 2
     },
                        {
       question: "Finsko má časové pásmo:",
@@ -538,9 +538,9 @@ function startQuizsjet() {
 
   function handleAnswer(isCorrect) {
     if (isCorrect) {
-      progress = Math.min(100, progress + 10);
+      progress = Math.min(100, progress + 3);
     } else {
-      progress = Math.max(0, progress - 5);
+      progress = Math.max(0, progress - 1);
     }
 
     document.getElementById("progress-sjet").style.width = progress + "%";
