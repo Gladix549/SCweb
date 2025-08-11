@@ -465,7 +465,7 @@ startQuizsjet();
   
   
   
-  <br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
 
 
  <!-- MAIN DOCUMENT SECTION -->
@@ -543,16 +543,16 @@ startQuizsjet();
     </div>
 </div>
 
-  <br><br><br><br><br>
+  <br><br>
   
     <!-- Quiz zapadni evropa teorie -->
 <section id="quiz-section" style="padding: 40px; background: #f0f0f0; text-align: center;">
-  <h2> Kvíz - Evropa</h2>
-<div id="quiz-box-1">
-  <h2 id="question-1"></h2>
-  <div id="answers-1"></div>
+  <h2> Kvíz - Západní Evropa</h2>
+<div id="quiz-box-zet">
+  <h2 id="question-zet"></h2>
+  <div id="answers-zet"></div>
   <div style="background: #ccc; width: 100%; height: 20px; border-radius: 10px;">
-    <div id="progress-1" style="background: green; width: 0%; height: 100%; border-radius: 10px;"></div>
+    <div id="progress-zet" style="background: green; width: 0%; height: 100%; border-radius: 10px;"></div>
   </div>
 </div>
 </section>
@@ -563,8 +563,8 @@ startQuizsjet();
   <script>
   // ========== QUIZ zapadni evropa ==========
 
-function startQuiz1() {
-  const quizData1 = [
+function startQuizzet() {
+  const quizDatazet = [
     {
       question: "Jaké je hlavní město Francie?",
       answers: ["Londýn", "Paříž", "Madrid"],
@@ -590,7 +590,7 @@ function startQuiz1() {
 
   let currentQuestion = 0;
   let progress = 0;
-  let shuffledQuizData = shuffleArray(quizData1);
+  let shuffledQuizData = shuffleArray(quizDatazet);
 
   function shuffleArray(array) {
     const copy = [...array];
@@ -603,19 +603,19 @@ function startQuiz1() {
 
   function showQuestion() {
     if (progress >= 100) {
-      document.getElementById("quiz-box-1").innerHTML = "<h3>Gratuluji! Dokončil jsi první kvíz!</h3>";
+      document.getElementById("quiz-box-zet").innerHTML = "<h3>Gratuluji! Dokončil jsi první kvíz!</h3>";
       return;
     }
 
     if (currentQuestion >= shuffledQuizData.length) {
-      shuffledQuizData = shuffleArray(quizData1);
+      shuffledQuizData = shuffleArray(quizDatazet);
       currentQuestion = 0;
     }
 
     const q = shuffledQuizData[currentQuestion];
-    document.getElementById("question-1").textContent = q.question;
+    document.getElementById("question-zet").textContent = q.question;
 
-    const answersDiv = document.getElementById("answers-1");
+    const answersDiv = document.getElementById("answers-zet");
     answersDiv.innerHTML = "";
 
     const answers = shuffleArray(q.answers.map((text, index) => ({
@@ -639,7 +639,7 @@ function startQuiz1() {
       progress = Math.max(0, progress - 5);
     }
 
-    document.getElementById("progress-1").style.width = progress + "%";
+    document.getElementById("progress-zet").style.width = progress + "%";
     currentQuestion++;
     showQuestion();
   }
@@ -649,7 +649,7 @@ function startQuiz1() {
 
 
 // Run both quizzes
-startQuiz1();
+startQuizzet();
 
 </script>
 
