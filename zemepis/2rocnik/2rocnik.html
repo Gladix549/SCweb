@@ -143,56 +143,32 @@
     
     
     
-.section-header {
+.section-title {
+  text-align: center;
+  margin: 40px 0;
   position: relative;
-  width: 100%;
-  padding: 40px 0;
-  background: linear-gradient(135deg, #1e3a8a, #2563eb, #0891b2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }
 
-/* Decorative diagonal lines */
-.section-header::before,
-.section-header::after {
+.section-title span {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
+  position: relative;
+  padding: 0 20px;
+}
+
+/* Soft underline bar */
+.section-title span::after {
   content: "";
   position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(255,255,255,0.05) 0px,
-    rgba(255,255,255,0.05) 2px,
-    transparent 2px,
-    transparent 8px
-  );
-  transform: rotate(15deg);
-  z-index: 0;
-}
-
-.section-header::after {
-  opacity: 0.2;
-  transform: rotate(-15deg);
-}
-
-/* Title text */
-.section-header h1 {
-  position: relative;
-  z-index: 1;
-  font-size: 4rem;
-  font-weight: 900;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-shadow:
-    0 3px 6px rgba(0,0,0,0.4),
-    0 6px 12px rgba(0,0,0,0.3);
-}
-    
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #0891b2);
+  border-radius: 2px;
+} 
     
     
     </style>
@@ -300,8 +276,8 @@
   
 
 
-<div class="section-header">
-  <h1>2. ročník</h1>
+<div class="section-title">
+  <span>2. ročník</span>
 </div>
 
     
