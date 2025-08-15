@@ -145,30 +145,49 @@
     
     
   
+/* centers the banner on the page */
+.title-wrap{
+  text-align:center;
+  margin: 48px 0 16px;
+}
 
-.fancy-title {
-  font-size: 4rem;
+/* the colored ribbon */
+.section-ribbon{
+  display:inline-block;
+  position:relative;
+  padding: 14px 32px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb, #0891b2);
+  color:#fff;
+  font-size: clamp(28px, 5vw, 48px);
   font-weight: 900;
-  text-align: center;
-  background: linear-gradient(90deg, #00c6ff, #0052d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  animation: fadeInUp 0.8s ease-out;
+  letter-spacing: .5px;
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.15);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+/* small ribbon tails */
+.section-ribbon::before,
+.section-ribbon::after{
+  content:"";
+  position:absolute;
+  bottom:-10px;
+  width:0; height:0;
+  border-top:10px solid #153b79;          /* darker shade of the ribbon */
 }
 
-    
+.section-ribbon::before{
+  left:18px;
+  border-left:12px solid transparent;
+  border-right:12px solid transparent;
+}
+
+.section-ribbon::after{
+  right:18px;
+  border-left:12px solid transparent;
+  border-right:12px solid transparent;
+}  
     
     
     
@@ -279,8 +298,11 @@
   
 
 
-<h1 class="fancy-title">2. ročník</h1>
-
+<div class="title-wrap">
+  <div class="section-ribbon">
+    2. ročník
+  </div>
+</div>
 
 
     
