@@ -123,17 +123,10 @@
 
   
 
-    .content {
-      padding: 20px 30px;
-      background-color: #7d7dff;
-      min-height: 10vh;
-    }
-    
+
     
    
-    
-    
-    
+
     
     
     .predmety a:hover {
@@ -142,13 +135,88 @@
     
     
     
+      /* Try native smooth scrolling where supported */
+  html, body { scroll-behavior: smooth; }
+
+  /* Layout + look */
+  :root { --maxw: 1200px; --gap: 14px; --card-h: 170px; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;  
+    color:#fff;
+  }
+
+  .grid {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: var(--gap);
+  }
+
+  a.card {
+    text-decoration: none;
+    background:#000;
+    border:2px solid #2a2a2a;
+    border-radius: 8px;
+    height: var(--card-h);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding: 18px;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    outline-offset: 3px;
+    cursor:pointer;
+  }
+  a.card:hover, a.card:focus-visible {
+    transform: translateY(-2px);
+    border-color:#fff;
+    border: 6px solid;;
+    box-shadow: 0 8px 22px rgba(0,0,0,.35);
+  }
+
+  .icon {
+    width:72px; height:72px; margin-bottom:10px; display:block;
+  }
+  .title {
+    margin:0; color:#fff; font-weight:600; letter-spacing:.2px; font-size:1.06rem;
+    text-align:center;
+  }
+
+  /* Content sections to scroll to */
+  section {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 88px 24px 120px;
+    min-height: 60vh;
+    scroll-margin-top: 16px; /* if you add a sticky header later */
+  }
+  section:nth-of-type(even){ background:#202020; }
+  section h2 { margin:0 0 12px; font-size:2rem; }
+  section p { margin:0; color:#e7e7e7; line-height:1.65; }
+
+  /* Responsive */
+  @media (max-width: 980px) {
+    .grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  }
+  @media (max-width: 540px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+
+
+
+<body>
+
+
+
     
     
-    
-    </style>
-    
-  </head>
-  <body>
+
   
     <div class="topbar">
     <h1>Sebik stránky</h1>
@@ -256,14 +324,116 @@
 </section>
 
 
+
+
+<!-- Card grid -->
+<div class="grid">
+  <a class="card" href="#africa" aria-label="Africa">
+    <!-- simple inline SVG 'continent blob' -->
+    <svg class="icon" viewBox="0 0 100 100" role="img" aria-hidden="true">
+      <rect x="0" y="0" width="100" height="100" fill="none"></rect>
+      <circle cx="50" cy="50" r="40" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1.5"/>
+      <path d="M26 44 Q40 28 56 32 T78 47 Q70 58 60 66 T40 73 Q33 60 26 58 Z"
+            fill="#7dd3fc"/>
+      <path d="M56 32 q4 6 -3 10" stroke="#0a0a0a" stroke-width="2" fill="none" opacity=".35"/>
+    </svg>
+    <h3 class="title">Africa</h3>
+  </a>
+
+  <a class="card" href="#asia" aria-label="Asia">
+    <svg class="icon" viewBox="0 0 100 100" role="img" aria-hidden="true">
+      <circle cx="50" cy="50" r="40" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1.5"/>
+      <path d="M24 52 Q36 34 54 36 T82 42 Q74 54 64 64 T40 70 Q30 64 24 52 Z"
+            fill="#86efac"/>
+      <path d="M54 36 q6 4 2 9" stroke="#0a0a0a" stroke-width="2" fill="none" opacity=".35"/>
+    </svg>
+    <h3 class="title">Asia</h3>
+  </a>
+
+  <a class="card" href="#europe" aria-label="Europe">
+    <svg class="icon" viewBox="0 0 100 100" role="img" aria-hidden="true">
+      <circle cx="50" cy="50" r="40" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1.5"/>
+      <path d="M30 44 Q42 34 58 38 T74 50 Q66 58 58 64 T42 66 Q34 58 30 44 Z"
+            fill="#fca5a5"/>
+      <path d="M58 38 q4 4 0 9" stroke="#0a0a0a" stroke-width="2" fill="none" opacity=".35"/>
+    </svg>
+    <h3 class="title">Europe</h3>
+  </a>
+
+  <a class="card" href="#northamerica" aria-label="North America">
+    <svg class="icon" viewBox="0 0 100 100" role="img" aria-hidden="true">
+      <circle cx="50" cy="50" r="40" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1.5"/>
+      <path d="M22 50 Q34 30 52 30 T78 44 Q66 56 56 66 T36 70 Q26 62 22 50 Z"
+            fill="#c4b5fd"/>
+      <path d="M52 30 q6 6 -2 11" stroke="#0a0a0a" stroke-width="2" fill="none" opacity=".35"/>
+    </svg>
+    <h3 class="title">North America</h3>
+  </a>
+
+  <a class="card" href="#southamerica" aria-label="South America">
+    <svg class="icon" viewBox="0 0 100 100" role="img" aria-hidden="true">
+      <circle cx="50" cy="50" r="40" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1.5"/>
+      <path d="M34 36 Q48 30 60 40 T66 56 Q58 64 52 74 T40 76 Q38 64 34 56 T32 44 Z"
+            fill="#fde68a"/>
+      <path d="M60 40 q4 6 -3 10" stroke="#0a0a0a" stroke-width="2" fill="none" opacity=".35"/>
+    </svg>
+    <h3 class="title">South America</h3>
+  </a>
+
+  <a class="card" href="#australia" aria-label="Australia">
+    <svg class="icon" viewBox="0 0 100 100" role="img" aria-hidden="true">
+      <circle cx="50" cy="50" r="40" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1.5"/>
+      <path d="M36 58 Q46 48 60 50 T70 62 Q62 66 54 72 T40 70 Q38 64 36 58 Z"
+            fill="#93c5fd"/>
+      <path d="M60 50 q4 4 -1 8" stroke="#0a0a0a" stroke-width="2" fill="none" opacity=".35"/>
+    </svg>
+    <h3 class="title">Australia</h3>
+  </a>
+
+  <a class="card" href="#antarctica" aria-label="Antarctica">
+    <svg class="icon" viewBox="0 0 100 100" role="img" aria-hidden="true">
+      <circle cx="50" cy="50" r="40" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1.5"/>
+      <path d="M26 64 Q42 56 50 58 T74 64 Q64 72 52 76 T34 74 Q30 70 26 64 Z"
+            fill="#e5e7eb"/>
+      <path d="M50 58 q6 2 -2 6" stroke="#0a0a0a" stroke-width="2" fill="none" opacity=".35"/>
+    </svg>
+    <h3 class="title">Antarctica</h3>
+  </a>
+</div>
+
+<!-- Scroll targets -->
+<section id="africa">
+  <h2>Africa</h2>
+  <p>Information about Africa…</p>
+</section>
+<section id="asia">
+  <h2>Asia</h2>
+  <p>Information about Asia…</p>
+</section>
+<section id="europe">
+  <h2>Europe</h2>
+  <p>Information about Europe…</p>
+</section>
+<section id="northamerica">
+  <h2>North America</h2>
+  <p>Information about North America…</p>
+</section>
+<section id="southamerica">
+  <h2>South America</h2>
+  <p>Information about South America…</p>
+</section>
+<section id="australia">
+  <h2>Australia</h2>
+  <p>Information about Australia…</p>
+</section>
+<section id="antarctica">
+  <h2>Antarctica</h2>
+  <p>Information about Antarctica…</p>
+</section>
+
+
 <br><br><br><br><br><br><br><br>
 <section>
-  <h2>Evropa – Středni Evropa</h2>
-  <a href="SC/files/severni_jizni_evropa.pdf" download>📥 Stáhnout dokument</a>
-  <br>
-  <iframe src="SC/files/severni_jizni_evropa.pdf" width="80%" height="600px"></iframe>
-</section>
-    
     
     
 
@@ -271,17 +441,6 @@
   <br> <br> <br> <br> <br> <br> <br> <br>
   
 
-<!-- Quiz 1 -->
-<section id="quiz-section" style="padding: 40px; background: #f0f0f0; text-align: center;">
-  <h2> Kvíz -Zeměpis</h2>
-<div id="quiz-box-1">
-  <h2 id="question-1"></h2>
-  <div id="answers-1"></div>
-  <div style="background: #ccc; width: 100%; height: 20px; border-radius: 10px;">
-    <div id="progress-1" style="background: green; width: 0%; height: 100%; border-radius: 10px;"></div>
-  </div>
-</div>
-</section>
 
 
 
@@ -297,106 +456,6 @@
 
 
 
-<script> /* script na quiz, nic jineho tam neni*/
-
-// ========== QUIZ 1 ==========
-
-function startQuiz1() {
-  const quizData1 = [
-    {
-      question: "Jaké je hlavní město Francie?",
-      answers: ["Londýn", "Paříž", "Madrid"],
-      correct: 1
-    },
-        {
-      question: "Je sima malej?",
-      answers: ["Ano", "Ne"],
-      correct: 0
-    },
-           {
-      question: "Je Sebik goat?",
-      answers: ["Ano", "Ne"],
-      correct: 0
-    },
-           {
-      question: "Krade Ústí?",
-      answers: ["Ano", "Ne", "Podle nálady"],
-      correct: 2
-    },
-    // ... more questions
-  ];
-
-  let currentQuestion = 0;
-  let progress = 0;
-  let shuffledQuizData = shuffleArray(quizData1);
-
-  function shuffleArray(array) {
-    const copy = [...array];
-    for (let i = copy.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [copy[i], copy[j]] = [copy[j], copy[i]];
-    }
-    return copy;
-  }
-
-  function showQuestion() {
-    if (progress >= 100) {
-      document.getElementById("quiz-box-1").innerHTML = "<h3>Gratuluji! Dokončil jsi první kvíz!</h3>";
-      return;
-    }
-
-    if (currentQuestion >= shuffledQuizData.length) {
-      shuffledQuizData = shuffleArray(quizData1);
-      currentQuestion = 0;
-    }
-
-    const q = shuffledQuizData[currentQuestion];
-    document.getElementById("question-1").textContent = q.question;
-
-    const answersDiv = document.getElementById("answers-1");
-    answersDiv.innerHTML = "";
-
-    const answers = shuffleArray(q.answers.map((text, index) => ({
-      text,
-      isCorrect: index === q.correct
-    })));
-
-    answers.forEach(answer => {
-      const btn = document.createElement("button");
-      btn.textContent = answer.text;
-      btn.onclick = () => handleAnswer(answer.isCorrect);
-      btn.style = "margin: 10px; padding: 10px 20px; font-size: 1em; background: #6a5acd; color: white; border: none; border-radius: 8px;";
-      answersDiv.appendChild(btn);
-    });
-  }
-
-  function handleAnswer(isCorrect) {
-    if (isCorrect) {
-      progress = Math.min(100, progress + 10);
-    } else {
-      progress = Math.max(0, progress - 5);
-    }
-
-    document.getElementById("progress-1").style.width = progress + "%";
-    currentQuestion++;
-    showQuestion();
-  }
-
-  showQuestion();
-}
-
-
-// Run both quizzes
-startQuiz1();
-
-</script>
-
-  
-  
-  
-  
-  
-  
   
   
   <script> /*script topbaru snad.....*/
@@ -414,7 +473,47 @@ startQuiz1();
   });
 </script>
   
-  
+  <script>
+  // Robust smooth-scroll polyfill (works even where CSS/scrollIntoView is ignored)
+  (function () {
+    var links = document.querySelectorAll('a[href^="#"]');
+    var scrollingEl = document.scrollingElement || document.documentElement;
+
+    function smoothScrollTo(targetY, duration) {
+      var startY = scrollingEl.scrollTop;
+      var diff = targetY - startY;
+      var start = performance.now();
+      var d = Math.max(200, Math.min(900, duration || 600));
+
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3)/2;
+      }
+
+      function step(now) {
+        var t = Math.min(1, (now - start) / d);
+        var eased = easeInOutCubic(t);
+        scrollingEl.scrollTop = startY + diff * eased;
+        if (t < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    links.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = this.getAttribute('href').slice(1);
+        var target = document.getElementById(id);
+        if (!target) return;
+        e.preventDefault();
+        var headerOffset = 0; // adjust if you add a sticky header
+        var y = target.getBoundingClientRect().top + (window.pageYOffset || scrollingEl.scrollTop) - headerOffset;
+        smoothScrollTo(y, 650);
+        // keep URL hash without triggering native jump
+        history.pushState(null, '', '#' + id);
+      });
+    });
+  })();
+</script>
+
   
   
   
