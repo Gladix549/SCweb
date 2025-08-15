@@ -143,53 +143,55 @@
     
     
     
-    
-  
-/* centers the banner on the page */
-.title-wrap{
-  text-align:center;
-  margin: 48px 0 16px;
-}
-
-/* the colored ribbon */
-.section-ribbon{
-  display:inline-block;
-  position:relative;
-  padding: 14px 32px;
-  border-radius: 14px;
+.section-header {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
   background: linear-gradient(135deg, #1e3a8a, #2563eb, #0891b2);
-  color:#fff;
-  font-size: clamp(28px, 5vw, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Decorative diagonal lines */
+.section-header::before,
+.section-header::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.05) 0px,
+    rgba(255,255,255,0.05) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+  transform: rotate(15deg);
+  z-index: 0;
+}
+
+.section-header::after {
+  opacity: 0.2;
+  transform: rotate(-15deg);
+}
+
+/* Title text */
+.section-header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 4rem;
   font-weight: 900;
-  letter-spacing: .5px;
-  box-shadow:
-    0 12px 30px rgba(0,0,0,.35),
-    inset 0 1px 0 rgba(255,255,255,.15);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow:
+    0 3px 6px rgba(0,0,0,0.4),
+    0 6px 12px rgba(0,0,0,0.3);
 }
-
-/* small ribbon tails */
-.section-ribbon::before,
-.section-ribbon::after{
-  content:"";
-  position:absolute;
-  bottom:-10px;
-  width:0; height:0;
-  border-top:10px solid #153b79;          /* darker shade of the ribbon */
-}
-
-.section-ribbon::before{
-  left:18px;
-  border-left:12px solid transparent;
-  border-right:12px solid transparent;
-}
-
-.section-ribbon::after{
-  right:18px;
-  border-left:12px solid transparent;
-  border-right:12px solid transparent;
-}  
-    
-    
     
     
     
@@ -298,12 +300,9 @@
   
 
 
-<div class="title-wrap">
-  <div class="section-ribbon">
-    2. ročník
-  </div>
+<div class="section-header">
+  <h1>2. ročník</h1>
 </div>
-
 
     
     <br><br><br><br><br><br><br><br>
