@@ -145,44 +145,29 @@
     
     
   
+
 .fancy-title {
   font-size: 4rem;
   font-weight: 900;
   text-align: center;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background: linear-gradient(90deg, #00c6ff, #0052d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow:
-    0 0 10px rgba(0, 114, 255, 0.6),
-    0 0 20px rgba(0, 198, 255, 0.6);
-  animation: fadeInUp 1s ease-out, glow 2s infinite alternate;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 0.8s ease-out;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(40px) scale(0.95);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
-@keyframes glow {
-  from  {
-    text-shadow:
-      0 0 10px rgba(0, 114, 255, 0.6),
-      0 0 20px rgba(0, 198, 255, 0.6);
-  }
-  to {
-    text-shadow:
-      0 0 20px rgba(0, 114, 255, 1),
-      0 0 40px rgba(0, 198, 255, 1);
-  }
-}
-
-    
     
     
     
