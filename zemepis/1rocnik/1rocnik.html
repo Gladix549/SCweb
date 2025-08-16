@@ -247,6 +247,13 @@
 
 
 
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills the entire card area */
+  border-radius: 8px;  /* match the card rounding */
+}
+
 
 </style>
 
@@ -382,17 +389,13 @@
 
 <!-- Card grid -->
 <div class="grid">
-  <a class="card" href="#africa" aria-label="Africa">
-    <!-- simple inline SVG 'continent blob' -->
-    <svg class="icon" viewBox="0 0 100 100" role="img" aria-hidden="true">
-      <rect x="0" y="0" width="100" height="100" fill="none"></rect>
-      <circle cx="50" cy="50" r="40" fill="#0a0a0a" stroke="#3a3a3a" stroke-width="1.5"/>
-      <path d="M26 44 Q40 28 56 32 T78 47 Q70 58 60 66 T40 73 Q33 60 26 58 Z"
-            fill="#7dd3fc"/>
-      <path d="M56 32 q4 6 -3 10" stroke="#0a0a0a" stroke-width="2" fill="none" opacity=".35"/>
-    </svg>
-    <h3 class="title">Africa</h3>
-  </a>
+ <a class="card" href="#africa" aria-label="Africa">
+  <img 
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWBA_3oefa-eynS_7pqLHeZfZomXtKzk2JyKyYNHr6bmiJ_EgHKnWw6gwhwo7jIK1fUrs&usqp=CAU" 
+    alt="Africa"
+    class="card-img">
+  <h3 class="title">Africa</h3>  
+</a>
 
   <a class="card" href="#asia" aria-label="Asia">
     <svg class="icon" viewBox="0 0 100 100" role="img" aria-hidden="true">
