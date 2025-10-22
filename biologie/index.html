@@ -182,6 +182,48 @@
   transform: scale(1.05);
 }
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Banner text size */
+  div[style*="background-image"] h1 {
+    font-size: 50px !important;
+  }
+
+  div[style*="background-image"] p {
+    font-size: 16px !important;
+    padding: 0 15px; /* adds some breathing space on sides */
+    text-align: center;
+  }
+
+  div[style*="background-image"] {
+    height: 300px !important; /* optional - makes it less tall */
+  }
+}
+
+@media (max-width: 480px) {
+  div[style*="background-image"] h1 {
+    font-size: 38px !important;
+  }
+
+  div[style*="background-image"] p {
+    font-size: 14px !important;
+  }
+}
+
+
+
+
+
 </style>
 ```
 
