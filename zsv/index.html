@@ -104,52 +104,83 @@
   }
 
  
- .obsah { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 3000px; margin: 60px auto; padding: 0 20px; }
+ .obsah { display: flex;  flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 3000px; margin: 60px auto; padding: 0 20px; }
  
- .rocnikydeleni { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 3000px;  padding: 0 20px; }
+ 
  
  
   .subject-box {
-    background: #8b008b;
+    background: linear-gradient(135deg, #8b008b, #c44ac4);
     color: white;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 25px;
     width: 300px;
     font-family: 'Segoe UI', sans-serif;
     margin: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
+  
+  .subject-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
 
-  .subject-box h2 {
-    margin: 0;
-    font-size: 1.4em;
-    font-weight: bold;
-  }
+ .subject-box h2 {
+  font-size: 1.8em;
+  margin-bottom: 8px;
+  text-align: center;
+}
 
-  .subject-box p {
-    font-size: 0.95em;
-    margin-top: 5px;
-    color: #dcdcdc;
-  }
 
-  .subject-box ul {
-    list-style: none;
-    margin: 15px 0 0;
-    padding: 0;
-  }
+ .subject-box p {
+  text-align: center;
+  color: #ffd9ff;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+  
+  
+  /* The horizontal line */
+.subject-box hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(255,255,255,0.4);
+  margin: 10px 0 20px;
+}
 
-  .subject-box li {
-    margin-bottom: 5px;
-  }
 
-  .subject-box a {
-    text-decoration: underline;
-    color: white;
-    font-weight: 500;
-  }
+ /* Links styled as buttons */
+.subject-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center; /* center them horizontally */
+  gap: 10px;
+}
+
+.subject-box li {
+  margin: 0;
+}
+
+.subject-box a {
+  display: inline-block;
+  background-color: #ff55d5;
+  color: white;
+  text-decoration: none;
+  padding: 8px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
 
   .subject-box a:hover {
-    color: lightblue;
-  }
+  background-color: white;
+  color: #8b008b;
+  transform: scale(1.05);
+}
  
 </style>
 ```
@@ -205,6 +236,7 @@
     </div>
     
         <br><br>
+    
     
     <div class="subject-box">
      <h2>AMERIKA</h2>
@@ -390,7 +422,7 @@
         </ul>
     </div>
     
-    <div class="ctvrtyrocnik">
+  
     <div class="subject-box">
      <h2>AMERIKA</h2>
         <p>nový svět plný kontrastů</p>
@@ -413,7 +445,7 @@
     
     
     <br><br><br><br><br><br>
-    </div>
+    
 
  </div>
 
