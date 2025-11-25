@@ -88,9 +88,6 @@
   margin-right: 10px;
 }
 
-.nav-links{
-}
-
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -121,6 +118,14 @@
   .predmety a:hover {
     transform: scale(1.2);
   }
+
+  .responsive-img {
+  width: clamp(200px, 60vw, 600px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
   /* ===== Motivation Section ===== 
   .motivace {
@@ -200,7 +205,7 @@
   <div style="max-width: 900px; margin: 0 auto; line-height: 1.7;">
 
 
-<h2 style="font-size: 28px; margin-bottom: 25px; color: #4aa3ff; text-shadow: 0 0 6px rgba(74,163,255,0.6);">
+<h2 style="font-size: 25px; margin-bottom: 25px; color: #4aa3ff; text-shadow: 0 0 6px rgba(74,163,255,0.6);">
   ⚠️ Upozornění a informace
 </h2>
 
@@ -212,7 +217,7 @@
   <p><strong>Dobrovolná podpora:</strong> Pokud ti zápisky pomohly, můžeš mě podpořit libovolným příspěvkem pomocí QR kódu nebo na účet: 
   <b style="color:#4aa3ff;">4222310053/0800</b>.  
   <br>Zpráva pro příjemce: <i>Podpora zápisků</i>.</p>
- <img src="qrcode.jpg" alt="QR kód pro podporu">
+ <img class="responsive-img" src="qrcode.jpg" alt="QR kód pro podporu">
 </div>
 
 <div style="background: rgba(255,255,255,0.07); padding: 20px; border-radius: 12px;">
