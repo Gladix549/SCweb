@@ -63,38 +63,46 @@
   .banner.shrink p {
     display: none;
   }
+/* ===== Top Bar ===== */
+.topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2c2c2c;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  z-index: 1000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: top 0.3s ease;
+  text-align: justify;
+}
 
-  /* ===== Top Bar ===== */
-  .topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #2c2c2c;
-    color: white;
-    padding: 25px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-    transition: top 0.3s ease;
-  }
+.topbar h1 {
+  font-size: 1.2em;
+  margin: 0;
+}
 
-  .topbar h1 {
-    font-size: 1.3em;
-  }
+.nav-links{
+}
 
-  .topbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-  }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+}
 
-  .topbar a:hover {
-    text-decoration: underline;
-  }
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 
   /* ===== Subject Buttons ===== */
   .predmety a {
@@ -133,8 +141,8 @@
     <!-- Topbar -->
     <div class="topbar">
       <h1>Sebik stránky</h1>
-      <div>
-        <a href="https://gladix549.github.io/SCweb/index.html">Domovská stránka</a> 
+      <nav class="nav-links">
+        <a href="https://gladix549.github.io/SCweb/index.html"><i class="fa-solid fa-house"></i></a> 
         <a href="fyzika/index.html">Fyzika</a>
         <a href="zemepis/index.html">Zeměpis</a>
         <a href="dejepis/index.html">Dějepis</a>
@@ -144,7 +152,7 @@
         <a href="zsv/index.html">ZSV</a>
         <a href="anglictina/index.html">Anglický jazyk</a>
         <a href="matematika/index.html">Matematika</a>
-      </div>
+      </nav>
     </div>
 
 ```
