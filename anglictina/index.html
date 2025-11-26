@@ -22,7 +22,7 @@
     box-sizing: border-box;
   }
 
-  /* ===== Banner Section ===== */
+ /* ===== Banner Section ===== */
   .banner {
     height: 100vh;
     width: 100%;
@@ -38,15 +38,19 @@
     overflow: hidden;
   }
 
+ 
   .banner h1 {
-    font-size: 6em;
+    font-size: clamp(5rem, 14vw, 8rem);
     margin-bottom: 0.3em;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
   }
 
   .banner p {
-    font-size: 1.3em;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     max-width: 90%;
   }
+
 
   /* Shrinked banner */
   .banner.shrink {
@@ -78,8 +82,8 @@
     align-items: center;
     z-index: 1000;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-     animation: colorFade 1s ease forwards;
-  animation-delay: 1s; /* waits 0.5 s before starting */;
+    animation: colorFade 1s ease forwards;
+    animation-delay: 1s; /* waits 0.5 s before starting */;
     transition: top 0.3s ease;
   }
   
@@ -107,9 +111,7 @@
  
  .obsah { display: flex;  flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 3000px; margin: 60px auto; padding: 0 20px; }
  
- 
- 
- 
+
   .subject-box {
     background: linear-gradient(135deg, #4169e1, #273f87);
     color: white;
@@ -286,7 +288,7 @@
     ANGLIČTINA
   </h1>
   <p style="font-size: 22px; margin-top: 15px; color: #e6e6e6; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
-    vzorečky :)
+    Hello!
   </p>
 </div>
 
