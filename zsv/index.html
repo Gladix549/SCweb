@@ -37,15 +37,19 @@
     overflow: hidden;
   }
 
+ 
   .banner h1 {
-    font-size: 6em;
+    font-size: clamp(5rem, 14vw, 8rem);
     margin-bottom: 0.3em;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
   }
 
   .banner p {
-    font-size: 1.3em;
+    font-size: clamp(1rem, 3vw, 1.5rem);
     max-width: 90%;
   }
+
 
   /* Shrinked banner */
   .banner.shrink {
@@ -77,8 +81,8 @@
     align-items: center;
     z-index: 1000;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-     animation: colorFade 1s ease forwards;
-  animation-delay: 1s; /* waits 0.5 s before starting */;
+    animation: colorFade 1s ease forwards;
+    animation-delay: 1s; /* waits 0.5 s before starting */;
     transition: top 0.3s ease;
   }
   
