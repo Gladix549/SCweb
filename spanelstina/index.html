@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+
+<html lang="cz">
+  <head>
+    <title>SC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+```
+<style>
+  body {
+    background: #2c3e50;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+ /* ===== Banner Section ===== */
+  .banner {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #00B2B2, #809A71, #FF8330);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    transition: all 1.5s ease-in-out;
+    overflow: hidden;
+  }
+
+ 
+  .banner h1 {
+    font-size: clamp(5rem, 14vw, 8rem);
+    margin-bottom: 0.3em;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+  }
+
+  .banner p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 90%;
+  }
+
+
+  /* Shrinked banner */
+  .banner.shrink {
+    height: 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+
+
+  .banner.shrink p {
+    display: none;
+  }
+  
+
+  /* ===== Top Bar ===== */
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c2c2c;
+    color: white;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    animation: colorFade 1s ease forwards;
+    animation-delay: 1s; /* waits 0.5 s before starting */;
+    transition: top 0.3s ease;
+  }
+  
+  @keyframes colorFade {
+  from { background-color: black; }
+  to { background-color: #fc9b00; }
+}
+
+
+  .topbar h1 {
+    font-size: 1.3em;
+  }
+
+  .topbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  .topbar a:hover {
+    text-decoration: underline;
+  }
+
+ 
+ .obsah { display: flex;  flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 3000px; margin: 60px auto; padding: 0 20px; }
+ 
+
+  .subject-box {
+    background: linear-gradient(135deg, #fc9b00, #704e15);
+    color: white;
+    border-radius: 20px;
+    padding: 25px;
+    width: 300px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .subject-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+ .subject-box h2 {
+  font-size: 1.8em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+
+ .subject-box p {
+  text-align: center;
+  color: #ffd9ff;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+  
+  
+  /* The horizontal line */
+.subject-box hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(255,255,255,0.4);
+  margin: 10px 0 20px;
+}
+
+
+ /* Links styled as buttons */
+.subject-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center; /* center them horizontally */
+  gap: 10px;
+}
+
+.subject-box li {
+  margin: 0;
+}
+
+.subject-box a {
+  display: inline-block;
+  background-color: #fc9b00;
+  color: white;
+  text-decoration: none;
+  padding: 8px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+}
+
+  .subject-box a:hover {
+  background-color: white;
+  color: #8b008b;
+  transform: scale(1.05);
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+
+  /* Banner text size */
+  div[style*="background-image"] h1 {
+    font-size: 75px !important;
+  }
+  .topbar {
+    padding: 12px 15px; /* smaller padding */
+    flex-direction: column; /* stack items if needed */
+    text-align: center;
+  }
+
+  .topbar h1 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+
+  .topbar a {
+    margin: 5px 10px;
+    display: inline-block;
+    font-size: 0.9em;
+  }
+
+  div[style*="background-image"] p {
+    font-size: 16px !important;
+    padding: 0 15px; /* adds some breathing space on sides */
+    text-align: center;
+  }
+
+  div[style*="background-image"] {
+    height: 300px !important; /* optional - makes it less tall */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .topbar {
+    padding: 8px 10px;
+  }
+
+  .topbar a {
+    font-size: 0.85em;
+  }
+
+  div[style*="background-image"] h1 {
+    font-size: 57px !important;
+  }
+
+  div[style*="background-image"] p {
+    font-size: 14px !important;
+  }
+}
+
+
+
+
+
+</style>
+```
+
+  </head>
+
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <h1>SC</h1>
+      <nav class="nav-links">
+        <a href="https://gladix549.github.io/SCweb/index.html"><i class="fa-solid fa-house"></i></a> 
+        <a href="https://gladix549.github.io/SCweb/biologie/index.html">Biologie</a>
+        <a href="https://gladix549.github.io/SCweb/chemie/index.html">Chemie</a>
+        <a href="https://gladix549.github.io/SCweb/fyzika/index.html">Fyzika</a>
+        <a href="https://gladix549.github.io/SCweb/zemepis/index.html">Zeměpis</a>
+        <a href="https://gladix549.github.io/SCweb/dejepis/index.html">Dějepis</a>
+        <a href="https://gladix549.github.io/SCweb/zsv/index.html">ZSV</a>
+        <a href="https://gladix549.github.io/SCweb/cestina/index.html">Český jazyk</a>
+        <a href="https://gladix549.github.io/SCweb/anglictina/index.html">Anglický jazyk</a>
+        <a href="https://gladix549.github.io/SCweb/spanelstina/index.html">Španělský jazyk</a>
+        <a href="https://gladix549.github.io/SCweb/matematika/index.html">Matematika</a>
+      </nav>
+    </div>
+
+```
+<!-- Banner -->
+<section class="banner" id="mainBanner">
+  <h1>Vítej na SCweb</h1>
+  <p>Stránce, kde najdeš všechny zápisky přehledně na jednom místě</p>
+</section>
+
+<div style="width: 100%; height: 400px; background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://cdn.pixabay.com/photo/2014/06/29/15/25/spain-379535_960_720.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; font-family: 'Segoe UI', sans-serif;">
+  <h1 style="font-size: 100px; font-weight: 800; margin: 0; text-shadow: 4px 4px 10px rgba(0,0,0,0.8); letter-spacing: 2px;">
+    ŠPANĚLSKÝ JAZYK
+  </h1>
+  <p style="font-size: 22px; margin-top: 15px; color: #e6e6e6; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
+    ¡Hola!
+  </p>
+</div>
+
+
+
+
+<div class="obsah">
+
+
+
+<div class="prvnirocnik">
+
+ <div class="subject-box">
+         <center><h2 style="font-size:40px">1.ročník</h2></center>
+        <center><p></p></center>   
+    </div>
+    
+        <br><br>
+   
+    
+    
+    <div class="subject-box">
+     <h2></h2>
+        <p></p>
+        <hr>
+        <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="subject-box">
+     <h2></h2>
+        <p></p>
+        <hr>
+        <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
+    </div>
+
+
+
+    
+       <div class="subject-box">
+     <h2></h2>
+        <p></p>
+        <hr>
+        <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
+    </div>
+
+
+
+   
+    
+    <br><br><br><br><br><br>
+</div>
+
+
+
+
+
+
+<div class="druhyrocnik">
+
+    <div class="subject-box">
+         <center><h2 style="font-size:40px">2.ročník</h2></center>
+        <center><p></p></center>   
+    </div>
+    
+        <br><br>
+    
+
+     <div class="subject-box">
+     <h2></h2>
+        <p></p>
+        <hr>
+        <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="subject-box">
+     <h2></h2>
+        <p></p>
+        <hr>
+        <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
+    </div>
+
+
+
+    
+        <div class="subject-box">
+     <h2></h2>
+        <p></p>
+        <hr>
+        <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
+    </div>
+
+
+      
+    
+    <br><br><br><br><br><br>
+</div>
+
+
+
+
+
+
+
+<div class="tretirocnik">
+
+      <div class="subject-box">
+         <center><h2 style="font-size:40px">3.ročník</h2></center>
+        <center><p></p></center>   
+    </div>
+    
+        <br><br>
+    
+       <div class="subject-box">
+     <h2></h2>
+        <p></p>
+        <hr>
+        <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
+    </div>
+    
+        <div class="subject-box">
+     <h2></h2>
+        <p></p>
+        <hr>
+        <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
+    </div>
+    
+        <div class="subject-box">
+     <h2></h2>
+        <p></p>
+        <hr>
+        <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    
+     
+    <br><br><br><br><br><br>
+</div>
+
+
+
+
+
+
+
+<div class="ctvrtyrocnik">
+
+
+        <div class="subject-box">
+         <center><h2 style="font-size:40px">4.ročník</h2></center>
+        <center><p></p></center>   
+    </div>
+    
+    <br><br>
+    
+ 
+    
+  
+   
+    
+    
+    <br><br><br><br><br><br>
+    
+
+ </div>
+
+</div>
+
+
+
+<footer style=" color: #ccc; padding: 15px ; text-align: center; font-size: 15px; border-top: 2px solid #fc9b00; font-family: 'Segoe UI', sans-serif;">
+  © 2025 <b>SC</b> – Všechna práva vyhrazena
+</footer>
+
+
+
+
+
+
+<!-- Shrink Animation Script -->
+<script>
+  const banner = document.getElementById("mainBanner");
+  setTimeout(() => {
+    banner.classList.add("shrink");
+  }, 500);
+</script>
+```
+
+  </body>
+</html>
+
