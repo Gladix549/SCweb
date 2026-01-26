@@ -6,7 +6,7 @@
     <title>SC - Zeměpis</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <style>
@@ -317,9 +317,142 @@
 <br><br><br><br><br><br><br><br>><br><br>><br><br>><br><br>
 
 
-  
-  
-  
+  <!--TESTOVACÍ KVÍZ-->
+<div class="quiz-wrapper">
+  <h2>Doplň i / y</h2>
+
+<p class="quiz-text">
+V období vlády <input type="text" class="q" maxlength="1" autocomplete="off">arie
+Tere<input type="text" class="q" maxlength="1" autocomplete="off">ie
+do<input type="text" class="q" maxlength="1" autocomplete="off">lo
+k v<input type="text" class="q" maxlength="1" autocomplete="off">znamn
+<input type="text" class="q" maxlength="1" autocomplete="off">m
+změnám v rakou<input type="text" class="q" maxlength="1" autocomplete="off">ké
+monarchii. <input type="text" class="q" maxlength="1" autocomplete="off">anovnice
+<input type="text" class="q" maxlength="1" autocomplete="off">avedla
+řadu reforem, které měly
+<input type="text" class="q" maxlength="1" autocomplete="off">ílit
+státní správu a
+<input type="text" class="q" maxlength="1" autocomplete="off">lep<input type="text" class="q" maxlength="1" autocomplete="off">it
+fungování celé ří<input type="text" class="q" maxlength="1" autocomplete="off">e.
+Byla zru<input type="text" class="q" maxlength="1" autocomplete="off">ena
+nevolnictv<input type="text" class="q" maxlength="1" autocomplete="off"> a
+zavedena povinná
+<input type="text" class="q" maxlength="1" autocomplete="off">kolní
+docházka, která měla zajistit, aby se děti
+nau<input type="text" class="q" maxlength="1" autocomplete="off">ily
+<input type="text" class="q" maxlength="1" autocomplete="off">íst a
+p<input type="text" class="q" maxlength="1" autocomplete="off">át.
+reformy marie tere<input type="text" class="q" maxlength="1" autocomplete="off">ie
+měly velk<input type="text" class="q" maxlength="1" autocomplete="off">
+v<input type="text" class="q" maxlength="1" autocomplete="off">znam
+nejen pro šlechtu, ale i pro oby<input type="text" class="q" maxlength="1" autocomplete="off">ejné
+obyvatele, kteří d<input type="text" class="q" maxlength="1" autocomplete="off">ky
+nim z<input type="text" class="q" maxlength="1" autocomplete="off">skali
+lep<input type="text" class="q" maxlength="1" autocomplete="off">í
+postavení ve společnosti.
+</p>
+
+  <button class="quiz-btn" onclick="vyhodnot()">Vyhodnotit</button>
+
+  <div id="vysledek"></div>
+</div>
+
+  <script>
+const spravne = [
+  "M", // Marie
+  "z", // Terezie
+  "š", // došlo
+  "ý", // významným
+  "ý", // významným
+  "s", // rakouské
+  "P", // Panovnice
+  "Z", // zavedla
+  "p", // posílit
+  "z", // zlepšit
+  "š", // zlepšit
+  "š", // říše
+  "š", // zrušena
+  "í", // nevolnictví
+  "š", // školní
+  "č", // naučily
+  "č", // číst
+  "s", // psát
+  "Z", // Reformy
+  "z", // Terezie
+  "ý", // velký
+  "ý", // význam
+  "č", // obyčejné
+  "í", // díky
+  "í", // získali
+  "š", // lepší
+  "í"  // lepší
+];
+
+// POŘADÍ MUSÍ SEDĚT s inputy v textu
+
+window.addEventListener("load", () => {
+  document.querySelectorAll(".q").forEach(input => {
+    input.value = "";
+    input.classList.remove("correct", "wrong");
+  });
+});
+
+input.addEventListener("input", () => {
+  if (input.value.length === 1) {
+    const next = inputs[i + 1];
+    if (next) next.focus();
+  }
+});
+
+function vyhodnot() {
+  const inputs = document.querySelectorAll(".q");
+  let chyby = 0;
+  let opravy = "";
+
+  inputs.forEach((input, i) => {
+    const odp = input.value.trim().toLowerCase();
+    if (odp === spravne[i]) {
+      input.style.borderBottom = "2px solid green";
+    } else {
+      input.style.borderBottom = "2px solid red";
+      chyby++;
+      opravy += `<p>${i + 1}. správně: <b>${spravne[i]}</b></p>`;
+    }
+  });
+
+
+
+  const znamka = urciZnamku(chyby);
+
+  document.getElementById("vysledek").innerHTML = `
+    <h3>Počet chyb: ${chyby}</h3>
+    <h3>Známka: ${znamka}</h3>
+    ${opravy}
+  `;
+}
+
+function urciZnamku(chyby) {
+  if (chyby <= 1) return 1;
+  if (chyby <= 3) return 2;
+  if (chyby <= 5) return 3;
+  if (chyby <= 7) return 4;
+  return 5;
+}
+
+input.classList.remove("correct", "wrong");
+
+if (odp === spravne[i]) {
+  input.classList.add("correct");
+} else {
+  input.classList.add("wrong");
+  chyby++;
+}
+
+</script>
+
+
+
 
 <!-- Quiz 1 -->
 <section id="quiz-section" style="padding: 40px; background: #f0f0f0; text-align: center;">
@@ -335,19 +468,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <script> /* script na quiz, nic jineho tam neni*/
+
 
 // ========== QUIZ 1 ==========
 
