@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>Generátor doplňovaček</title>
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  padding: 40px;
+  background: #111;
+  color: #eee;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 12px;
+  font-size: 1em;
+}
+
+button {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+pre {
+  background: #1e1e1e;
+  padding: 15px;
+  overflow-x: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>Generátor doplňovaček</h1>
+
+<p>Označ písmena k doplnění pomocí <b>[ ]</b></p>
+
+<textarea id="inputText"></textarea>
+
+<button onclick="generuj()">Generovat</button>
+
+<h2>HTML výstup</h2>
+<pre id="htmlOut"></pre>
+
+<h2>JS odpovědi</h2>
+<pre id="jsOut"></pre>
+
+<script>
+function generuj() {
+  const text = document.getElementById("inputText").value;
+  let html = "";
+  let spravne = [];
+
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === "[" && text[i+2] === "]") {
+      const znak = text[i+1];
+      spravne.push(znak);
+      html += `<input type="text" class="q" maxlength="1" autocomplete="off">`;
+      i += 2;
+    } else {
+      html += text[i];
+    }
+  }
+
+  document.getElementById("htmlOut").textContent =
+`<p class="quiz-text">
+${html}
+</p>`;
+
+  document.getElementById("jsOut").textContent =
+`const spravne = ${JSON.stringify(spravne, null, 2)};`;
+}
+</script>
+
+</body>
+</html>
