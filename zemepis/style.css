@@ -1,67 +1,141 @@
+/* ===== SCWEB TEST STYL ===== */
+
 body {
-  font-family: system-ui, sans-serif;
-  background: #f2f4f7;
-  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #1f2a36;
+  color: #eaeaea;
 }
 
-.container {
-  max-width: 850px;
-  margin: auto;
-  background: white;
+/* obal testu */
+form {
+  max-width: 900px;
+  margin: 40px auto;
   padding: 30px;
+  background: #29394a;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* nadpis */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  background: linear-gradient(135deg, #00B2B2, #809A71, #FF8330);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* otázky */
+.question,
+.mc {
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  border-left: 6px solid transparent;
+  transition: all 0.3s ease;
 }
 
-h1, h2 {
-  text-align: left;
-}
-
-.question, .mc {
-  margin: 0px 0;
-  padding: 10px;
-  border-radius: 8px;
-}
-
+/* správně / špatně */
 .correct {
-  background: #e6f7ea;
-  border-left: 5px solid #2ecc71;
+  border-left-color: #00B2B2;
+  background: rgba(0, 178, 178, 0.12);
 }
 
 .wrong {
-  background: #fdeaea;
-  border-left: 5px solid #e74c3c;
+  border-left-color: #FF8330;
+  background: rgba(255, 131, 48, 0.12);
 }
 
+/* odpovědi */
 label {
   display: block;
-  margin-left: 20px;
+  margin-top: 8px;
+  cursor: pointer;
+  line-height: 1.5;
 }
 
+/* inputy */
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+/* doplňovačky */
 input[type="text"] {
-  width: 200px;
-  padding: 5px;
-  margin: 0 5px;
-  text-transform: lowercase;
+  width: 10em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin: 0 4px;
+  padding: 2px 4px;
+  background: #eaeaea;
+  color: #111;
+  transition: background 0.3s ease;
 }
 
+/* správně / špatně přímo na input */
+input.correct {
+  background: rgba(0, 178, 178, 0.3); /* světle modrozelená */
+}
+
+input.wrong {
+  background: rgba(255, 131, 48, 0.3); /* světle oranžová */
+}
+
+/* správná odpověď */
+.correct-answer {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #cfd8dc;
+  opacity: 0.85;
+}
+
+/* tlačítka */
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   margin-top: 30px;
 }
 
 button {
-  padding: 12px 25px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 8px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  border-radius: 30px;
   border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #00B2B2, #809A71, #FF8330);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* výsledek */
 #vysledek {
   margin-top: 25px;
   text-align: center;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* mobil */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  input[type="text"] {
+    width: 2em;
+  }
 }
