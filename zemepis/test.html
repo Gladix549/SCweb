@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Opakovací test – obojživelníci</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<form autocomplete="off">
+
+<div class="container">
+  <h1>Opakovací test – obojživelníci</h1>
+
+  <!-- ANO / NE -->
+  <h2>1️⃣ Potvrďte správné tvrzení</h2>
+
+  <div class="question" data-correct="ano">
+    Obojživelníci jsou bioindikátory kvality životního prostředí.
+    <label><input type="radio" name="q1" value="ano"> ANO</label>
+    <label><input type="radio" name="q1" value="ne"> NE</label>
+  </div>
+
+  <div class="question" data-correct="ne">
+    Žáby mají vyvinutou schopnost regenerace.
+    <label><input type="radio" name="q2" value="ano"> ANO</label>
+    <label><input type="radio" name="q2" value="ne"> NE</label>
+  </div>
+
+  <div class="question" data-correct="ano">
+    Červoři jsou v tropech přizpůsobení životu v podzemí.
+    <label><input type="radio" name="q3" value="ano"> ANO</label>
+    <label><input type="radio" name="q3" value="ne"> NE</label>
+  </div>
+
+  <!-- DOPLŇOVAČKA -->
+  <h2>2️⃣ Doplňte chybějící výrazy</h2>
+
+  <p>
+    Larvy obojživelníků se nazývají
+    <input type="text" data-answer="pulci">.
+  </p>
+
+  <p>
+    Hlavním zdrojem pohybu čolků ve vodě je jejich
+    <input type="text" data-answer="ocas">.
+  </p>
+
+  <p>
+    Žáby pumpují vzduch do plic
+    <input type="text" data-answer="spodinou ústní dutiny">.
+  </p>
+
+  <!-- ABCD -->
+  <h2>3️⃣ Vyberte správnou odpověď</h2>
+
+  <div class="mc" data-correct="b">
+    V naší přírodě jsou chráněni:
+    <label><input type="checkbox" name="m1" value="a"> a) jen skokani a rosničky</label>
+    <label><input type="checkbox" name="m1" value="b"> b) všechny druhy obojživelníků</label>
+    <label><input type="checkbox" name="m1" value="c"> c) čolci a rosničky jen na jaře</label>
+    <label><input type="checkbox" name="m1" value="d"> d) pouze ropuchy</label>
+  </div>
+
+  <div class="mc" data-correct="a">
+    Srdce obojživelníků má:
+    <label><input type="checkbox" name="m2" value="a"> a) dvě předsíně a jednu komoru</label>
+    <label><input type="checkbox" name="m2" value="b"> b) předsíň a dvě komory</label>
+    <label><input type="checkbox" name="m2" value="c"> c) jednu předsíň a jednu komoru</label>
+    <label><input type="checkbox" name="m2" value="d"> d) dvě předsíně a dvě komory</label>
+  </div>
+
+  <div class="buttons">
+    <button onclick="vyhodnotit()">Vyhodnotit test</button>
+    <button onclick="resetTest()">Reset</button>
+  </div>
+
+  <div id="vysledek"></div>
+</div>
+
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
