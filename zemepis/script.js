@@ -31,7 +31,7 @@ function vyhodnotit() {
   document.querySelectorAll("input[type='text']").forEach(input => {
     total++;
     const user = input.value.trim().toLowerCase();
-    const correct = input.dataset.answer.toLowerCase();
+    const correct = input.dataset.answer.trim().toLowerCase();
 
     let info = input.nextElementSibling;
     if (!info || !info.classList.contains("correct-answer")) {
