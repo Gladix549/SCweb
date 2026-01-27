@@ -112,7 +112,3 @@ function resetTest() {
 
   document.getElementById("vysledek").textContent = "";
 }
-
-window.addEventListener("load", () => {
-  resetTest();
-});
