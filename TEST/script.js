@@ -48,7 +48,7 @@ function vyhodnotit() {
       info.textContent = "";
     } else {
       input.classList.add("wrong");
-      info.textContent = ` ← správně: ${correct}`;
+      info.textContent = ` Správná odpověď: ${correct}`;
     }
   });
 
