@@ -58,7 +58,7 @@ function generuj() {
     if (text[i] === "[" && text[i+2] === "]") {
       const znak = text[i+1];
       spravne.push(znak);
-      html += `<input type="text" class="q" maxlength="1" autocomplete="off">`;
+      html += `<input type="text" class="q" maxlength="1" autocomplete="off" autocapitalize="none">`;
       i += 2;
     } else {
       html += text[i];
