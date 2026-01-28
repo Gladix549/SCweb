@@ -78,8 +78,8 @@ function vyhodnotit() {
     }
   });
 
-// === OTEVŘENÉ OTÁZKY (keyword scoring) ===
-document.querySelectorAll(".open-question").forEach(q => {
+// === OTEVŘENÉ OTÁZKY (keyword scoring) === 
+/*document.querySelectorAll(".open-question").forEach(q => {
   total++;
 
   const textarea = q.querySelector("textarea");
@@ -114,7 +114,7 @@ document.querySelectorAll(".open-question").forEach(q => {
       `Uznané pojmy: ${foundWords.join(", ") || "žádné"}`;
   }
 });
-
+*/
 
   const procenta = Math.round((score / total) * 100);
   const znamka = vypocetZnamky(score, total);
@@ -147,10 +147,10 @@ function resetTest() {
   document.querySelectorAll(".correct-answer").forEach(el => {
     el.textContent = "";
   });
-
+/*
   document.querySelectorAll("textarea").forEach(t => {
     t.value = "";
   });
-
+*/
   document.getElementById("vysledek").textContent = "";
 }
