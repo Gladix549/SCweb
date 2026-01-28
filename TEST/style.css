@@ -183,15 +183,10 @@ button:hover {
 }
 
 /* zpětná vazba */
-.open-question {
-  overflow: visible;
-}
-
 .open-question .correct-answer {
-  display: block;
   margin-top: 8px;
   font-size: 14px;
-  line-height: 1.4;
+  opacity: 0.9;
 }
 
 /* barvy feedbacku */
