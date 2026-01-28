@@ -183,10 +183,15 @@ button:hover {
 }
 
 /* zpětná vazba */
+.open-question {
+  overflow: visible;
+}
+
 .open-question .correct-answer {
+  display: block;
   margin-top: 8px;
   font-size: 14px;
-  opacity: 0.9;
+  line-height: 1.4;
 }
 
 /* barvy feedbacku */
@@ -197,7 +202,7 @@ button:hover {
 .open-question.wrong .correct-answer {
   color: #e74c3c;
 }
-/*
+
 @media (max-width: 600px) {
   .open-question textarea {
     min-height: 70px;
