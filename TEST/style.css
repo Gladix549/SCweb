@@ -197,7 +197,7 @@ button:hover {
 .open-question.wrong .correct-answer {
   color: #e74c3c;
 }
-
+/*
 @media (max-width: 600px) {
   .open-question textarea {
     min-height: 70px;
