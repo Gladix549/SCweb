@@ -139,3 +139,61 @@ button:hover {
     width: 2em;
   }
 }
+
+/* === OTEVŘENÁ OTÁZKA === */
+.open-question {
+  margin: 20px 0;
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  /*border-left: 4px solid #228b22; /* akcent SCweb */
+}
+
+/* text otázky */
+.open-question p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* textarea */
+.open-question textarea {
+  width: 97%;
+  min-height: 120px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px solid #3a4a5a;
+  background: #1f2a35;
+  color: #ffffff;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.open-question textarea:focus {
+  outline: none;
+  /*border-color: #228b22;*/
+}
+
+/* správně / špatně */
+.open-question.correct {
+  border-left-color: #2ecc71;
+}
+
+.open-question.wrong {
+  border-left-color: #e74c3c;
+}
+
+/* zpětná vazba */
+.open-question .correct-answer {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* barvy feedbacku */
+.open-question.correct .correct-answer {
+  color: #2ecc71;
+}
+
+.open-question.wrong .correct-answer {
+  color: #e74c3c;
+}

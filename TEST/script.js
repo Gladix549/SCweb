@@ -78,6 +78,44 @@ function vyhodnotit() {
     }
   });
 
+// === OTEVŘENÉ OTÁZKY (keyword scoring) ===
+document.querySelectorAll(".open-question").forEach(q => {
+  total++;
+
+  const textarea = q.querySelector("textarea");
+  const keywords = q.dataset.keywords
+    .split(",")
+    .map(k => k.trim().toLowerCase());
+
+  const text = textarea.value.toLowerCase();
+
+  let found = 0;
+  const foundWords = [];
+
+  keywords.forEach(k => {
+    if (text.includes(k) && !foundWords.includes(k)) {
+      found++;
+      foundWords.push(k);
+    }
+  });
+
+  q.classList.remove("correct", "wrong");
+
+  const info = q.querySelector(".correct-answer");
+
+  if (found >= 5) {
+    score++;
+    q.classList.add("correct");
+    info.textContent = `✔ Nalezeno ${found} správných znaků.`;
+  } else {
+    q.classList.add("wrong");
+    info.textContent =
+      `✘ Nalezeno ${found} / 5 správných znaků. ` +
+      `Uznané pojmy: ${foundWords.join(", ") || "žádné"}`;
+  }
+});
+
+
   const procenta = Math.round((score / total) * 100);
   const znamka = vypocetZnamky(score, total);
 
@@ -108,6 +146,10 @@ function resetTest() {
 
   document.querySelectorAll(".correct-answer").forEach(el => {
     el.textContent = "";
+  });
+
+  document.querySelectorAll("textarea").forEach(t => {
+    t.value = "";
   });
 
   document.getElementById("vysledek").textContent = "";
