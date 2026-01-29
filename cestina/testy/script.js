@@ -78,35 +78,50 @@ function vyhodnotit() {
     }
   });
 
-// === OTEVŘENÉ OTÁZKY (může jich být libovolně) ===
+// === OTEVŘENÉ OTÁZKY (libovolně, s částečnými body a hláškou) ===
 document.querySelectorAll(".open-question").forEach(q => {
-  total++;
 
   const textarea = q.querySelector("textarea");
+  const info = q.querySelector(".correct-answer");
+
   const keywords = q.dataset.keywords
     .split(",")
     .map(k => k.trim().toLowerCase());
+
+  const maxPoints = Number(q.dataset.points) || 5;
 
   const text = textarea.value.toLowerCase();
 
   const found = keywords.filter(k => text.includes(k));
   const uniqueFound = [...new Set(found)];
 
-  const info = q.querySelector(".correct-answer");
+  const gainedPoints = Math.min(uniqueFound.length, maxPoints);
 
-  q.classList.remove("correct", "wrong");
+  total += maxPoints;
+  score += gainedPoints;
 
-  if (uniqueFound.length >= 5) {
-    score++;
+  q.classList.remove("correct", "wrong", "partial");
+
+  let statusText = "";
+
+  if (gainedPoints === maxPoints) {
     q.classList.add("correct");
-    info.textContent = `✔ Rozpoznané pojmy (${uniqueFound.length}): ${uniqueFound.join(", ")}`;
+    statusText = "✔ Správně";
+  } else if (gainedPoints > 0) {
+    q.classList.add("partial");
+    statusText = "◑ Částečně správně";
   } else {
     q.classList.add("wrong");
-    info.textContent =
-      `✖ Nalezeno ${uniqueFound.length} pojmů. ` +
-      `Navrhované pojmy: ${keywords.join(", ")}`;
+    statusText = "✖ Nesplněno";
   }
+
+  info.innerHTML = `
+    <strong>${statusText}</strong><br>
+    Rozpoznané pojmy (${uniqueFound.length}): ${uniqueFound.join(", ") || "žádné"}<br>
+    Body: <strong>${gainedPoints} / ${maxPoints}</strong>
+  `;
 });
+
 
 
   const procenta = Math.round((score / total) * 100);
