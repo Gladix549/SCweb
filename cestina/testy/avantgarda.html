@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Opakovací test – obojživelníci</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form autocomplete="off">
+
+<div class="container">
+  <h1>Opakovací test – avantgarda</h1>
+
+  <!-- ANO / NE -->
+  <h2>1) Potvrďte správné tvrzení:</h2>
+
+  <div class="question" data-correct="ano">
+    Zakladatelem futurismu byl italský básník Filippo Tommaso Marinetti.
+    <label><input type="radio" name="q1" value="ano"> ANO</label>
+    <label><input type="radio" name="q1" value="ne"> NE</label>
+  </div>
+
+  <div class="question" data-correct="ano">
+    Poetismus je považován za jediný čistě český avantgardní směr.
+    <label><input type="radio" name="q2" value="ano"> ANO</label>
+    <label><input type="radio" name="q2" value="ne"> NE</label>
+  </div>
+
+  <div class="question" data-correct="ne">
+    Surrealisté kladli velký důraz na rozum, logiku a vědecké poznání.
+    <label><input type="radio" name="q3" value="ano"> ANO</label>
+    <label><input type="radio" name="q3" value="ne"> NE</label>
+  </div>
+
+  <!-- DOPLŇOVAČKA -->
+  <h2>2) Doplňte chybějící výrazy:</h2>
+
+  <p>
+    Guillaume Apollinaire ve své sbírce Alkoholy publikoval báseň s názvem <input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" data-answer="Pásmo">, která ovlivnila celou generaci českých básníků.
+    
+  </p>
+
+  <p>
+    Jakub Deml, Jan Zahradníček a Bohuslav Reynek představují <input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" data-answer="křesťansky"> zaměřenou literaturu.
+      </p>
+
+  <p>
+    Tristan Tzara byl zakladatelem avantgardního směru <input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" data-answer="dadaismu">.
+  </p>
+
+  <!-- ABCD -->
+  <h2>3) Vyberte správnou odpověď (může být více správných odpovědí):</h2>
+
+  <div class="mc" data-correct="b">
+    Který z těchto autorů získal Nobelovu cenu za literaturu?
+    <label><input type="radio" name="m1" value="a"> Vítězslav Nezval</label>
+    <label><input type="radio" name="m1" value="b"> Jaroslav Seifert</label>
+    <label><input type="radio" name="m1" value="c"> Jiří Wolker</label>
+    <label><input type="radio" name="m1" value="d"> Jiří Orten</label>
+  </div>
+
+  <div class="mc" data-correct="c">
+    Co je to „kaligram“?
+    <label><input type="radio" name="m2" value="a"> báseň psaná ve verších, které se nerýmují</label>
+    <label><input type="radio" name="m2" value="b"> typ obrazného pojmenování typický pro surrealismus</label>
+    <label><input type="radio" name="m2" value="c"> výtvarná báseň, kde jsou slova uspořádána do určitého obrazce</label>
+    <label><input type="radio" name="m2" value="d"> velmi dlouhá báseň</label>
+  </div>
+
+  <div class="mc" data-correct="d">
+    Který z autorů si napsal svůj vlastní epitaf?
+    <label><input type="radio" name="m3" value="a"> Jaroslav Seifert</label>
+    <label><input type="radio" name="m3" value="b"> Konstantin Biebl</label>
+    <label><input type="radio" name="m3" value="c"> Vladimír Holan</label>
+    <label><input type="radio" name="m3" value="d"> Jiří Wolker</label>
+  </div>
+  
+<h2>4) Otevřené otázky:</h2>
+
+<div class="open-question" data-keywords="avantgarda,volný verš,experiment,moderní,diskontinuita,slovy,kubismus,obrazce,básník,kritik,surrealismus,Alkoholy,Pásmo,Kaligramy,Pražský chodec,Kacíř a spol.,Zavražděný básník,Prsy Tiresiovy,asociativnost,interpunkce,vizuální lyrismus,zážitky,
+Praha,autobiografické prvky,drama,zakladatel,poezie" data-min="7">
+  <p>
+    Alespoň pěti znaky popište tvorbu Guillaume Apollinaira. Uveďte alespoň jedno jeho nejznámnější dílo, které podrobněji charakterizujete.
+  </p>
+
+  <textarea
+    rows="5"
+    autocapitalize="off"
+    spellcheck="false"
+    placeholder="Piš souvislý text…"
+  ></textarea>
+
+  <div class="correct-answer"></div>
+</div>
+
+<div class="open-question" data-keywords="hravost,optimismus,radost,fantazie,apolitičnost,exotika,cirkus,obrazotvornost,spontánnost,přírodní,lyrika, milostná,poezie,civilizace,asociativnost,pojmy,Vítězslav Nezval,Karel Teige,Manifest poetismu" data-min="7">
+  <p>
+    Alespoň pěti znaky definujte poetismus. Jmenujte jeho zakladatele a uveďte název jejich společného manifestu.
+  </p>
+
+  <textarea
+    rows="5"
+    autocapitalize="off"
+    spellcheck="false"
+    placeholder="Piš souvislý text…"
+  ></textarea>
+
+  <div class="correct-answer"></div>
+</div>
+
+<div class="open-question" data-keywords="kolektivismus,sociální,nespravedlnost,revoluce,třídní,boj,víra,dělník,bída,nenávist,válce,osvobodit,lidové,sovětské,francouzské,Neumann,Josef Hora,Jindřich Hořejší,Jaroslav Seifert,Jiří Wolker,Proletářské umění,Host do domu,optimismus,utrpení,Těžká hodina,sociální balada,pesimismus,Rudého práva,Pracující den,Bouřlivé jaro,Srdce a vřava světa,Struny ve větru,Máchovské variace,Domov,Jan houslista,velkoměsto
+civilizace,Hudba na náměstí,Korálový náhrdelník,Den a noc,Devětsil" data-min="7">
+  <p>
+    Jmenujte dva nejvýznamnější představitele české proletářské poezie a ke každému napište alespoň jedno dílo. Jedno z těchto děl blíže (alespoň třemi znaky) definujte.
+  </p>
+
+  <textarea
+    rows="5"
+    autocapitalize="off"
+    spellcheck="false"
+    placeholder="Piš souvislý text…"
+  ></textarea>
+
+  <div class="correct-answer"></div>
+</div>
+
+<div class="open-question" data-keywords="skupina,avantgarda,levicová orientace,1920,manifesty,literatura,poezie,film,malířství,Karel Teige, V. Nezval,Jaroslav Seifert,Vladislav Vančura,Toyen,Štýrský,vliv,výtvarníci" data-min="5">
+  <p>
+    Vysvětlete, co byl Devětsil a jaký měl význam pro českou literaturu. Jmenujte alespoň tři členy.
+  </p>
+
+  <textarea
+    rows="5"
+    autocapitalize="off"
+    spellcheck="false"
+    placeholder="Piš souvislý text…"
+  ></textarea>
+
+  <div class="correct-answer"></div>
+</div>
+
+<div class="open-question" data-keywords="lyrika,báseň,Abeceda,exotika,dobrodružství,fantazie,putování,luk,západ,Indián,stopa,prérie,měsíc,kamení,poslední,druhové,Vítězslav Nezval,poetismus,hravost,obraznost,volná,asociace,interpunkce,apolitičnost,přirovnání" data-min="10">
+  <p>
+    Analyzujte ukázku, určete literární druh a téma, které alespoň 5 motivy definujete. Uveďte název díla a jeho autora. V díle najděte znaky typické pro daný umělecký směr.    
+  </p>
+  <p style="font-style: normal; padding-left: 1em;">D</p>
+  <p style="font-style: italic; padding-left: 1em;">luk jenž od západu napíná se</p>
+  <p style="font-style: italic; padding-left: 1em;">Indián shlédl stopu na zemi</p>
+  <p style="font-style: italic; padding-left: 1em;">Poslední druhové zhynuli v dávném čase</p>
+  <p style="font-style: italic; padding-left: 1em;">a měsíc dorůstá prérie kamení</p>
+
+  <textarea
+    rows="5"
+    autocapitalize="off"
+    spellcheck="false"
+    placeholder="Piš souvislý text…"
+  ></textarea>
+
+  <div class="correct-answer"></div>
+</div>
+
+ <div class="buttons">
+  <button type="button" onclick="vyhodnotit()">Vyhodnotit test</button>
+  <button type="button" onclick="resetTest()">Reset</button>
+</div>
+
+<div id="vysledek"></div>
+
+</div>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
