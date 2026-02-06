@@ -130,7 +130,7 @@ function vypocetZnamky(score, total) {
   if (procenta >= 75) return 2;
   if (procenta >= 60) return 3;
   if (procenta >= 50) return 4;
-  return 5;
+  if (procenta < 50) return 5;
 }
 
 function resetTest() {
