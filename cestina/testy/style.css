@@ -148,6 +148,13 @@ button:hover {
   background: rgba(255, 255, 255, 0.04);
   /*border-left: 4px solid #228b22; /* akcent SCweb */
 }
+.opq {
+  margin: 20px 0;
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  /*border-left: 4px solid #228b22; /* akcent SCweb */
+}
 
 /* text otázky */
 .open-question p {
