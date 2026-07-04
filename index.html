@@ -150,7 +150,8 @@
 
 /*STATISTIKY SEKCE*/
 .statistiky {
-  padding: 40px 10px;
+  padding: 10px 10px;
+  padding-bottom: 100px;
   background-color: #eaeaea;
   text-align: center;
 }
@@ -185,6 +186,12 @@
 .stat:hover {
     transform: scale(1.2);
   }
+
+.count {
+  font-weight: bold;
+  font-size: 20px;
+  color: #00B2B2;
+}
 
 </style>
 ```
@@ -241,6 +248,7 @@
   <p>- Sebastian Carrera</p>
 </section> -->
 
+
 <section class="statistiky">
 
   <h2>📊 Statistiky</h2>
@@ -248,15 +256,15 @@
   <div class="stats-container">
 
     <div class="stat">
-      📚 >170 zápisků
+      📚 ><span class="count" data-target="170">0</span> zápisků
     </div>
 
     <div class="stat">
-      📄 >1000 stran materiálů
+      📄 ><span class="count" data-target="1000">0</span> stran materiálů
     </div>
 
     <div class="stat">
-      🧪 10 předmětů
+      🧪 <span class="count" data-target="10">0</span> předmětů
     </div>
 
   </div>
@@ -302,8 +310,75 @@
   setTimeout(() => {
     banner.classList.add("shrink");
   }, 1000);
-</script>
 
+// STATISTIKY
+
+function animateCount(el) {
+  const target = Number(el.dataset.target);
+  const duration = 1200;
+  const startTime = performance.now();
+
+  function update(now) {
+    const progress = Math.min((now - startTime) / duration, 1);
+    const value = Math.floor(progress * target);
+
+    el.textContent = value;
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      el.textContent = target;
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+// SCROLL TRIGGER (IntersectionObserver)
+
+let statsAnimated = false;
+let statsTimer;
+
+const statsSection = document.querySelector(".statistiky");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting && !statsAnimated) {
+
+      // ⏱️ malé zpoždění pro lepší UX
+      statsTimer = setTimeout(() => {
+        statsAnimated = true;
+
+        // fade-in efekt (pokud máš CSS)
+        statsSection.classList.add("visible");
+
+        // cascade animace (postupně)
+        const counters = document.querySelectorAll(".count");
+
+        counters.forEach((el, i) => {
+          setTimeout(() => {
+            animateCount(el);
+          }, i * 200); // postupně každé číslo
+        });
+
+      }, 500); // delay po scrollu
+
+    } else {
+      clearTimeout(statsTimer);
+    }
+
+  });
+}, {
+  threshold: 0.7
+});
+
+// spustí sledování sekce
+if (statsSection) {
+  observer.observe(statsSection);
+}
+
+</script>
 
   </body>
 </html>
