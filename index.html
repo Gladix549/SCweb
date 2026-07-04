@@ -148,6 +148,44 @@
     color: white;
   }
 
+/*STATISTIKY SEKCE*/
+.statistiky {
+  padding: 40px 10px;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+.statistiky h2 {
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: #00B2B2;
+  text-shadow: 0 0 6px #4bcfffaf;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* důležité */
+  max-width: 1000px;
+  margin: auto;
+}
+
+.stat {
+  background: rgba(52, 65, 65, 0.2);
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  color: #111;
+  text-shadow: 0 0 6px #00000040;
+  min-width: 180px;
+  transition: transform 0.2s;
+}
+
+.stat:hover {
+    transform: scale(1.2);
+  }
+
 </style>
 ```
 
@@ -203,16 +241,25 @@
   <p>- Sebastian Carrera</p>
 </section> -->
 
-<section style="padding-top: 1px; padding-bottom: 40px; background-color: #eaeaea; text-align: center;">
-  <h2 style="font-size: 25px; text-align: center; margin-bottom: 25px; color: #00B2B2; text-shadow: 0 0 6px #4bcfffaf;">📊 Statistiky</h2>
+<section class="statistiky">
 
-<div style="background: #3441; padding: 20px; border-radius: 12px; margin-bottom: 25px; line-height: 1.7; max-width: 900px; margin: 0 auto;">
-  <p style="max-width: 700px; margin: 20px auto; font-size: 18px; color: #111111; text-shadow: 0 0 6px #00000040; text-align: center;">
-📚 312 zápisků &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-📄 587 stran materiálů &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-🧪 10 předmětů
-  </p>
-</div>
+  <h2>📊 Statistiky</h2>
+
+  <div class="stats-container">
+
+    <div class="stat">
+      📚 312 zápisků
+    </div>
+
+    <div class="stat">
+      📄 587 stran materiálů
+    </div>
+
+    <div class="stat">
+      🧪 10 předmětů
+    </div>
+
+  </div>
 
 </section>
 
