@@ -278,6 +278,71 @@
   color: #cfc103;
 }
 
+/*RECENZE*/
+
+.reviews-section{
+    padding-top:20px;
+    padding-bottom:60px;
+    background: linear-gradient(135deg, #1f2a38, #2c3e50);
+    overflow:hidden;
+    text-align:center;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.4);
+}
+
+.reviews-section h2{
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: white;
+  text-shadow: 0 0 6px #f3f3f3af;
+}
+
+.reviews-subtitle{
+    color:white;
+    margin-bottom:35px;
+}
+
+.reviews-wrapper{
+    overflow:hidden;
+}
+
+.reviews-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation:scrollReviews 35s linear infinite;
+}
+
+.review-card{
+    width:300px;
+    background:rgba(255,255,255,0.07);
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    flex-shrink:0;
+}
+
+.review-card p{
+    margin-top:12px;
+    font-style:italic;
+    color: white;
+}
+
+@keyframes scrollReviews{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+.reviews-track:hover{
+animation-play-state:paused;
+}
+
 </style>
 ```
 
@@ -355,6 +420,65 @@
   </div>
 
 </section>
+
+<section class="reviews-section">
+
+<h2>💬 Co říkají uživatelé?</h2>
+<p class="reviews-subtitle">
+Komentáře pochází z anonymního dotazníku.
+</p>
+
+<div class="reviews-wrapper">
+
+<div class="reviews-track">
+
+<div class="review-card">
+<p>"(…) porovnam si takhle svoje zapisky a doplnim nebo ujasnim si nejake veci, rozhodne mi to pomaha jako celkovy souhrn uciva. (…)"</p>
+</div>
+
+<div class="review-card">
+<p>"(…) Díky tvým stručných zápiskům, co s námi sdílíš, se naučím mnohem víc věcí za kratší čas :D"</p>
+</div>
+
+<div class="review-card">
+<p>"(…) hlavně ze zeměpisu a biologie jelikož to vubec nestíhám a tohle je to jediné co mě zachraňuje 🙏 (…) "</p>
+</div>
+
+<div class="review-card">
+<p>"(…) Jsou naprostro skvělé a přehledné. (…) Zápisky si sice píšu sama, ale ty tvé používám pro kontrolu a shrnutí látky jako takové. A moc mi to pomáhá."</p>
+</div>
+
+<div class="review-card">
+<p>"(…) Já si třeba pisu zápisky ale nepochopim ani nepochytim všechno takže tvoje soubory jsou pro me doplnek. (…) Mas to přehledný a hlavně fakt obsáhlý v tom co je potřeba! (…)"</p>
+</div>
+
+<!-- zkopíruj znovu stejné kartičky -->
+<div class="review-card">
+<p>"(…) porovnam si takhle svoje zapisky a doplnim nebo ujasnim si nejake veci, rozhodne mi to pomaha jako celkovy souhrn uciva. (…)"</p>
+</div>
+
+<div class="review-card">
+<p>"(…) Díky tvým stručných zápiskům, co s námi sdílíš, se naučím mnohem víc věcí za kratší čas :D"</p>
+</div>
+
+<div class="review-card">
+<p>"(…) hlavně ze zeměpisu a biologie jelikož to vubec nestíhám a tohle je to jediné co mě zachraňuje 🙏 (…) "</p>
+</div>
+
+<div class="review-card">
+<p>"(…) Jsou naprostro skvělé a přehledné. (…) Zápisky si sice píšu sama, ale ty tvé používám pro kontrolu a shrnutí látky jako takové. A moc mi to pomáhá."</p>
+</div>
+
+<div class="review-card">
+<p>"(…) Já si třeba pisu zápisky ale nepochopim ani nepochytim všechno takže tvoje soubory jsou pro me doplnek. (…) Mas to přehledný a hlavně fakt obsáhlý v tom co je potřeba! (…)"</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 
 <section style="padding: 50px 20px; background: linear-gradient(135deg, #1f2a38, #2c3e50); color: #f8f9fa; font-family: 'Segoe UI', sans-serif; text-align: center; box-shadow: 0 -3px 10px rgba(0,0,0,0.4);">
   <div style="max-width: 900px; margin: 0 auto; line-height: 1.7;">
