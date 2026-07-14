@@ -4,21 +4,21 @@
     "subject": "Biologie",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1yEEeUEDJptastBtf5pQetFd3_PmnwN2sVEIGoq-W4zE/export?format=docx",
-    "keywords": ["základy", "biologie"]
+    "keywords": ["základy", "biologie", "systém", "taxonomie", "taxon", "organismus", "buněčná", "kolonie", "individua vyššího řádu", "projevy života", "vlastnosti organismu", "uspořádání", "hierarchie", "obligátní společenstva", "časová ohraničenost"]
   },
   {
     "title": "Nebuněční",
     "subject": "Biologie",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/17K7MotIEa47Gmts9xENkom6DK6PHbmGbHo3gbbHoqvE/export?format=docx",
-    "keywords": ["nebuněční"]
+    "keywords": ["nebuněční", "viry", "virion", "bakteriofág", "permisivita", "antigenita", "kapsid", "přenos virové infekce", "DNA", "RNA", "priony", "viroid", "virusoid"]
   },
   {
     "title": "Prokaryota",
     "subject": "Biologie",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/16BrI2Aa9k_T1u0lVtAtjkqqiBrjsBIZjfU5gnTlOl50/export?format=docx",
-    "keywords": ["prokaryota"]
+    "keywords": ["prokaryota", "archea", "bacteria", "L.U.C.A", "LUCA", "bakterie", "sinice", "prochlorofyty", "spora", "nitrifikační", "barviva", "karotenoidy", "fykocyanin", "fykoerytrin", "tylakoidy", "lišejník", "dinitrifikační", "hlízkovité", "bakteriální nemoci", "aerobní", "anaerobní", "autotrofní", "Robert Koch", "organely", "nukleoid", "ribozom", "ribosom", "cytoplazma", "cytoplazmatická membrána", "buněčná stěna", "plazmatická membrána", "plazmidy", "pouzdro", "řasinky", "fimbrie", "bičík"]
   },
   {
     "title": "Eukaryota",
