@@ -1,0 +1,31 @@
+[
+  {
+  "title": "Obojživelníci",
+
+  "subject": "Biologie",
+
+  "notes": "https://docs.google.com/document/d/1H2RtC1-S-MbmH5IPdX7R2CQAHssch6w5mbbULNEGAd4/export?format=docx",
+
+  "test": "testy/obojzivelnici/index.html",
+
+  "keywords": [
+    "žába",
+    "pulci",
+    "ropucha",
+    "čolek"
+  ]
+    },
+
+  {
+    "title": "Plazi",
+    "subject": "Biologie",
+    "type": "📄 Zápisky",
+    "url": "https://docs.google.com/document/d/1H2RtC1-S-MbmH5IPdX7R2CQAHssch6w5mbbULNEGAd4/export?format=docx",
+    "keywords": [
+      "plazi",
+      "hadi",
+      "želva",
+      "ještěr"
+    ]
+  }
+]

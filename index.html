@@ -353,22 +353,23 @@ animation-play-state:paused;
 /*SEARCH*/
 .search-container{
     position:relative;
-    max-width:500px;
+    max-width:550px;
     margin:30px auto;
 }
 
 #searchInput{
     width:100%;
-    padding:14px 18px;
+    padding:15px 18px;
     font-size:17px;
     border:none;
     border-radius:12px;
     outline:none;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    box-sizing:border-box;
 }
 
 #searchResults{
-
+    display:none;
     position:absolute;
     width:100%;
     background:white;
@@ -376,29 +377,26 @@ animation-play-state:paused;
     margin-top:8px;
     overflow:hidden;
     box-shadow:0 8px 20px rgba(0,0,0,.15);
-
-    display:none;
-    z-index:999;
+    z-index:1000;
 }
 
 .result{
-
     padding:14px 18px;
     cursor:pointer;
     transition:.2s;
-
 }
 
 .result:hover{
+    background:#eefcff;
+}
 
-    background:#eafcff;
-
+.result strong{
+    display:block;
+    color:#222;
 }
 
 .result small{
-
     color:#666;
-
 }
 
 </style>
@@ -433,13 +431,13 @@ animation-play-state:paused;
   <p>Stránce, kde najdeš všechny zápisky přehledně na jednom místě</p>
 </section>
 
-<!--SEARCH
+<!--SEARCH-->
 <div class="search-container">
 
     <input
         type="text"
         id="searchInput"
-        placeholder="🔍 Hledat zápis nebo test..."
+        placeholder="🔍 Hledat zápisky..."
         autocomplete="off"
     >
 
@@ -448,102 +446,108 @@ animation-play-state:paused;
 </div>
 
 <script>
-  const materials = [
-
-{
-title:"Obojživelníci",
-subject:"Biologie",
-type:"📄 Zápisky",
-url:"https://docs.google.com/document/d/1H2RtC1-S-MbmH5IPdX7R2CQAHssch6w5mbbULNEGAd4/export?format=docx",
-keywords:["žába","pulci","ropucha","čolek","obojživelníci"]
-},
-
-{
-title:"Obojživelníci",
-subject:"Biologie",
-type:"📝 Test",
-url:"https://gladix549.github.io/SCweb/biologie/testy/obojzivelnici%20a%20plazi.html",
-keywords:["žába","pulci","ropucha","čolek","obojživelníci"]
-},
-
-{
-title:"Plazi",
-subject:"Biologie",
-type:"📄 Zápisky",
-url:"https://docs.google.com/document/d/1H2RtC1-S-MbmH5IPdX7R2CQAHssch6w5mbbULNEGAd4/export?format=docx",
-keywords:["hadi","želva","ještěr","plazi"]
-}
-
-];
+let materials = [];
 
 const input = document.getElementById("searchInput");
 const results = document.getElementById("searchResults");
 
-input.addEventListener("input",function(){
+fetch("data/materials.json")
+.then(response => response.json())
+.then(data => {
 
-const search=this.value.toLowerCase().trim();
+    materials = data;
 
-results.innerHTML="";
+})
+.catch(error => {
 
-if(search===""){
-
-results.style.display="none";
-return;
-
-}
-
-const found=materials.filter(item=>{
-
-return item.title.toLowerCase().includes(search)
-
-|| item.subject.toLowerCase().includes(search)
-
-|| item.keywords.some(k=>k.includes(search));
+    console.error("Nepodařilo se načíst materials.json", error);
 
 });
 
-if(found.length===0){
+input.addEventListener("input", function(){
 
-results.innerHTML="<div class='result'>Nic nenalezeno.</div>";
-results.style.display="block";
-return;
+    const search = this.value
+        .toLowerCase()
+        .trim();
 
-}
+    results.innerHTML = "";
 
-found.forEach(item=>{
+    if(search===""){
 
-const div=document.createElement("div");
+        results.style.display="none";
+        return;
 
-div.className="result";
+    }
 
-div.innerHTML=`
-<strong>${item.title}</strong><br>
-<small>${item.subject} • ${item.type}</small>
-`;
+    const found = materials.filter(item=>{
 
-div.onclick=()=>{
+        const title=item.title.toLowerCase();
 
-window.location=item.url;
+        const subject=item.subject.toLowerCase();
 
-};
+        const type=item.type.toLowerCase();
 
-results.appendChild(div);
+        const keywords=item.keywords.join(" ").toLowerCase();
+
+        return title.includes(search)
+
+            || subject.includes(search)
+
+            || type.includes(search)
+
+            || keywords.includes(search);
+
+    });
+
+    if(found.length===0){
+
+        results.innerHTML=`
+        <div class="result">
+            Nic nenalezeno.
+        </div>
+        `;
+
+        results.style.display="block";
+
+        return;
+
+    }
+
+    found.forEach(item=>{
+
+        const div=document.createElement("div");
+
+        div.className="result";
+
+        div.innerHTML=`
+            <strong>${item.title}</strong>
+            <small>${item.subject} • ${item.type}</small>
+        `;
+
+        div.onclick=function(){
+
+            window.location.href=item.url;
+
+        };
+
+        results.appendChild(div);
+
+    });
+
+    results.style.display="block";
 
 });
 
-results.style.display="block";
+document.addEventListener("click",function(e){
+
+    if(!e.target.closest(".search-container")){
+
+        results.style.display="none";
+
+    }
 
 });
 
-document.addEventListener("click",(e)=>{
-
-if(!e.target.closest(".search-container")){
-
-results.style.display="none";
-
-}
-
-});
 </script>
 -->
 
