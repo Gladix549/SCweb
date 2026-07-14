@@ -483,15 +483,11 @@ input.addEventListener("input", function(){
 
         const title = (item.title || "").toLowerCase();
         const subject = (item.subject || "").toLowerCase();
-        const type = (item.type || "").toLowerCase();
         const keywords = (item.keywords || []).join(" ").toLowerCase();
 
         return title.includes(search)
 
             || subject.includes(search)
-
-            || type.includes(search)
-
             || keywords.includes(search);
 
     });
@@ -518,7 +514,7 @@ input.addEventListener("input", function(){
 
         div.innerHTML=`
             <strong>${item.title}</strong>
-            <small>${item.subject} • ${item.type}</small>
+            <small>${item.subject}</small>
         `;
 
         div.onclick=function(){
