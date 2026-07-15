@@ -32,7 +32,7 @@
     "subject": "Biologie",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1V8Rc5LuS9UITZHxaeCkrkL4K65bK4Gse1HDhsqIgeSw/export?format=docx",
-    "keywords": ["pletiva", "parenchym", "prosenchym", "kolenchym", "sklerenchym", "meristémy", "dřevo", "lýko", "lignin", "kambium", "felogen", "kalus", "epidermis", "rhizodermis", "kutikula", "průduchy", "stomady", "hydatody", "vodní skuliny", "trichomy", "xylem", "floem", "latex", "aerenchym"]
+    "keywords": ["pletiva", "parenchym", "prosenchym", "kolenchym", "sklerenchym", "meristémy", "dřevo", "lýko", "lignin", "kambium", "felogen", "kalus", "epidermis", "rhizodermis", "kutikula", "průduchy", "stomady", "hydatody", "vodní skuliny", "trichomy", "xylem", "floem", "latex", "aerenchym", "dřevovina"]
   },
   {
     "title": "Buněčné dělení a osmotické jevy",
@@ -49,11 +49,11 @@
     "keywords": ["orgány", "vegetativní", "rostliny", "stonek", "kořen", "list", "metamorfóza", "byliny", "dřeviny", "funkce", "morfologické přeměny", "stavba"]
   },
   {
-    "title": "Generativní rostlinné orgány",
+    "title": "Generativní rostlinné orgány a látkové složení rostlinného těla",
     "subject": "Biologie",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1OeEbPeMEoRMtkafYR_aryZTqsvBpNE1DeRaimPYhCsA/export?format=docx",
-    "keywords": ["generativní", "rostlinné", "orgány"]
+    "keywords": ["generativní", "rostlinné", "orgány", "květ", "květenství", "plod", "plodenství", "látkové složení rostlinného těla", "tyčinky", "pestíky", "koruna", "kalich", "okvětí", "nitka", "prašník", "blizna", "čnělka", "semeník", "opylení", "oplození", "sušina", "voda", "biogenní prvky", "lignin", "dřevovina"]
   },
   {
     "title": "Fotosyntéza, buněčné dýchání a kvašení",
