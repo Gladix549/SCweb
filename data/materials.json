@@ -333,28 +333,28 @@
     "subject": "Chemie",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1D4jFF7-MJViasWgQU05E0npz88M0BiDueRUo0pLunVY/export?format=docx",
-    "keywords": ["chemie", "základy"]
+    "keywords": ["chemie", "základy", "analytická chemie", "anorganická chemie", "biochemie", "farmacie", "metalurgie", "obecná chemie", "organická chemie", "petrochemie", "přeměna látek", "přírodní věda", "reakce", "sloučeniny bez uhlíku", "sloučeniny uhlíku", "složení látek", "vlastnosti látek", "alchymie", "atomy", "elixír mládí", "laboratorní sklo", "magistr Kelley", "mystika", "Nicolas Flamel", "Rudolf II.", "Tycho de Brahe", "Velký třesk"]
   },
   {
     "title": "Chemické látky a směsi",
     "subject": "Chemie",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1MdbW66_ZlnqzU_fAOA9hEybCjvHpu6jc9aGOM68qEOo/export?format=docx",
-    "keywords": ["směsi", "chemické", "látky"]
+    "keywords": ["anionty", "atomy", "bronz", "dým", "fyzikální vlastnosti", "hořlavost", "ionty", "kationty", "chemická vazba", "chemické látky", "chemické vlastnosti", "molekuly", "mosaz", "pole z vln", "průsvitnost", "radioaktivita", "aerosol", "emulze", "heterogenní směsi", "homogenní směsi", "mlha", "nasycený roztok", "nenasycený roztok", "pěna", "roztoky", "stejnorodé směsi", "suspenze", "směsi", "aceton", "destilace", "filtrace", "krystalizace", "líh", "rozpuštěná látka", "rozpustnost", "rozpouštědlo", "sedimentace", "sublimace", "toluen", "usazování", "vypařování", "hmotnost roztoku", "hmotnostní zlomek"]
   },
   {
     "title": "Chemické názvosloví",
     "subject": "Chemie",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1cdq8h7l43z8FjB8YcHuGQHiQb38OmbmxYanEYcNWDIM/export?format=docx",
-    "keywords": ["názvosloví", "chemické"]
+    "keywords": ["názvosloví", "chemické", "elektronový vzorec", "funkční skupina", "funkční vzorec", "geometrický vzorec", "lomená molekula", "poměr atomů", "stechiometrický vzorec", "strukturní vzorec", "tvar molekuly", "vazby v molekule", "volné elektronové páry", "hydridy", "I.A skupina", "II.A skupina", "náboj iontu", "nespárované elektrony", "oxidační číslo", "peroxid", "součet oxidačních čísel"]
   },
   {
     "title": "Atom, ionty, periodická tabulka prvků",
     "subject": "Chemie",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/12ITGeKr2ILltFeSll15Wdm7tBS32lLBMEssKmxpEShg/export?format=docx",
-    "keywords": ["periodická", "tabulka", "prvků", "ionty", "atom"]
+    "keywords": ["ionty", "atom", "atomismus", "Daltonova atomová teorie", "planetární model atomu", "pudinkový model atomu", "Rutherfordův model atomu", "alfa záření", "beta záření", "gama záření", "dozimetr", "draslík 40", "elektron", "elementární částice", "izotopy", "kationty", "kosmické záření", "kvarky", "leptony", "neutron", "neutronové číslo", "nukleid", "nukleon", "nukleonové číslo", "poločas rozpadu", "proton", "protonové číslo", "radioaktivita", "radioaktivní rozpad", "sievert", "uhlík 14", "uran 235", "uran 238", "degenerované orbitaly", "elektronová afinita", "elektronová konfigurace", "elektronový obal", "excitovaný stav", "hlavní kvantové číslo", "Hundovo pravidlo", "ionizační energie", "kvantová čísla", "magnetické kvantové číslo", "orbital", "Pauliho princip", "rámečková konfigurace", "spin", "spinové kvantové číslo", "valenční vrstva", "vedlejší kvantové číslo", "výstavbový princip", "gallium", "Mendělejevův periodický zákon", "periodická tabulka prvků", "perioda", "skupina prvků", "transurany", "vzácné plyny"]
   },
   {
     "title": "Chemické vazby and reakce",
