@@ -466,35 +466,35 @@
     "subject": "Chemie",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1wb0g_dyfB5qWk5WLAGC-AuOwAkqBNEQR332AJb-ng3E/export?format=docx",
-    "keywords": ["enzymy", "bílkoviny"]
+    "keywords": ["biochemie", "bílkoviny", "proteiny", "peptidová vazba", "aminokyseliny", "proteinogenní aminokyseliny", "amfion", "esenciální aminokyseliny", "neesenciální aminokyseliny", "N-koncová aminokyselina", "C-koncová aminokyselina", "dipeptidy", "tripeptidy", "oligopeptidy", "polypeptidy", "primární struktura", "sekundární struktura", "α-helix", "β-skládaný list", "terciární struktura", "globulární", "fibrilární", "kvartérní struktura", "hemoglobin", "globíny", "hemy", "denaturace bílkovin", "priony", "BSE", "scrapie", "Creutzfeldtova–Jakobova nemoc", "kuru", "metaloproteiny", "fosfoproteiny", "kasein", "glykoproteiny", "imunoglobulin", "lipoproteiny", "kolagen", "keratin", "fibroin", "albumin", "fibrinogen", "fibrin", "aktin", "myosin", "hypoglykemický záchvat", "enzymy", "biokatalyzátory", "aktivační energie", "substrátová specifita", "apoenzym", "koenzym", "laktátdehydrogenasa", "pepsin", "trypsin", "substrát", "aktivní místo", "inhibice", "kompetitivní inhibice", "afinita", "alkoholdehydrogenasa", "nekompetitivní inhibice", "aktivátory", "inhibitory"]
   },
   {
     "title": "Sacharidy",
     "subject": "Chemie",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1CYSR_0YWaMKwNNVBxUF15NpuPLIa2xPO1FJjaIssmhs/export?format=docx",
-    "keywords": ["sacharidy"]
+    "keywords": ["sacharidy", "zásobní funkce", "stavební funkce", "strukturní funkce", "monosacharidy", "disacharidy", "polysacharidy", "cukry", "aldosy", "ketosy", "triosy", "tetrosy", "pentosy", "hexosy", "heptosy", "opticky aktivní", "chirální uhlík", "D-konfigurace", "L-konfigurace", "Fischerův vzorec", "Tollensův vzorec", "Haworthův vzorec", "redukující sacharidy", "poloacetalový hydroxyl", "stříbrné zrcadlo", "neredukující sacharidy", "Fehlingovo činidlo", "Tollensovo činidlo", "anomery", "mutarotace", "sorbitol", "mannitol", "erythritol", "xylitol", "oligosacharidy", "ribosa", "deoxyribosa", "glukóza", "hroznový cukr", "glykemie", "glukopur", "fruktóza", "ovocný cukr", "galaktóza", "manóza", "sacharosa", "karamel", "laktosa", "mléčný cukr", "laktózová intolerance", "galaktosidasa", "maltosa", "sladový cukr", "škrob", "amylosa", "amylopektin", "dextriny", "glykogen", "živočišný škrob", "celulóza", "vláknina", "acetátové hedvábí", "nitrocelulóza", "pektiny", "inulin", "chitin", "heparin", "glukosamin", "galaktosamin", "fluoroglukosa"]
   },
   {
     "title": "Lipidy",
     "subject": "Chemie",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1MI0b05xjNx5pr3ZRjGyDUe6RoYM8gehEdtaq0nCDNtE/export?format=docx",
-    "keywords": ["lipidy"]
+    "keywords": ["lipidy", "acylglyceroly", "mastné kyseliny", "kyselina laurová", "kyselina myristová", "kyselina palmitová", "kyselina stearová", "kyselina arašídová", "kyselina linolová", "kyselina linolenová", "kyselina olejová", "kyselina arachidonová", "monoacylglyceroly", "diacylglyceroly", "triacylglyceroly", "hydrolýza", "saponifikace", "mýdla", "micela", "žluknutí", "ztužování tuků", "hydrogenace", "margaríny", "oxidační polymerace", "fermeže", "vosky", "lanolín", "vorvaňovina", "spermacet", "parafín", "fosfolipidy", "amfifilní charakter", "glykolipidy", "sfingolipidy", "sfingosin", "isoprenoidy", "terpeny", "monoterpeny", "seskviterpeny", "diterpeny", "triterpeny", "tetraterpeny", "polyterpeny", "mentol", "limonen", "kafr", "pinen", "terpentýnová silice", "citral", "lemonal", "geraniol", "azulen", "humulen", "kyselina abscisová", "retinol", "vitamín A1", "kaučuk", "vulkanizace", "gutaperča", "steroidy", "steran", "cyklopentanoperhydrofenantren", "steroly", "cholesterol", "HDL", "LDL", "žlučové kyseliny", "kyselina cholová", "steroidní hormony", "kortikoidy", "aldosteron", "kortizol", "testosteron", "androgeny", "estrogen", "estradioly", "progesteron", "gonadotropiny", "anabolika"]
   },
   {
     "title": "Vitamíny a nukleové kyseliny",
     "subject": "Chemie",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1080YvxoJH3lrcZgUi0m5J84vcdS9IVTj2l5o9GkdAOc/export?format=docx",
-    "keywords": ["kyseliny", "vitamíny", "nukleové"]
+    "keywords": ["vitamíny", "hypervitaminóza", "hypovitaminóza", "avitaminóza", "provitamin", "lipofilní vitamíny", "hydrofilní vitamíny", "retinol", "beta-karoten", "retinoidy", "kalciferol", "tokoferol", "fylochinon", "kyselina askorbová", "kurděje", "B-komplex", "thiamin", "beri-beri", "niacin", "kyselina nikotinová", "kyselina listová", "kobalamin", "biotin", "nukleové kyseliny", "DNA", "RNA", "nukleotid", "nukleosid", "adenin", "guanin", "cytosin", "thymin", "uracil", "komplementarita", "mRNA", "tRNA", "rRNA", "James Watson", "Francis Crick", "Rosalind Franklinová", "centrální dogma molekulární biologie", "reverzní transkripce", "replikace", "semikonzervativní replikace", "replikační počátek", "helikáza", "DNA polymeráza", "leading strand", "lagging strand", "Okazakiho fragmenty", "transkripce", "RNA polymeráza", "exony", "introny", "splicing", "translace", "proteosyntéza", "kodon", "triplet", "start kodon", "stop kodon", "antikodon"]
   },
   {
     "title": "Metabolismus (stručné)",
     "subject": "Chemie",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1F5KDbSNwSPD84JJ0v03ZxraDBSsnrjTV-lDypurKs3k/export?format=docx",
-    "keywords": ["metabolismus", "stručné"]
+    "keywords": ["metabolismus", "katabolismus", "anabolismus", "ATP", "amfibolické dráhy", "D-glukóza", "glykolýza", "pyruvát", "alkoholové kvašení", "mléčné kvašení", "laktát", "acetylkoenzym A", "citrátový cyklus", "Krebsův cyklus", "triacylglyceroly", "beta-oxidace", "amoniak", "močovinový cyklus", "ornithinový cyklus", "močovina", "oxalacetát", "citrát", "dýchací řetězec", "ATP-syntáza"]
   },
   {
     "title": "Úvod do dějepisu",
