@@ -725,21 +725,21 @@
     "subject": "Fyzika",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1kWepyGuGoJZc7Iy5LRQzhmF72oh8xyy9UBdFl2iATLQ/export?format=docx",
-    "keywords": ["fyziky", "základy"]
+    "keywords": ["základy fyziky", "fyzis", "hmota", "látka", "silové pole", "empirické metody", "pozorování", "experiment", "fyzikální měření", "hypotéza", "vědecká teorie", "jednotky SI", "základní jednotky", "odvozené jednotky", "vedlejší jednotky", "metr", "kilogram", "sekunda", "ampér", "kelvin", "kandela", "mol", "předpony jednotek", "skalární veličiny", "vektorové veličiny", "vektory", "skládání sil", "orientovaná úsečka", "vektorová přímka"]
   },
   {
     "title": "Pohyb a klid",
     "subject": "Fyzika",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1-mC6Z7wQ5AFyGDQD-ic_pkJTjwcpQ-q9CPXHNXDdH34/export?format=docx",
-    "keywords": ["pohyb", "klid"]
+    "keywords": ["kinematika", "klid", "pohyb", "dráha", "trajektorie", "rychlost", "průměrná rychlost", "okamžitá rychlost", "počáteční rychlost", "zrychlení", "okamžité zrychlení", "vztažná soustava", "vztažné těleso", "rovnoměrný pohyb", "nerovnoměrný pohyb", "rovnoměrně zrychlený pohyb", "rovnoměrně zpomalený pohyb", "přímočarý pohyb", "křivočarý pohyb", "relativní rychlost"]
   },
   {
     "title": "Volný pád a rovnoměrný pohyb po kružnici",
     "subject": "Fyzika",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1ajCFTh1pwfxn0WuDdskBo-SAioVcbqOX9NA3hBRN2YE/export?format=docx",
-    "keywords": ["pohyb", "volný", "rovnoměrný", "kružnici"]
+    "keywords": ["kinematika", "volný pád", "tíhové zrychlení", "Galileo Galilei", "Newtonova trubice", "odpor vzduchu", "rovnoměrný pohyb po kružnici", "úhlová rychlost", "průvodič", "radián", "periodický pohyb", "perioda", "oběžná doba", "frekvence", "úhlová dráha", "obvodová rychlost", "dostředivé zrychlení"]
   },
   {
     "title": "Dynamika",
