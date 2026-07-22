@@ -396,14 +396,14 @@
     "subject": "Chemie",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/1t1E4vmhQdVRjsgaKsHZHrVx6PPsZP091hcEH-qM8RHs/export?format=docx",
-    "keywords": ["prvky", "skupiny"]
+    "keywords": ["prvky", "d skupiny", "kovy", "lesklé", "kujné", "tažné", "rtuť", "koordinačně kovaletní vazba", "komplexní sloučeniny", "donor", "akceptor", "elektronový pár", "centrální atom", "d-kovy", "ligand", "Železo", "biogenní prvek", "hemoglobin", "ruda", "oxid železnato-železitý", "síran železnatý", "vysoká pec", "koks", "redukční činidlo", "kychtové plyny", "přímá redukce", "nepřímá redukce", "struska", "surové železo", "litina", "ocel", "legování oceli", "pyrit", "kyz železný", "disulfid železnatý", "magnetit", "magnetovec", "hematit", "krevel", "limonit", "hnědel", "siderit", "ocelek", "uhličitan železnatý", "vysoká pec"]
   },
   {
     "title": "Kovy a polokovy",
     "subject": "Chemie",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/1lYgc_CwWnF27rg5RXsgbqq1IU0wEY_pDE5DdlRtZIfQ/export?format=docx",
-    "keywords": ["kovy", "polokovy"]
+    "keywords": ["kovy", "krystalová mřížka", "vodiče", "kujnost", "tažnost", "kovový lesk", "rtuť", "slitina", "bronz", "měď", "cín", "mosaz", "zinek", "dural", "hliník", "hořčík", "mangan", "pájka", "olovo", "kyselina sírová", "kyselina dusičná", "Beketovova řada kovů", "elektrodový potenciál", "vodík", "ionty", "koroze", "oxidace", "pasivace", "oxid měďnatý", "měděnka", "metalurgie", "hutnictví", "chemická redukce", "koks", "elektrochemická redukce", "elektrolýza", "elektroda", "katoda", "anoda", "elektrolyt", "vodíková elektroda", "platina", "galvanické pokovování", "alkalické kovy", "Lithium", "Sodík", "Draslík", "Rubidium", "Cesium", "Francium", "halit", "sůl kamenná", "chlorid sodný", "sylvín", "chlorid draselný", "osmotické jevy", "neurony", "ionizační energie", "atomový poloměr", "hydroxidy", "petrolej", "hydroxid sodný", "hydroxid draselný", "mýdlo", "louh sodný", "louh draselný", "soda", "uhličitan sodný", "jedlá soda", "hydrogenuhličitan sodný", "kyselina chlorovodíková", "kovy alkalických zemin", "Beryllium", "Hořčík", "Vápník", "Stroncium", "Barium", "Radium", "elektronegativita", "vápenec", "uhličitan vápenatý", "sádrovec", "dihydrát síranu vápenatého", "magnezit", "uhličitan hořečnatý", "dolomit", "plamenová zkouška", "ohňostroje", "oxid hořečnatý", "hydroxid hořečnatý", "pálené vápno", "oxid vápenatý", "cement", "malta", "hydroxid vápenatý", "krasové jevy", "fosforečnan vápenatý", "superfosfát", "sádra", "polokovy", "polovodiče", "izolanty", "typ N", "donor", "typ P", "Bor", "akceptor", "Křemík", "zemská kůra", "tranzistory", "čipy", "ferosilicium", "silikony", "sklo", "keramika", "oxid křemičitý", "křemen", "růženín", "křišťál", "citrín", "záhněda", "amethyst", "silikáty", "křemičitany", "živec", "kaolinit", "azbest"]
   },
   {
     "title": "D-prvky: opakovací kvíz",
@@ -417,21 +417,21 @@
     "subject": "Chemie",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/1iVlS6dMz_609NpVqmAefjs1OsQBUd-YDMsCziRugJ0w/export?format=docx",
-    "keywords": ["chemie", "organické", "základy"]
+    "keywords": ["základy", "organická chemie", "uhlík", "vitalismus", "syntéza močoviny", "organická rozpouštědla", "kovalentní vazba", "vazba sigma", "vazba pí", "jednoduchá vazba", "dvojná vazba", "trojná vazba", "vaznost prvků", "čtyřvazný uhlík", "empirický vzorec", "sumární vzorec", "racionální vzorec", "funkční vzorec", "strukturní vzorec", "elektronový vzorec", "geometrický vzorec", "izomerie", "izomery", "konstituční izomerie", "řetězová izomerie", "polohová izomerie", "skupinová izomerie", "tautomerie", "prostorová izomerie", "konformační izomerie", "zákrytová konformace", "nezákrytová konformace", "židličková konformace", "vaničková konformace", "geometrická izomerie", "předpona cis", "předpona trans", "optická izomerie", "polarizované světlo", "enantiomery", "racemát", "racemická směs", "substituce", "adice", "eliminace", "přesmyk", "elektrofilní reakce", "elektrofil", "nukleofilní reakce", "nukleofil", "radikálová reakce", "radikál", "nespárovaný elektron", "heterolytické štěpení", "homolytické štěpení", "hydrogenace", "dehydrogenace", "hydratace", "dehydratace", "halogenace", "chlorace", "bromace", "nitrace", "kyselina dusičná", "sulfonace", "kyselina sírová", "oxidace", "redukce"]
   },
   {
     "title": "Alkany",
     "subject": "Chemie",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/11qRVr52kCePuCSVger_2IG6bagEJzIb9jJyKsRmN57g/export?format=docx",
-    "keywords": ["alkany"]
+    "keywords": ["acyklické uhlovodíky", "cyklické uhlovodíky", "nasycené uhlovodíky", "nenasycené uhlovodíky", "alifatické uhlovodíky", "aromatické uhlovodíky", "alkany", "methan", "ethan", "propan", "butan", "pentan", "hexan", "heptan", "oktan", "nonan", "dekan", "undekan", "dodekan", "hlavní řetězec", "lokanty", "substituent", "alkyl", "nepolární rozpouštědla", "radikálová substituce", "halogenace", "nitrace", "chlormethan", "nitromethan", "kyselina chlorovodíková", "iniciace", "ultrafialové záření", "propagace", "terminace", "spalování uhlovodíků", "oxid uhličitý", "skleníkové plyny", "zemní plyn", "tetraedr", "zákrytová konformace", "nezákrytová konformace", "propan-butan", "ropa", "parafín", "cykloalkany"]
   },
   {
     "title": "Alkeny a alkyny",
     "subject": "Chemie",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/1WPFg0oFQWzdXc9iN6nsQBDdLnw_6HwgfP2oqXjW5wTQ/export?format=docx",
-    "keywords": ["alkeny", "alkyny"]
+    "keywords": ["alkeny", "dvojná vazba", "alkenyly", "cykloalkeny", "alkadieny", "kumulovaná dvojná vazba", "konjugovaná dvojná vazba", "izolovaná dvojná vazba", "delokalizované elektrony", "geometrická izomerie", "adice", "margarín", "hydratace", "ethanol", "adice halogenovodíku", "Markovnikovovo pravidlo", "elektrofilní reakce", "polymerace", "polyethylen", "ethen", "ethylen", "acetaldehyd", "polyvinylchlorid", "fytohormon", "alkyny", "trojná vazba", "alkynyly", "cykloalkyny", "acetylidy", "dehydrogenace", "ethyn", "acetylen", "svařování kovů", "karbidový hořák"]
   },
   {
     "title": "Areny a přírodní zdroje",
