@@ -760,14 +760,14 @@
     "subject": "Fyzika",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1Y-Cp9sjPfLxtH6A9JfI-0VAzrBCY1gYVxnN0equjLhg/export?format=docx",
-    "keywords": ["těles", "pohyby", "gravitačním", "tíhovém", "poli"]
+    "keywords": ["gravitační pole", "gravitační síla", "gravitační interakce", "siločáry", "intenzita gravitačního pole", "potenciální energie", "Newtonův gravitační zákon", "gravitační konstanta", "gravitační zrychlení", "homogenní gravitační pole", "tíhové pole", "tíhová síla", "setrvačná odstředivá síla", "tíhové zrychlení", "tíha tělesa", "stav tíže", "stav beztíže", "kosmické rychlosti", "kritická rychlost", "kruhová rychlost", "1. kosmická rychlost", "perigeum", "apogeum", "úniková rychlost", "2. kosmická rychlost", "hyperbolická rychlost", "3. kosmická rychlost", "geostacionární družice", "geosynchronní družice", "astronomická jednotka", "světelný rok", "parsek", "geocentrické uspořádání", "heliocentrické uspořádání", "Mikuláš Koperník", "Tycho de Brahe", "Johannes Kepler", "Keplerovy zákony", "1. Keplerův zákon", "perihelium", "afélium", "hlavní poloosa", "2. Keplerův zákon", "průvodič planety", "3. Keplerův zákon", "oběžná doba"]
   },
   {
     "title": "Pohyby těles v homogenním tíhovém poli u povrchu Země",
     "subject": "Fyzika",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1K5U-zykwVVoM4_qdpcbw8Oo0Ypfz646lbdLo_IZJtxw/export?format=docx",
-    "keywords": ["těles", "pohyby", "tíhovém", "povrchu", "homogenním", "země", "poli"]
+    "keywords": ["těles", "pohyby", "povrchu", "země", "homogenní tíhové pole", "intenzita gravitačního pole", "tíhová síla", "tíhové zrychlení", "volný pád", "okamžitá rychlost", "celková doba volného pádu", "rychlost dopadu", "svislý vrh vzhůru", "doba výstupu", "výška vrhu", "vodorovný vrh", "doba pádu", "délka vrhu", "parabola", "šikmý vrh vzhůru", "balistická křivka", "elevační úhel"]
   },
   {
     "title": "Mechanika tuhého tělesa",
