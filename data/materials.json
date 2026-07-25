@@ -774,28 +774,28 @@
     "subject": "Fyzika",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1ziMt5h_vlNq_B1_4peNUZfW5HeQXv-87odbjFBzELp0/export?format=docx",
-    "keywords": ["tuhého", "tělesa", "mechanika"]
+    "keywords": ["mechanika", "tuhé těleso", "posuvný pohyb", "otáčivý pohyb", "složený pohyb", "moment síly", "rameno síly", "pravidlo pravé ruky", "princip páky", "momentová věta", "skládání různoběžných sil", "skládání rovnoběžných sil", "dvojice sil", "moment dvojice sil", "rozklad sil", "těžiště tělesa", "rovnovážná poloha", "stabilní rovnovážná poloha", "labilní rovnovážná poloha", "indiferentní rovnovážná poloha", "stabilita tělesa", "kinetická energie tuhého tělesa", "moment setrvačnosti", "gyroskop", "setrvačník"]
   },
   {
     "title": "Mechanika kapalin a plynů",
     "subject": "Fyzika",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/1bJQwBpj0050_8h_TUV48cioUiL7TJPQZD_qZryKA0ZQ/export?format=docx",
-    "keywords": ["kapalin", "plynů", "mechanika"]
+    "keywords": ["mechanika kapalin a plynů", "hydrostatický tlak", "Pascalův zákon", "spojené nádoby", "hydraulické zařízení", "hydraulický lis", "pneumatické zařízení", "atmosférický tlak", "Archimédův zákon", "vztlaková síla", "proudnice", "laminární proudění", "turbulentní proudění", "ustálené proudění", "objemový průtok", "rovnice kontinuity", "Bernoulliova rovnice", "dynamický tlak", "statický tlak", "výtoková rychlost", "Torricelliho vzorec"]
   },
   {
     "title": "Molekulová fyzika a termika",
     "subject": "Fyzika",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/1_UNgDYDAPOLzDzNUV6KwKJQAJoR1Tj5gCwClQ37PpHQ/export?format=docx",
-    "keywords": ["fyzika", "termika", "molekulová"]
+    "keywords": ["termika", "molekulová fyzika", "statistická fyzika", "termodynamika", "nauka o teplotě", "atom", "nukleony", "izotopy", "protonové číslo", "nukleonové číslo", "relativní atomová hmotnost", "atomová hmotnostní konstanta", "relativní molekulová hmotnost", "látkové množství", "mol", "Avogadrova konstanta", "molární hmotnost", "kinetická teorie látek", "diskrétní uspořádání", "tepelný pohyb", "vnitřní kinetická energie", "Brownův pohyb", "difúze", "osmóza", "tlak plynu", "fluktuace tlaku", "koheze", "adheze", "vnitřní potenciální energie", "vazebná energie", "termodynamická soustava", "stavové veličiny", "rovnovážný stav", "rovnovážný děj", "nerovnovážný děj", "izolovaná soustava", "adiabaticky izolovaná soustava", "teplota", "teplo", "termometrie", "Celsiova stupnice", "Fahrenheitova stupnice", "termodynamická teplotní stupnice", "Kelvin", "absolutní nula", "skupenství", "plazma"]
   },
   {
     "title": "Vnitřní energie, práce a teplo",
     "subject": "Fyzika",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/1mebVgYEvyTUKAn0EMiKgistk3kpuDpJIQ65DKNKHK00/export?format=docx",
-    "keywords": ["vnitřní", "energie", "teplo", "práce"]
+    "keywords": ["práce", "vnitřní energie", "tepelný pohyb", "přírůstek vnitřní energie", "úbytek vnitřní energie", "tepelná výměna", "zákon zachování energie", "teplo", "dějová veličina", "tepelná kapacita", "měrná tepelná kapacita", "kalorimetrická rovnice", "směšovací kalorimetr", "1. termodynamický zákon", "adiabatický děj", "tepelný stroj", "přenos vnitřní energie", "vedení tepla", "proudění tepla", "záření tepla", "anomálie vody"]
   },
   {
     "title": "Struktura a vlastnosti plynného skupenství látek",
