@@ -823,28 +823,28 @@
     "subject": "Fyzika",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1AYkfJQfdKFKAxcOo1boWT29r30dIm8mA8-u2BKCIgFE/export?format=docx",
-    "keywords": ["kmitání", "mechanické"]
+    "keywords": ["kmitání", "mechanické", "kmitavý pohyb", "mechanický oscilátor", "harmonické kmitání", "neharmonické kmitání", "tlumené kmitání", "rovnovážná poloha", "amplituda výchylky", "okamžitá výchylka", "perioda", "frekvence", "úhlová frekvence", "pohybová rovnice harmonického oscilátoru", "počáteční fáze", "amplituda rychlosti", "amplituda zrychlení", "fázový rozdíl", "složené kmitání", "princip superpozice", "izochronní kmitání", "rázy", "zázněje", "kyvadlo", "vlastní perioda", "vlastní frekvence", "Foucaultovo kyvadlo", "pružinový oscilátor", "tuhost pružiny", "síla pružnosti", "netlumené kmitání", "nucené kmitání", "rezonance"]
   },
   {
     "title": "Mechanické vlnění, zvuk",
     "subject": "Fyzika",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1iGwmXjVzox6xyZHMTEnVmEs0EgDdvQh_o-OmtKL0oXQ/export?format=docx",
-    "keywords": ["vlnění", "mechanické", "zvuk"]
+    "keywords": ["mechanické vlnění", "příčné vlnění", "podélné vlnění", "vlnová délka", "rovnice postupné vlny", "fáze vlnění", "interference vlnění", "fázový rozdíl", "dráhový rozdíl", "interferenční maximum", "interferenční minimum", "odraz vlnění", "pevnou konec", "volný konec", "stojaté vlnění", "fázová rychlost", "kmitna", "uzel", "chvění", "Huygensův princip", "vlnoplocha", "zakon odrazu", "lom vlnění", "zakon lomu", "ohyb vlnění", "paprsek", "zvuk", "akustika", "osciloskop", "tón", "hluk", "rychlost zvuku", "ozvěna", "dozvuk", "výška tónu", "barva tónu", "hlasitost zvuku", "absolutní výška", "relativní výška", "základní frekvence", "vyšší harmonické frekvence", "první harmonická", "druhá harmonická", "akustický výkon", "intenzita zvuku", "práh slyšení", "práh bolesti", "hladina akustického výkonu", "ultrazvuk", "sonografie", "sonar", "defektoskopie", "infrazvuk", "sonický třesk", "Dopplerův jev", "Dopplerův efekt", "červený posuv", "fialový posuv"]
   },
   {
     "title": "Elektrostatika",
     "subject": "Fyzika",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1yGohp-CIMxFdSMo7fLwDOXmJ4IjUcmLnstNMAuuQXGQ/export?format=docx",
-    "keywords": ["elektrostatika"]
+    "keywords": ["elektrostatika", "elektrický náboj", "elementární náboj", "Coulombův zákon", "permitivita", "intenzita elektrického pole", "elektrický potenciál", "elektrické napětí", "homogenní elektrické pole", "ekvipotenciální plocha", "polarizace dielektrika", "elektrický dipól", "elektrostatická indukce", "plošná hustota náboje", "Faradayova klec", "kondenzátor", "kapacita kondenzátoru", "sériové zapojení", "paralelní zapojení"]
   },
   {
     "title": "Elektrodynamika",
     "subject": "Fyzika",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1mBltz8gg22uNI_RlcPqLH3uNZ7kVerl0Si7Y22YQtyY/export?format=docx",
-    "keywords": ["elektrodynamika"]
+    "keywords": ["elektrodynamika", "elektronový plyn", "tepelný pohyb", "unášivá rychlost", "elektrický proud", "ampér", "ampérsekunda", "zdroj elektrického napětí", "elektromotorické napětí", "napětí nezatíženého zdroje", "svorkové napětí", "ampérmetr", "voltmetr", "galvanický článek", "fotočlánek", "termočlánek", "dynamo", "alternátor", "elektrická vodivost", "elektrický odpor", "Ohmův zákon", "rezistivita", "voltampérová charakteristika", "teplotní součinitel elektrického odporu", "rezistor", "sériové zapojení", "paralelní zapojení", "vnitřní odpor zdroje", "měkký zdroj", "tvrdý zdroj", "reostat", "potenciometr", "potenciometrické zapojení", "supravodivost", "spojení nakrátko", "zkratový proud", "pojistka", "jistič", "elektrická práce", "výkon elektrického prout", "příkon", "účinnost", "wattsekunda", "kilowatthodina", "elektroměr", "odporový drát", "Jouleovo teplo", "Jouleův zákon", "Kirchhoffovy zákony"]
   },
   {
     "title": "Polovodiče (stručné)",
