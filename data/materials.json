@@ -851,20 +851,21 @@
     "subject": "Fyzika",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1ER382dcwx5oAAXYQggvaNFVVwXATHYUBrsVm-vWXpcs/export?format=docx",
-    "keywords": ["polovodiče", "stručné"]
+    "keywords": ["polovodiče", "termistor", "fotorezistor", "generace páru elektron a díra", "rekombinace", "vlastní polovodič", "příměsový polovodič", "polovodič typu N", "polovodič typu P", "donor", "akceptor", "majoritní nosiče náboje", "minoritní nosiče náboje", "polovodičová dioda", "PN přechod", "hradlová vrstva", "propustný směr", "závěrný směr"]
   },
   {
     "title": "Elektrický proud v kapalinách a plynech",
     "subject": "Fyzika",
     "grade": "3. ročník",
     "url": "https://docs.google.com/document/d/1yefNuDqKd_Qp7mDsMuut1UXvPnt-OwOoqW-6HolJK4A/export?format=docx",
-    "keywords": ["kapalinách", "proud", "elektrický", "plynech"]
+    "keywords": ["kapalinách", "proud", "elektrický", "plynech", "iontová vodivost", "elektrolyt", "elektrolytická disociace", "elektrolýza", "anoda", "katoda", "aniont", "kationt", "deionizovaná voda", "elektrolytická výroba kovů", "elektrolytické čištění kovů", "galvanické pokovování", "elektrochemické leptání", "elektrochemický ekvivalent", "I. Faradayův zákon", "II. Faradayův zákon", "Faradayova konstanta", "galvanický článek", "primární článek", "suchý článek", "alkalický článek", "sekundární článek", "akumulátor", "výboj v plynu", "samostatný výboj", "nesamostatný výboj", "ionizace plynu", "ionizační energie", "rekombinace", "plazma", "jiskrový výboj", "obloukový výboj", "koróna", "doutnavý výboj", "doutnavka", "neonové osvětlení", "zářivka", "luminiscence", "luminofory", "kanálové záření", "katodové záření"]
   },
   {
     "title": "Magnetické pole (stručné)",
     "subject": "Fyzika",
     "grade": "3. ročník",
-    "url": "https://docs.google.com/document/d/1L6PNxCmnSFlmmJXBcv4rBg2Xx9sOWZpetcg5CJyW2Zk/export"
+    "url": "https://docs.google.com/document/d/1L6PNxCmnSFlmmJXBcv4rBg2Xx9sOWZpetcg5CJyW2Zk/export",
+    "keywords": ["magnetické pole", "permanentní magnet", "magnetit", "magnetické indukční čáry", "vírové pole", "stacionární pole", "nestacionární pole", "feromagnetické látky", "ferimagnetické látky", "magnetická indukce", "tesla", "Ampérovo pravidlo pravé ruky", "vektorový součin", "Lorentzova síla", "Flemingovo pravidlo levé ruky", "elektromagnetická indukce", "permeabilita", "diamagnetické látky", "paramagnetické látky", "magnetizace", "feritové magnety", "Curieova teplota", "elektromagnet", "nasycení jádra"]
   },
   {
     "title": "Místopis světa - seznam her na procvičení",
