@@ -551,9 +551,18 @@ input.addEventListener("input", function(){
 
         div.className="result";
 
+        let ending = "";
+
+        if (item.interactiveTest) {
+          ending = " • Interaktivní test";
+        }
+        else if (item.review) {
+          ending = " • Opakování";
+        }
+
         div.innerHTML=`
-            <strong>${item.title}</strong>
-            <small>${item.subject} • ${item.grade}</small>
+          <strong>${item.title}</strong>
+          <small>${item.subject} • ${item.grade}${ending}</small>
         `;
 
         div.onclick=function(){
