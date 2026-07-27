@@ -854,6 +854,20 @@
     "keywords": ["ideálním", "plynem", "hmotnosti", "stálé", "děje", "izotermický děj", "Boyleův–Mariottův zákon", "izoterma", "izochorický děj", "Charlesův zákon", "izochora", "izobarický děj", "Gay–Lussacův zákon", "izobara", "adiabatický děj", "Poissonův zákon", "Poissonova konstanta", "adiabata", "izobarická expanze", "kruhový děj", "ohřívač", "chladič", "účinnost", "2. termodynamický zákon", "Carnotův cyklus", "chladicí stroj", "tepelné čerpadlo", "perpetuum mobile 1. druhu", "perpetuum mobile 2. druhu", "tepelný motor"]
   },
   {
+    "title": "Pevné látky (stručné)",
+    "subject": "Fyzika",
+    "grade": "2. ročník",
+    "url": "https://docs.google.com/document/d/1Zc-RTwD4Om0CTlAtAHMQa5VTlyExk4Q4SOiX1R_RTBY/export?format=docx",
+    "keywords": ["krystalické látky", "polykrystaly", "monokrystaly", "izotropie", "anizotropie", "amorfní látky", "dalekodosahové uspořádání", "krátkodosahové uspořádání", "polymery", "deformace", "pružná deformace", "tvárná deformace", "deformace tahem", "deformace tlakem", "deformace ohybem", "deformace smykem", "deformace kroucením", "normálové napětí", "relativní prodloužení", "relativní zkrácení", "mez pružnosti", "mez pevnosti", "dovolené napětí", "součinitel bezpečnosti", "Hookův zákon", "modul pružnosti"]
+  },
+  {
+    "title": "Kapaliny (stručné)",
+    "subject": "Fyzika",
+    "grade": "2. ročník",
+    "url": "",
+    "keywords": []
+  },
+  {
     "title": "Mechanické kmitání",
     "subject": "Fyzika",
     "grade": "3. ročník",
