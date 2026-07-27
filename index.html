@@ -483,10 +483,39 @@ animation-play-state:paused;
 </div>
 
 <script>
+
 let materials = [];
 
 const input = document.getElementById("searchInput");
 const results = document.getElementById("searchResults");
+
+
+// odstranění diakritiky + malá písmena
+function normalize(text){
+
+    return text
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+}
+
+
+// zvýraznění hledaného textu
+function highlight(text, search){
+
+    if(!text) return "";
+
+    const regex = new RegExp(
+        `(${search})`,
+        "gi"
+    );
+
+    return text.replace(regex, "<mark>$1</mark>");
+
+}
+
+
 
 fetch("data/materials.json")
 .then(response => response.json())
@@ -501,35 +530,148 @@ fetch("data/materials.json")
 
 });
 
+
+
 input.addEventListener("input", function(){
 
-    const search = this.value
-        .toLowerCase()
-        .trim();
+
+    const search = normalize(this.value.trim());
+
 
     results.innerHTML = "";
 
-    if(search===""){
+
+    if(search === ""){
 
         results.style.display="none";
         return;
 
     }
 
-    const found = materials.filter(item=>{
 
-        const title = (item.title || "").toLowerCase();
-        const subject = (item.subject || "").toLowerCase();
-        const grade = (item.grade || "").toLowerCase();
-        const keywords = (item.keywords || []).join(" ").toLowerCase();
+    // příliš krátké hledání
+    if(search.length < 2){
 
-        return title.includes(search)
+        results.innerHTML=`
+        <div class="result">
+            Napiš alespoň 2 znaky.
+        </div>
+        `;
 
-            || subject.includes(search)
-            || grade.includes(search)
-            || keywords.includes(search);
+        results.style.display="block";
+        return;
 
-    });
+    }
+
+
+
+    const found = materials.map(item=>{
+
+
+        let score = 0;
+
+
+        const title = normalize(item.title || "");
+        const subject = normalize(item.subject || "");
+        const grade = normalize(item.grade || "");
+        const keywords = normalize(
+            (item.keywords || []).join(" ")
+        );
+
+
+
+        // Název
+        if(title === search){
+
+            score += 100;
+
+        }
+        else if(title.startsWith(search)){
+
+            score += 70;
+
+        }
+        else if(title.includes(search)){
+
+            score += 50;
+
+        }
+
+
+
+       // Klíčová slova
+
+const keywordList = (item.keywords || [])
+    .map(word => normalize(word));
+
+
+// přesné klíčové slovo
+if(keywordList.includes(search)){
+
+    score += 50;
+
+}
+
+
+// klíčové slovo začíná hledáním
+else if(keywordList.some(word => word.startsWith(search))){
+
+    score += 35;
+
+}
+
+
+// hledání uvnitř slova
+else if(keywordList.some(word => word.includes(search))){
+
+    score += 20;
+
+}
+
+
+
+        // Předmět
+        if(subject.includes(search)){
+
+            score += 15;
+
+        }
+
+
+
+        // Ročník
+        if(grade.includes(search)){
+
+            score += 10;
+
+        }
+
+
+
+        return {
+
+            ...item,
+            score
+
+        };
+
+
+    })
+
+
+    // odstranění výsledků bez shody
+    .filter(item => item.score > 0)
+
+
+    // nejlepší výsledky nahoru
+    .sort((a,b)=> b.score - a.score)
+
+
+    // maximálně 8 výsledků
+    .slice(0,8);
+
+
+
 
     if(found.length===0){
 
@@ -545,25 +687,46 @@ input.addEventListener("input", function(){
 
     }
 
+
+
+
     found.forEach(item=>{
+
 
         const div=document.createElement("div");
 
         div.className="result";
 
+
         let ending = "";
 
         if (item.interactiveTest) {
-          ending = " • Interaktivní test";
-        }
-        else if (item.review) {
-          ending = " • Opakování";
+
+            ending = " • Interaktivní test";
+
         }
 
+        else if (item.review) {
+
+            ending = " • Opakování";
+
+        }
+
+
+
         div.innerHTML=`
-          <strong>${item.title}</strong>
-          <small>${item.subject} • ${item.grade}${ending}</small>
+
+            <strong>
+                ${highlight(item.title, search)}
+            </strong>
+
+            <small>
+                ${item.subject} • ${item.grade}${ending}
+            </small>
+
         `;
+
+
 
         div.onclick=function(){
 
@@ -571,15 +734,25 @@ input.addEventListener("input", function(){
 
         };
 
+
         results.appendChild(div);
+
+
 
     });
 
+
+
     results.style.display="block";
+
+
 
 });
 
+
+
 document.addEventListener("click",function(e){
+
 
     if(!e.target.closest(".search-container")){
 
@@ -587,7 +760,9 @@ document.addEventListener("click",function(e){
 
     }
 
+
 });
+
 
 </script>
 
