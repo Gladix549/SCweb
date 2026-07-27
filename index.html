@@ -500,6 +500,40 @@ function normalize(text){
 
 }
 
+// odstranění diakritiky + malá písmena
+function normalize(text){
+
+    return text
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+}
+
+
+// kontrola přesné shody celého slova
+function containsWord(text, search){
+
+    return text
+        .split(/\s+/)
+        .some(word => word === search);
+
+}
+
+
+// zvýraznění hledaného textu
+function highlight(text, search){
+
+    if(!text) return "";
+
+    const regex = new RegExp(
+        `(${search})`,
+        "gi"
+    );
+
+    return text.replace(regex, "<mark>$1</mark>");
+
+}
 
 // zvýraznění hledaného textu
 function highlight(text, search){
@@ -579,26 +613,31 @@ input.addEventListener("input", function(){
         );
 
 
+// Název
 
-        // Název
-        if(title === search){
+if(title === search){
 
-            score += 100;
+    score += 120;
 
-        }
-        else if(title.startsWith(search)){
+}
 
-            score += 70;
+else if(containsWord(title, search)){
 
-        }
-        else if(title.includes(search)){
+    score += 100;
 
-            score += 50;
+}
 
-        }
+else if(title.startsWith(search)){
 
+    score += 70;
 
+}
 
+else if(title.includes(search)){
+
+    score += 20;
+
+}
        // Klíčová slova
 
 const keywordList = (item.keywords || [])
@@ -608,7 +647,7 @@ const keywordList = (item.keywords || [])
 // přesné klíčové slovo
 if(keywordList.includes(search)){
 
-    score += 50;
+    score += 80;
 
 }
 
@@ -616,7 +655,7 @@ if(keywordList.includes(search)){
 // klíčové slovo začíná hledáním
 else if(keywordList.some(word => word.startsWith(search))){
 
-    score += 35;
+    score += 40;
 
 }
 
@@ -624,7 +663,7 @@ else if(keywordList.some(word => word.startsWith(search))){
 // hledání uvnitř slova
 else if(keywordList.some(word => word.includes(search))){
 
-    score += 20;
+    score += 10;
 
 }
 
