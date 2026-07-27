@@ -858,14 +858,14 @@
     "subject": "Fyzika",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/1Zc-RTwD4Om0CTlAtAHMQa5VTlyExk4Q4SOiX1R_RTBY/export?format=docx",
-    "keywords": ["krystalické látky", "polykrystaly", "monokrystaly", "izotropie", "anizotropie", "amorfní látky", "dalekodosahové uspořádání", "krátkodosahové uspořádání", "polymery", "deformace", "pružná deformace", "tvárná deformace", "deformace tahem", "deformace tlakem", "deformace ohybem", "deformace smykem", "deformace kroucením", "normálové napětí", "relativní prodloužení", "relativní zkrácení", "mez pružnosti", "mez pevnosti", "dovolené napětí", "součinitel bezpečnosti", "Hookův zákon", "modul pružnosti"]
+    "keywords": ["krystalické látky", "polykrystaly", "monokrystaly", "izotropie", "anizotropie", "amorfní látky", "dalekodosahové uspořádání", "krátkodosahové uspořádání", "polymery", "deformace", "pružná deformace", "tvárná deformace", "deformace tahem", "deformace tlakem", "deformace ohybem", "deformace smykem", "deformace kroucením", "normálové napětí", "relativní prodloužení", "relativní zkrácení", "mez pružnosti", "mez pevnosti", "dovolené napětí", "součinitel bezpečnosti", "Hookův zákon", "modul pružnosti", "pevné látky"]
   },
   {
     "title": "Kapaliny (stručné)",
     "subject": "Fyzika",
     "grade": "2. ročník",
-    "url": "",
-    "keywords": []
+    "url": "https://docs.google.com/document/d/1FFJY-iD86MhhZ0u1ZUeRZIoRwo6uSF5gehzs4Io5Jvo/export?format=docx",
+    "keywords": ["hladina", "povrchová vrstva", "sféra molekulového působení", "kohezní tlak", "povrchová energie", "smáčivost", "nesmáčivost", "kapilární elevace", "kapilární deprese", "stykový úhel", "kapilára", "vzlínavost", "kapilarita", "kapilární tlak", "povrchové napětí", "povrchová síla", "kapaliny"]
   },
   {
     "title": "Mechanické kmitání",
