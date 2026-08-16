@@ -229,9 +229,16 @@
   {
     "title": "Zaznamenání maturitní četby",
     "subject": "Český Jazyk",
-    "grade": "1. ročník",
+    "grade": "4. ročník",
     "url": "https://docs.google.com/spreadsheets/d/1pxboZD3sN_z7BV9rJ9RTnuTLSHkfoQnp/export?format=xlsx",
     "keywords": ["zaznamenání", "četby", "maturitní"]
+  },
+{
+    "title": "Přehled literárních pojmů",
+    "subject": "Český Jazyk",
+    "grade": "4. ročník",
+    "url": "https://docs.google.com/document/d/1MQ0Y7bsv4970GNKzXNr0gHbCpPvvSoXvIkgUBlgT2w4/export?format=docx",
+    "keywords": ["přehled", "literatura", "pojmy", "žánry", "styly", "druhy", "tropy", "figury", "prostředky", "fonetické", "lingvistické", "grafické"]
   },
   {
     "title": "Základy jazyka",
