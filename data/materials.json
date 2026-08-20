@@ -542,91 +542,97 @@
     "subject": "Dějepis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1FrvAq7J_a22hlAx-2wYVsRpJa_5mEkJWgNWBVw26GfI/export?format=docx",
-    "keywords": ["dějepisu", "úvod"]
+    "keywords": ["úvod", "historie", "dějepis", "historiografie", "dějepisectví", "historické metody", "heuristika", "kritika pramenů", "interpretace", "syntéza", "monografie", "regionální literatura", "historické prameny", "hmotné prameny", "písemné prameny", "obrazové prameny", "audiovizuální prameny", "orální historie", "artefakty", "archiválie", "pomocné vědy historické", "etnologie", "paleografie", "chronologie", "heraldika", "numismatika", "genealogie", "srovnávací jazykověda", "vexilologie", "periodizace dějin", "pravěk", "starověk", "pád Západořímské říše", "středověk", "objevení Ameriky", "novověk", "první světová válka", "moderní dějiny"]
   },
   {
     "title": "Pravěk",
     "subject": "Dějepis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1ZsVqIZQUHDxxzmts9KZDxrJVpVK9lCYfJT0ZFdtZmq0/export?format=docx",
-    "keywords": ["pravěk"]
+    "keywords": ["pravěk", "prehistorie", "periodizace pravěku", "doba kamenná", "paleolit", "mezolit", "neolit", "eneolit", "chalkolit", "doba bronzová", "doba železná", "doba římská", "glaciál", "interglaciál", "pleistocén", "holocén", "antropogeneze", "hominizace", "sapientace", "antropologie", "archeologie", "Australopithecus", "Homo habilis", "Homo erectus", "Neandrtálec", "Homo sapiens sapiens", "pěstní klín", "pazourek", "paleolitické umění", "jeskynní malby", "Altamira", "Lascaux", "Věstonická Venuše", "matriarchát", "tlupa", "přisvojovací hospodářství", "neolitická revoluce", "výrobní hospodářství", "úrodný půlměsíce", "domestikace", "žďáření", "sekeromlat", "předení a tkaní", "kultura s lineární keramikou", "kultura s vypíchanou keramikou", "metalurgie", "orba", "rada a vůz", "megality", "menhiry", "dolmeny", "Stonehenge", "patriarchát", "sociální diferenciace", "bronz", "depot", "kultura únětická", "kultura mohylová", "kultura popelnicových polí", "doba halštatská", "doba laténská", "Hallstatt", "Býčí skála", "La Tène", "Keltové", "Bójové", "Boiohaemum", "hrnčířský kruh", "duhovky", "statéry", "oppidum", "druidové", "Germáni", "Markomani", "Kvádové", "limes romanus", "Marobud", "markomanské války", "Mušov", "stěhování národů", "runové písmo", "germánská mytologie"]
   },
   {
-    "title": "Starověk, Mezopotámie",
+    "title": "Úvod do starověku, Mezopotámie",
     "subject": "Dějepis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/17tC3akW18ZuLuc9TOTY22nqjAnwcsYXByUfHucTzqe0/export?format=docx",
-    "keywords": ["mezopotámie", "starověk"]
+    "keywords": ["starověk", "úrodný půlměsíce", "starorientální státy", "klasické otrokářské státy", "vyspělé zemědělství", "zavlažovací zařízení", "teokracie", "despocie", "vesnické občiny", "městské státy", "Mezopotámie", "Eufrat", "Tigris", "Sumer", "Ur", "Uruk", "Nippur", "Kiš", "Akkadská říše", "Sargon", "Staroasyrská říše", "Aššur", "Starobabylonská říše", "Babylon", "Chammurapi", "Chammurapiho zákoník", "Novoasyrská říše", "Aššurbanipal", "Ninive", "Aššurbanipalova knihovna", "Novobabylonská říše", "Nabukadnezar II.", "babylonské zajetí", "piktografické písmo", "klínové písmo", "hliněné tabulky", "polyteismus", "Ištar", "Marduk", "zikkurat", "Babylonská věž", "Ištařina brána", "Epos o Gilgamešovi", "šedesátková soustava"]
   },
   {
     "title": "Starověký Egypt, Féničané, Chetité a Persie",
     "subject": "Dějepis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1KmP9pza7u5mCdvxE15pAHOyhi1dGQfe6IrKNlVWFYV4/export?format=docx",
-    "keywords": ["egypt", "féničané", "persie", "starověký", "chetité"]
+    "keywords": ["starověký Egypt", "dar Nilu", "delta Nilu", "zavlažování", "Předdynastické období", "Horní Egypt", "Dolní Egypt", "Dynastické období", "Meni", "Memfis", "Mennofer", "Stará říše", "Džoser", "Džoserova pyramida", "Sakkára", "Cheops", "Cheopsova pyramida", "Gíza", "sfinga", "Střední říše", "Veset", "Théby", "Hyksósové", "Nová říše", "Luxor", "Karnak", "Amon", "obelisk", "kolos", "Amenhotep IV.", "Achnaton", "monoteismus", "Atón", "Tutanchamon", "Nefertiti", "Ramesse II.", "bitva u Kadeše", "první mírová smlouva", "chrám královny Hatšepsut", "Ptolemaiovci", "společenská pyramida", "faraon", "faraonské insignie", "polyteismus", "antropomorfní bohové", "Re", "Hathor", "Thovt", "Sobek", "Anubis", "Sachmet", "Sirius", "posmrtný soud", "mumifikace", "balzamování", "kanopy", "sarkofág", "Údolí králů", "Údolí královen", "hieroglyfy", "papyrus", "François Champollion", "Rosettská deska", "hieratické písmo", "démotické písmo", "desítková soustava", "Fénicie", "Byblos", "Sidón", "Týros", "purpur", "Kartágo", "hláskové písmo", "abeceda", "Chetité", "Malá Asie", "Chattušaš", "Bedřich Hrozný", "Perská říše", "Persie", "Kýros II.", "Avesta"]
   },
   {
     "title": "Starověká Indie",
     "subject": "Dějepis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1G1UzLQmTCAV_vfwsk4S1tUMLZTe4E2xooR8xH4L0bb4/export?format=docx",
-    "keywords": ["indie", "starověká"]
+    "keywords": ["indie", "starověká", "starověká Indie", "kolébka civilizace", "povodí Indu", "povodí Gangy", "Harappská kultura", "Harappa", "Mohendžodaro", "citadela", "Árjové", "Indoevropané", "kmenová království", "rádža", "varna", "kasty", "Brahmani", "Kšatrijové", "Vaišjové", "Šúdrové", "nedotknutelní", "Dómové", "Romové", "Maurijská říše", "Ašóka", "Ašókovy sloupy", "hinduismus", "sanskrt", "reinkarnace", "karma", "védy", "mantra", "polyteismus", "Brahma", "Višnu", "Šiva", "jóga", "meditace", "mandala", "posvátnost krav", "guru", "asketismus", "Hólí"]
   },
   {
     "title": "Izrael a Palestina",
     "subject": "Dějepis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1N_f6oZKMNHk4JQ0KkfVGSyjjsLKRYHHgQSDLh7O-TgY/export?format=docx",
-    "keywords": ["palestina", "izrael"]
+    "keywords": ["Starověký Izrael", "Palestina", "Kanaán", "Pelištejci", "Mojžíš", "Desatero", "král David", "král Šalamoun", "Judea", "Jeruzalém", "judaismus", "diaspora", "antisemitismus", "ghetto", "pogrom", "osvícenství", "asimilace", "sionismus", "kibuc", "britský mandát", "holocaust", "Šoa", "OSN", "stát Izrael", "6-ti denní válka", "Jomkipurská válka", "Camp David", "OOP", "Jásir Arafat", "intifáda", "dohody z Osla", "Fatah", "Hamás", "Hizballáh", "Zeď nářků", "Chrámová hora", "Skalní dóm"]
   },
   {
     "title": "Antické Řecko do archaického období",
     "subject": "Dějepis",
     "grade": "1. ročník",
+    "review":true,
     "url": "https://docs.google.com/document/d/1UnhwkfuazeJ3jwT3dfhepIuoCRZ68Eb1QwcgXTkSv58/export?format=docx",
-    "keywords": ["řecko", "období", "antické", "archaického"]
+    "keywords": ["antické Řecko", "Peloponés", "přírodní podmínky Řecka", "středomořské klima", "Mínojská civilizace", "Kréta", "Mínos", "Minotaurus", "Theseus", "Ariadnina nit", "lineární písmo A", "Knóssos", "palácové hospodářství", "labrys", "výbuch na Théře", "Mykénská civilizace", "Mykény", "Achájové", "lineární písmo B", "kyklopské hradby", "Lví brána", "Agamemnonova maska", "Temné období", "doba homérská", "Homér", "Ilias a Odyssea", "Heinrich Schliemann", "Trojská válka", "Trojský kůň", "první řecká kolonizace", "Archaické období", "polis", "Velká řecká kolonizace", "metropolis", "Massalia", "Syrakusy", "Neapolis", "Byzantion", "hoplité", "tyranida", "oligarchie", "demokracie", "Sparta", "Lakónie", "Dórové", "perioikové", "heilóti", "sparťanská výchova", "efoři", "gerúsiá", "Peloponéský spolek", "lakonická odpověď", "Athény", "Attika", "areopag", "Drakón", "drakonický trest", "Solón", "zrušení otroctví pro dluhy", "Peisistratos", "Kleisthenés", "fýly", "rada pět set", "ostrakismos", "střepinový soud", "plnoprávní občané"]
   },
   {
     "title": "Klasické, helénistické Řecko, řecká kultura a divy světa",
     "subject": "Dějepis",
     "grade": "1. ročník",
+    "review":true,
     "url": "https://docs.google.com/document/d/1oCGqnxvFAW9v-wo8do1OTjvevH9shmv-pTHDsneba6E/export?format=docx",
-    "keywords": ["řecko", "kultura", "světa", "klasické", "řecká", "helénistické", "divy"]
+    "keywords": ["klasické Řecko", "Řecko-perské války", "povstání v Milétu", "Dareios I.", "bitva u Marathonu", "Miltiadés", "maratónský běh", "Xerxés I.", "Hellespont", "bitva u Thermopyl", "Leonidas", "300 Sparťanů", "námořní bitva u Salamíny", "triéra", "pozemní bitva u Platají", "Athénský námořní spolek", "Perikles", "akropole", "Parthenon", "Pallas Athéna", "Pireus", "Peloponéská válka", "Peloponéský spolek", "vláda 30 tyranów", "Helénistické Řecko", "Makedonie", "Filip II. Makedonský", "Démosthenés", "filipika", "bitva u Chaironeie", "Alexandr Veliký", "Théby", "Gordion", "gordický uzel", "Alexandrie", "bitva u Gaugamél", "diadochové", "Ptolemaiovci", "Seleukovci", "Antigonovci", "helénistická kultura", "pantheon", "Olymp", "Delfy", "pýthie", "pythický výrok", "olympští bohové", "Zeus", "Poseidon", "Hádes", "Styx", "Cháron", "Kerberos", "Afrodita", "Apollón", "Dionýsos", "Asklepion", "amfora", "dórský sloh", "iónský sloh", "korintský sloh", "karyatidy", "amfiteátr", "filozofie", "Thalés z Milétu", "Sokrates", "Platon", "Aristoteles", "kalokagathia", "rétorika", "Herodotos", "Thúkýdidés", "Pythagoras", "Archimédes", "Hippokratés", "Hippokratova přísaha", "kúros", "kóre", "Feidias", "Laokoon", "Diskobolos", "Myrón", "Sedm divů světa", "Filón Byzantský", "Cheopsova pyramida", "Visuté zahrady Semiramidiny", "Diova socha v Olympii", "Artemidin chrám v Efesu", "Maják na ostrově Faros", "Mauzoleum v Halikarnassu", "Rhodský kolos"]
   },
   {
     "title": "Antický Řím do republiky",
     "subject": "Dějepis",
     "grade": "1. ročník",
+    "review":true,
     "url": "https://docs.google.com/document/d/18yTkEWC7c-OONaA3LTKYdukWpZh0RDvFO8hOU_auwLo/export?format=docx",
-    "keywords": ["republiky", "antický"]
+    "keywords": ["antický Řím", "starověká Itálie", "Apeninský poloostrov", "Pádská nížina", "Venetové", "Keltové", "Galové", "Latinové", "Sabinové", "Etruskové", "terasovité zemědělství", "nekropole", "Etrurie", "Aeneas", "Romulus a Remus", "kapitolská vlčice", "založení Říma", "Kapitol", "doba královská", "Tarquiniovci", "Tarquinius Superbus", "patriciové", "plebejové", "proletáři", "patron a klient", "Únos Sabinek", "Římská republika", "konzulové", "Senát", "cenzoři", "římský diktátor", "secese plebejů", "tribun lidu", "právo veta", "Zákony dvanácti desek", "Forum Romanum", "fasces", "SPQR", "kapitolské husy", "Pyrrhovo vítězství", "sjednocení Itálie", "via"]
   },
   {
-    "title": "Římská říše od punských válek do jejího zániku",
+    "title": "Antický Řím od punských válek do jeho zániku",
     "subject": "Dějepis",
     "grade": "1. ročník",
+    "review":true,
     "url": "https://docs.google.com/document/d/1uU2UmvpdHv1kal4f08DnX9HAPUvfpdfaiiILtZX3a5w/export?format=docx",
-    "keywords": ["říše", "válek", "zániku", "římská", "punských"]
+    "keywords": ["Punské války", "Kartágo", "Punové", "havraní můstky", "Hannibal", "Nové Kartágo", "bitva u Trasimenského jezera", "bitva u Kann", "Hannibal ante portas", "Cato", "zničení Kartága", "ilyrské války", "hegemon Středomoří", "latifundie", "bezzemci", "krize římské republiky", "bratři Gracchové", "pozemkové maximum", "Gaius Marius", "profesionální armáda", "optimáti", "populárové", "občanská válka v Římě", "Sulla", "proskripce", "Spartakovo povstání", "gladiátoři", "Vesuv", "Capua", "Via Appia", "První triumvirát", "Crassus", "Pompeius", "Gaius Julius Caesar", "Galie", "Rubicon", "Alea iacta est", "Veni vidi vici", "Kleopatra", "Caesarova diktatura", "juliánský kalendář", "zavraždění Caesara", "Brutus", "Druhý triumvirát", "Marcus Antonius", "Octavianus", "bitva u mysu Actium", "principát", "Octavianus Augustus", "princeps inter pares", "pretoriánská garda", "císařské a senátní provincie", "bitva u Teutoburského lesa", "limes romanus", "castrum", "Caligula", "Nero", "požár Říma", "Flaviovci", "Vespasianus", "Koloseum", "případ Pompejí", "adoptivní císaři", "Traianus", "Hadrianus", "Hadriánův val", "pax romana", "diaspora židů", "Marcus Aurelius", "Markomanské války", "Caracalla", "kolonát", "dominát", "Dioklecián", "dominus et deus", "tetrarchie", "pronásledování křesťanů", "Konstantin Veliký", "edikt milánský", "koncil v Nikaji", "Konstantinopol", "rozpad Římské říše", "Vizigóti", "Vandali", "Romulus Augustulus", "Odoaker", "pád Západořímské říše"]
   },
   {
     "title": "Římská kultura a vzdělanost",
     "subject": "Dějepis",
     "grade": "1. ročník",
+    "review": true,
     "url": "https://docs.google.com/document/d/1fNfBwl2ODDcbi7b4W9wvoIYemjqchNQ0TJsAUiem1cs/export?format=docx",
-    "keywords": ["kultura", "vzdělanost", "římská"]
+    "keywords": ["římská kultura", "římská vzdělanost", "latina", "latinka", "trivium", "římské číslice", "Cicero", "rétorika", "římské právo", "Titus Livius", "Tacitus", "Zápisky o válce galské", "Vergilius", "Aeneida", "Ovidius", "mecenáš", "Maecenas", "akvadukt", "Pont du Gard", "bazilika", "thermy", "vítězný oblouk", "Forum Romanum", "Koloseum", "římský Pantheon", "Hadriánovo mauzoleum", "Andělský hrad", "amfiteátr", "portrétní umění", "Jupiter", "Juno", "Venuše", "Mars", "Merkur", "Ceres", "Ježíš Kristus", "Betlém", "Nazaret", "Jan Křtitel", "apoštolové", "Svatý Petr", "Máří Magdaléna", "Jidáš", "Pilát Pontský", "Golgota", "křesťanství", "INRI", "mesiáš", "Svatá Trojice", "dědičný hřích", "Desatero", "Starý zákon", "křest", "biřmování", "svátost manželství", "přijímání pod obojí", "poslední soud", "Svatý Pavel", "katakomby"]
   },
   {
     "title": "Středověká kultura, církev, Byzantská a Franská říše",
     "subject": "Dějepis",
     "grade": "2. ročník",
+    "review": true,
     "url": "https://docs.google.com/document/d/1qasZ0p9809FgvwjGMGcBoxNjAnbJEOBi07WryYh6RDA/export?format=docx",
-    "keywords": ["říše", "kultura", "církev", "středověká", "byzantská", "franská"]
+    "keywords": ["středověk", "medievistika", "temný středověk", "křesťansko-židovská civilizace", "antické dědictví", "barbarské kmeny", "feudalismus", "christianizace", "stěhování národů", "Hunové", "Attila", "bitva na Katalaunských polích", "Gótové", "Vizigóti", "Ostrogóti", "Vandalové", "Anglové a Sasové", "Frankové", "barbarská království", "asimilace Germánů", "raně středověká společnost", "polozemnice", "dvojpolní systém", "léno", "feudál", "šlechta", "dominikál", "rustikál", "poddaní", "edikt milánský", "Theodosius", "trojí lid", "duchovenstvo", "papež", "pontifikát", "konkláve", "Vatikán", "hierarchie církve", "řády", "benediktini", "Svatý Benedikt z Nursie", "ora et labora", "skriptorium", "Břevnovský klášter", "rajský dvůr", "Franská říše", "Chlodvík", "Merovejci", "Sámo", "majordomus", "Karel Martel", "bitva u Poitiers", "Karlovci", "Pipin III. Krátký", "Karel Veliký", "renovatio imperii", "karolínská renesance", "karolínská minuskula", "Cáchy", "Verdunská smlouva", "Byzantská říše", "Konstantinopol", "Cařihrad", "Justinián I.", "caesaropapismus", "Justiniánův zákoník", "povstání Niká", "obrazoborectví", "ikonoklasmus", "Seldžukové", "4. křížová výprava", "Osmanští Turci", "dobytí Konstantinopole 1453", "Hagia Sofia", "ikony", "Cyril a Metoděj"]
   },
   {
-    "title": "Středověké státy",
+    "title": "Středověké státy, vikingové, SŘŘ",
     "subject": "Dějepis",
     "grade": "2. ročník",
     "url": "https://docs.google.com/document/d/19z5qV5vPciFt6678iVzR8otrd5bAyhJIxX_rvXGSAZg/export?format=docx",
-    "keywords": ["státy", "středověké"]
+    "keywords": ["středověká Francie", "Západofranská říše", "Karel Holý", "Normandie", "Hugo Kapet", "Kapetovci", "Île-de-France", "středověká Itálie", "Lombardie", "Papežský stát", "Benátsko", "dóže", "Republika svatého Marka", "Marco Polo", "Janov", "středověká Anglie", "Anglové a Sasové", "anglosaská království", "Alfréd Veliký", "hrabství", "Knut Veliký", "bitva u Hastings", "1066", "Vilém Dobyvatel", "Vikingové", "drakkary", "Odin", "runové písmo", "Normané", "Erik Rudý", "Grónsko", "Leif Eriksson", "Vinland", "Varjagové", "Harald I. Modrozub", "Harald I. Krásnovlasý", "Erik Vítězný", "Svatá říše římská", "Východofranská říše", "Ludvík Němec", "Jindřich Ptáčník", "tribut pacis", "Ota I.", "Ottoni", "bitva na řece Lechu", "955", "renovatio imperii", "kurfiřti", "boj o investituru", "investitura", "Jindřich IV.", "Řehoř VII.", "exkomunikace", "klatba", "Canossa", "konkordát wormský", "1122", "Štaufové", "Fridrich I. Barbarossa", "obléhání Milána", "Vladislav II.", "Fridrich II. Sicilský", "Zlatá bula sicilská", "1212", "interregnum", "Přemysl Otakar II.", "Habsburkové"]
   },
   {
     "title": "Arabský svět",
