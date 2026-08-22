@@ -942,63 +942,64 @@
   {
     "title": "Místopis světa - seznam her na procvičení",
     "subject": "Zeměpis",
-    "grade": "1. ročník",
+    "grade": "1.-4. ročník",
+    "interactiveTest": true,
     "url": "https://docs.google.com/document/d/1uKRkh50iF79wgbkfG8zzMQnoGe4fY07a1nUVDyMupVA/edit?usp=drive_link",
     "keywords": ["seznam", "světa", "místopis", "procvičení"]
   },
   {
     "title": "Mapa Španělsko - povrch",
     "subject": "Zeměpis",
-    "grade": "1. ročník",
+    "grade": "2. ročník",
     "url": "https://drive.google.com/file/d/1v58JPqEoxsSovoG5Jsw2O3zkouLV5mQQ/view?usp=sharing",
     "keywords": ["povrch", "mapa", "španělsko"]
   },
   {
     "title": "Mapa Španělsko - města",
     "subject": "Zeměpis",
-    "grade": "1. ročník",
+    "grade": "2. ročník",
     "url": "https://drive.google.com/file/d/1vQanNioSC6KsJwFv7T34HN9WX8ChdOYk/view?usp=sharing",
     "keywords": ["města", "mapa", "španělsko"]
   },
   {
     "title": "Mapa Velká Británie a Irsko - povrch",
     "subject": "Zeměpis",
-    "grade": "1. ročník",
+    "grade": "2. ročník",
     "url": "https://drive.google.com/file/d/1nHz49mytdvWJmM7ms0VdvQKiMyT9Tp0U/view?usp=sharing",
     "keywords": ["povrch", "irsko", "velká", "mapa", "británie"]
   },
   {
     "title": "Mapa Velká Británie a Irsko - města",
     "subject": "Zeměpis",
-    "grade": "1. ročník",
+    "grade": "2. ročník",
     "url": "https://drive.google.com/file/d/1U2wZzGomjLfd7TjBeUYK_j-z5txFHCS4/view?usp=sharing",
     "keywords": ["města", "irsko", "velká", "mapa", "británie"]
   },
   {
     "title": "Mapa Itálie - povrch",
     "subject": "Zeměpis",
-    "grade": "1. ročník",
+    "grade": "2. ročník",
     "url": "https://drive.google.com/file/d/16dDwf9tCQZ0t09nbjLD84xEqkz-1U_jw/view?usp=sharing",
     "keywords": ["povrch", "mapa", "itálie"]
   },
   {
     "title": "Mapa Itálie - města",
     "subject": "Zeměpis",
-    "grade": "1. ročník",
+    "grade": "2. ročník",
     "url": "https://drive.google.com/file/d/1qRZ9QW4GA1DGS3EyGVG-a-U0XWK1Vok9/view?usp=sharing",
     "keywords": ["města", "mapa", "itálie"]
   },
   {
     "title": "Mapa Francie - povrch",
     "subject": "Zeměpis",
-    "grade": "1. ročník",
+    "grade": "2. ročník",
     "url": "https://drive.google.com/file/d/1ibIKcnwLBZIHHGxpsf7huSu5RWu7lRcH/view?usp=sharing",
     "keywords": ["povrch", "francie", "mapa"]
   },
   {
     "title": "Mapa Francie - města",
     "subject": "Zeměpis",
-    "grade": "1. ročník",
+    "grade": "2. ročník",
     "url": "https://drive.google.com/file/d/1AKPl7i-bz_OOMhkmCu1iIGc7XzYH8XHu/view?usp=sharing",
     "keywords": ["města", "francie", "mapa"]
   },
@@ -1007,47 +1008,48 @@
     "subject": "Zeměpis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/18nd6fWWG4PfWu4jeK6-nf2uaIFIsMouHcvI0Ht-OzMA/export?format=docx",
-    "keywords": ["zeměpisu", "základy"]
+    "keywords": ["zeměpisu", "základy", "Eratosthenés", "Geografica", "fyzickogeografická sféra", "socioekonomická sféra", "krajinná sféra", "litosféra", "Mohorovičićova plocha nespojitosti", "atmosféra", "troposféra", "hydrosféra", "pedosféra", "biosféra", "fyzická geografie", "geomorfologie", "meteorologie", "klimatologie", "hydrogeografie", "pedogeografie", "biogeografie", "socioekonomická geografie", "geografie obyvatelstva", "geografie průmyslu", "geografie zemědělství", "geografie rekreace", "geografie cestovního ruchu", "matematická geografie", "kartografie", "regionální geografie", "politická geografie"]
   },
   {
     "title": "Vesmír",
     "subject": "Zeměpis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1Nr1ZeCHFsxbbjdzyzmEcdqEPv-csof7-NcO0IohLrxM/export?format=docx",
-    "keywords": ["vesmír"]
+    "keywords": ["vesmír", "Velký třesk", "hvězdy", "plazma", "Slunce", "astronomická jednotka", "Proxima Centauri", "Sirius", "souhvězdí", "Velký vůz", "Malý vůz", "Polárka", "Kassiopeia", "Pegasův čtverec", "Andromeda", "Orion", "ekliptikální souhvězdí", "cirkumpolární souhvězdí", "galaxie", "Mléčná dráha", "Sluneční soustava", "Merkur", "Venuše", "Země", "Neptun", "vnitřní planety", "vnější planety", "terestrické planety", "plynné planety", "měsíce", "Mars", "eliptická dráha", "komety", "meteoroid", "meteor", "meteorit", "geocentrické uspořádání", "Klaudios Ptolemaios", "heliocentrické uspořádání", "Mikuláš Koperník"]
   },
   {
     "title": "Nebeská sféra a Země",
     "subject": "Zeměpis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1JVcye5hGXg7BMJGJQ23OHG0JCJjzRGPz3lN844X_2zg/export?format=docx",
-    "keywords": ["nebeská", "sféra"]
+    "keywords": ["nebeská sféra", "světový rovník", "ekliptika", "obzorník", "jarní bod", "jarní rovnodennost", "podzimní bod", "podzimní rovnodennost", "Keplerovy zákony", "zákon oběžných drah", "zákon oběžných ploch", "důkazy kulatosti Země", "Fernão de Magalhães", "geoid", "elipsoid", "WGS 84", "referenční koule", "oběh Země", "siderický rok", "perihelium", "afelium", "zemská osa", "deklinace Slunce", "letní slunovrat", "obratník Raka", "severní polární kruh", "jižní polární kruh", "zimní slunovrat", "obratník Kozoroha", "střídání ročních období", "rotace Země", "siderický день", "úhlová rychlost", "obvodová rychlost", "střídání dne a noci", "Coriolisova síla", "precese", "nutace", "zdánlivý pohyb Slunce", "soumrak", "svítání", "občanský soumrak", "nautický soumrak", "astronomický soumrak", "bílá noc", "astronomicky bílá noc"]
   },
   {
     "title": "Měsíc a slapové pohyby",
     "subject": "Zeměpis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1CuH0Jgmk_mOwhaa-Y2ON2psMip8SFv8224v5U0QUBRA/export?format=docx",
-    "keywords": ["pohyby", "měsíc", "slapové"]
+    "keywords": ["Měsíc", "Neil Armstrong", "Buzz Aldrin", "Apollo 11", "siderický měsíc", "přivrácená strana Měsíce", "přízemí", "perigeum", "odzemí", "apogeum", "uzel", "měsíční fáze", "novoluní", "první čtvrť", "úplněk", "poslední čtvrť", "kvadratury", "syzygie", "synodický měsíc", "barycentrum", "zatmění Slunce", "úplné zatmění", "částečné zatmění", "prstencové zatmění", "zatmění Měsíce", "saros", "slapové pohyby", "příboj", "mořské dmutí", "příliv", "odliv", "skočný příliv", "skočné dmutí", "hluché dmutí", "lunární den", "Fundy Bay", "Bristolský záliv", "přílivová elektrárna", "pororoca"]
   },
   {
     "title": "Jednotky času, časová pásma a kalendáře",
     "subject": "Zeměpis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1HQlVcbvP_k3jkqBX5gml2TKYEDDkBwvrPCOeG7faFCM/export?format=docx",
-    "keywords": ["kalendáře", "jednotky", "pásma", "časová", "času"]
+    "keywords": ["jednotky času", "střední sluneční den", "horní kulminace", "dolní kulminace", "tropický rok", "časová rovnice", "časová pásma", "pásmový čas", "místní čas", "světový čas", "západoevropský čas", "Greenwichský čas", "středoevropský čas", "Jindřichův Hradec", "datová hranice", "kalendář", "lunární kalendář", "solární kalendář", "lunisolární kalendář", "starověký Egypt", "velký rok", "malý rok", "Gaius Julius Caesar", "juliánský kalendář", "papež Řehoř XIII.", "gregoriánský kalendář", "přestupný rok"]
   },
   {
     "title": "Kartografie",
     "subject": "Zeměpis",
     "grade": "1. ročník",
     "url": "https://docs.google.com/document/d/1QzT3YKfPbFqFDDfOZ6ulIX2mV6AQJ8rQvP7_NA5C79w/export?format=docx",
-    "keywords": ["kartografie"]
+    "keywords": ["Kartografie", "mapa", "měřítko mapy", "glóbus", "měřítko glóbu", "číselné měřítko", "grafické měřítko", "slovní měřítko", "velké měřítko", "střední měřítko", "malé měřítko", "zeměpisné souřadnice", "zeměpisná šířka", "rovnoběžky", "rovník", "póly", "severní polokoule", "jižní polokoule", "obratník Raka", "obratník Kozoroha", "severní polární kruh", "jižní polární kruh", "zeměpisná délka", "poledníky", "Greenwichský poledník", "mezinárodní datová hranice", "generalizace", "ortodroma", "loxodroma", "kartografické zobrazení", "jednoduchá zobrazení", "azimutální zobrazení", "válcová zobrazení", "kuželová zobrazení", "obecná zobrazení", "normální poloha", "příčná poloha", "obecná poloha", "plochojevná zobrazení", "ekvivalentní zobrazení", "úhlojevná zobrazení", "konformní zobrazení", "vyrovnávací zobrazení", "délkojevná zobrazení", "obsah mapy", "výškopis", "barevná hypsometrie", "batymetrie", "vrstevnice", "izohypsa", "kóta", "Jaderské moře", "Lišov u Českých Budějovic", "Baltské moře", "polohopis", "smluvní značky", "legenda", "popis mapy", "slepá mapa", "choronyma", "místní jména", "oikonyma", "pomístní jména", "anoikonyma", "oronyma", "hydronyma", "hodonyma", "pozemková jména", "domácí názvy", "cizí názvy", "exonyma", "dublety", "transliterace", "transkripce", "topografický obsah", "plány", "topografické mapy", "geografické mapy", "tématické mapy", "metoda bodových značek", "metoda lokalizovaných diagramů", "metoda kartodiagramů", "metoda půdorysných čar", "stuhová metoda", "metoda pohybových čar", "metoda izočar", "izolineje", "izotermy", "izobary", "izohyety", "izohaliny", "izochory", "izochrony", "metoda barevných vrstev", "metoda tečková", "metoda kartogramů", "metoda anamorfózy", "areálová metoda", "dasymetrická metoda", "Mikuláš Klaudyán", "Vladislav Jagellonský", "Komenského mapa Moravy", "Müllerova mapa Čech", "Jan Kryštof Müller", "katastrální mapa", "Český úřad zeměměřický a katastrální", "polyedrické glóby", "blokdiagram", "plastická mapa", "kartometrie", "křivkoměr", "planimetr", "trigonometrická síť", "trigonometrické body", "nivelační síť", "nivelační body", "družicové snímkování", "dálkový průzkum Země", "panchromatické snímky", "infračervené snímky", "multispektrální snímky", "tepelné snímky", "radarové snímky", "fotogrammetrie", "ortofotomapy", "geostacionární družice", "meteorologické družice", "azimut"]
   },
   {
     "title": "Geomorfologie",
     "subject": "Zeměpis",
     "grade": "1. ročník",
+    "review": true,
     "url": "https://docs.google.com/document/d/1xNshayBPVY07V3zhm5yY3FSNtuTHoki8RCRceGStaGw/export?format=docx",
     "keywords": ["geomorfologie"]
   },
