@@ -1,0 +1,585 @@
+
+```html
+<!-- ============================= -->
+<!-- SCweb – Download popup        -->
+<!-- ============================= -->
+
+<div id="scwebDownloadPopup" class="scweb-popup-overlay" aria-hidden="true">
+    <div class="scweb-popup" role="dialog" aria-modal="true" aria-labelledby="scwebPopupTitle">
+
+        <button
+            type="button"
+            class="scweb-popup-close"
+            id="scwebPopupClose"
+            aria-label="Zavřít"
+        >
+            ×
+        </button>
+
+        <div class="scweb-popup-icon">✅</div>
+
+        <h2 id="scwebPopupTitle">Stažení dokončeno!</h2>
+
+        <p class="scweb-popup-text">
+            Pomohl ti SCweb?<br>
+            Byl bych vděčný, pokud bys zvážil jednu z těchto možností:
+        </p>
+
+        <div class="scweb-popup-buttons">
+
+            <!-- ZMĚŇ tento odkaz na svůj skutečný donate odkaz -->
+            <button
+                type="button"
+                class="scweb-popup-share"
+             >
+                Podpořit SCweb - č. účtu: 4222310053/0800
+            </button>
+
+            <button
+                type="button"
+                class="scweb-popup-share"
+                id="scwebShareButton"
+            >
+                Sdílet SCweb s ostatními
+            </button>
+
+        </div>
+
+        <button
+            type="button"
+            class="scweb-popup-later"
+            id="scwebPopupLater"
+        >
+            Možná později
+        </button>
+
+    </div>
+</div>
+
+
+<style>
+/* ===== SCweb Download Popup ===== */
+
+.scweb-popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+.scweb-popup-overlay.scweb-popup-visible {
+    display: flex;
+}
+
+.scweb-popup {
+    position: relative;
+
+    width: 100%;
+    max-width: 420px;
+
+    box-sizing: border-box;
+
+    padding: 35px 30px 25px;
+
+    background: linear-gradient(135deg, #00B2B2, #809A71, #FF8330);
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+
+    animation: scwebPopupAppear 0.2s ease-out;
+}
+
+.scweb-popup-close {
+    position: absolute;
+
+    top: 8px;
+    right: 14px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+    line-height: 35px;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+.scweb-popup-close:hover {
+    color: #222;
+}
+
+.scweb-popup-icon {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.scweb-popup h2 {
+    margin: 0 0 12px;
+    color: white;
+    text-shadow: 0 0 3px white;
+    font-size: 24px;
+}
+
+.scweb-popup-text {
+    margin: 0;
+
+    color: #fffefe;
+
+    line-height: 1.5;
+}
+
+.scweb-popup-buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.scweb-popup-donate,
+.scweb-popup-share {
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.scweb-popup-donate {
+    border: none;
+
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.scweb-popup-share {
+    border: none;
+
+    background: #eeeeee;
+    color: #222;
+}
+
+.scweb-popup-donate:hover,
+.scweb-popup-share:hover {
+    opacity: 0.85;
+}
+
+.scweb-popup-donate:active,
+.scweb-popup-share:active {
+    transform: scale(0.98);
+}
+
+.scweb-popup-later {
+    margin-top: 15px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #000000;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.scweb-popup-later:hover {
+    color: #333;
+}
+
+@keyframes scwebPopupAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+</style>
+```
+```html
+<script>
+/* =========================================
+   SCweb – Download popup + Google Analytics
+   ========================================= */
+
+(function () {
+
+    const POPUP_STORAGE_KEY = "scweb_download_popup_last_shown";
+    const POPUP_COOLDOWN = 0;
+
+    const popup = document.getElementById("scwebDownloadPopup");
+    const closeButton = document.getElementById("scwebPopupClose");
+    const laterButton = document.getElementById("scwebPopupLater");
+    const shareButton = document.getElementById("scwebShareButton");
+    const donateButton = document.getElementById("scwebDonateButton");
+
+
+    /* =========================================
+       Google Analytics helper
+       ========================================= */
+
+    function sendAnalyticsEvent(eventName, parameters = {}) {
+
+        if (typeof window.gtag === "function") {
+
+            window.gtag("event", eventName, parameters);
+
+        } else {
+
+            console.warn(
+                "SCweb: Google Analytics (gtag) nebyl nalezen."
+            );
+
+        }
+    }
+
+
+    /* =========================================
+       Zjištění, zda může být popup zobrazen
+       ========================================= */
+
+    function canShowPopup() {
+
+        try {
+
+            const lastShown = localStorage.getItem(
+                POPUP_STORAGE_KEY
+            );
+
+            if (!lastShown) {
+                return true;
+            }
+
+            const timeSinceLastPopup =
+                Date.now() - Number(lastShown);
+
+            return timeSinceLastPopup >= POPUP_COOLDOWN;
+
+        } catch (error) {
+
+            // Pokud localStorage není dostupné,
+            // popup raději zobrazíme.
+            return true;
+        }
+    }
+
+
+    /* =========================================
+       Zobrazení popupu
+       ========================================= */
+
+    function showPopup() {
+
+        if (!popup) {
+            return;
+        }
+
+        if (!canShowPopup()) {
+            return;
+        }
+
+        popup.classList.add("scweb-popup-visible");
+        popup.setAttribute("aria-hidden", "false");
+
+        try {
+
+            localStorage.setItem(
+                POPUP_STORAGE_KEY,
+                Date.now().toString()
+            );
+
+        } catch (error) {
+            // Nic se neděje.
+        }
+
+        sendAnalyticsEvent("download_popup_view", {
+            popup_type: "download_support"
+        });
+    }
+
+
+    /* =========================================
+       Zavření popupu
+       ========================================= */
+
+    function closePopup() {
+
+        if (!popup) {
+            return;
+        }
+
+        popup.classList.remove("scweb-popup-visible");
+        popup.setAttribute("aria-hidden", "true");
+    }
+
+
+    /* =========================================
+       Sdílení SCwebu
+       ========================================= */
+
+    async function shareSCweb() {
+
+        const shareData = {
+            title: "SCweb",
+            text: "Mrkni na SCweb – web s materiály pro studenty!",
+            url: "https://scweb.cz"
+        };
+
+
+        /* -------------------------------------
+           Mobil / prohlížeče s Web Share API
+           ------------------------------------- */
+
+        if (
+            navigator.share &&
+            typeof navigator.share === "function"
+        ) {
+
+            try {
+
+                await navigator.share(shareData);
+
+                sendAnalyticsEvent("share_click", {
+                    share_method: "native_share"
+                });
+
+                closePopup();
+
+                return;
+
+            } catch (error) {
+
+                // Uživatel mohl sdílení jen zrušit.
+                // V takovém případě popup nezavíráme.
+                if (error && error.name === "AbortError") {
+                    return;
+                }
+
+                console.warn(
+                    "SCweb: Native share se nepodařilo použít.",
+                    error
+                );
+            }
+        }
+
+
+        /* -------------------------------------
+           PC / fallback → zkopírování odkazu
+           ------------------------------------- */
+
+        try {
+
+            await navigator.clipboard.writeText(
+                "https://scweb.cz"
+            );
+
+            sendAnalyticsEvent("share_click", {
+                share_method: "copy_link"
+            });
+
+            alert(
+                "Odkaz byl zkopírován do schránky."
+            );
+
+            closePopup();
+
+        } catch (error) {
+
+            console.error(
+                "SCweb: Nepodařilo se zkopírovat odkaz.",
+                error
+            );
+
+            alert(
+                "Odkaz na SCweb: https://scweb.cz"
+            );
+        }
+    }
+
+
+    /* =========================================
+       Download odkazy
+       ========================================= */
+
+    const downloadLinks = document.querySelectorAll(
+        'a[href*="docs.google.com/document"][href*="/export"]'
+    );
+
+
+    downloadLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            /*
+             * Získáme název dokumentu z textu odkazu.
+             * Např. "Pohybová (svalová) soustava ✍️"
+             */
+
+            const documentName =
+                link.textContent.trim();
+
+
+            /* -------------------------------
+               GA4 – download event
+               ------------------------------- */
+
+            sendAnalyticsEvent("download", {
+
+                file_name: documentName,
+
+                file_type: "docx",
+
+                link_url: link.href
+
+            });
+
+
+            /* -------------------------------
+               Popup
+               ------------------------------- */
+
+            /*
+             * Krátké zpoždění zajistí, že se
+             * nejdřív spustí odkaz na Google Docs
+             * a až potom popup.
+             */
+
+            setTimeout(function () {
+
+                showPopup();
+
+            }, 1000);
+
+        });
+
+    });
+
+
+    /* =========================================
+       Tlačítka popupu
+       ========================================= */
+
+    if (closeButton) {
+
+        closeButton.addEventListener(
+            "click",
+            closePopup
+        );
+
+    }
+
+
+    if (laterButton) {
+
+        laterButton.addEventListener(
+            "click",
+            closePopup
+        );
+
+    }
+
+
+    if (shareButton) {
+
+        shareButton.addEventListener(
+            "click",
+            shareSCweb
+        );
+
+    }
+
+
+    if (donateButton) {
+
+        donateButton.addEventListener(
+            "click",
+            function () {
+
+                sendAnalyticsEvent("donate_click", {
+
+                    link_url: donateButton.href
+
+                });
+
+            }
+        );
+
+    }
+
+
+    /* =========================================
+       Kliknutí mimo popup → zavření
+       ========================================= */
+
+    if (popup) {
+
+        popup.addEventListener(
+            "click",
+            function (event) {
+
+                if (event.target === popup) {
+                    closePopup();
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =========================================
+       ESC → zavření
+       ========================================= */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (event.key === "Escape") {
+                closePopup();
+            }
+
+        }
+    );
+
+})();
+</script>
+```
+
